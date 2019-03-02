@@ -1,0 +1,6 @@
+input.txt
+output.txt
+*.out
+*.out.dsYM
+.DS_Store
+.vscode
