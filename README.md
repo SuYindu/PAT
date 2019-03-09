@@ -1,6 +1,4 @@
-# [PAT (Advanced Level) Practice](https://pintia.cn/problem-sets/994805342720868352/problems)
-
-## Progress: 66 / 155
+# [Advanced Level: 66 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
 
 | # | Title | Solutions |
 |:-:|:-----:|:---------:|
@@ -72,3 +70,7 @@
 |1153|[Decode Registration Card of PAT](https://pintia.cn/problem-sets/994805342720868352/problems/1071785190929788928)|[C++](./src/甲级/1153.cpp)|
 |1154|[Vertex Coloring](https://pintia.cn/problem-sets/994805342720868352/problems/1071785301894295552)|[C++](./src/甲级/1154.cpp)|
 |1155|[Heap Paths](https://pintia.cn/problem-sets/994805342720868352/problems/1071785408849047552)|[C++](./src/甲级/1155.cpp)|
+|1156|[Sexy Primes](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274880)|[C++](./src/甲级/1156.cpp)|
+|1157|[Anniversary](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274881)|[C++](./src/甲级/1157.cpp)|
+|1158|[Telefraud Detection](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274882)|[C++](./src/甲级/1158.cpp)|
+|1159|[Structure of a Binary Tree](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274883)|[C++](./src/甲级/1159.cpp)|
