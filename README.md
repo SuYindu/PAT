@@ -1,6 +1,6 @@
 # [Advanced Level: 66 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
 
-| # | Title | Solutions |
+| No. | Title | Solutions |
 |:-:|:-----:|:---------:|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
@@ -74,3 +74,15 @@
 |1157|[Anniversary](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274881)|[C++](./src/甲级/1157.cpp)|
 |1158|[Telefraud Detection](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274882)|[C++](./src/甲级/1158.cpp)|
 |1159|[Structure of a Binary Tree](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274883)|[C++](./src/甲级/1159.cpp)|
+
+------------------------------------------------------------
+
+# [乙级: 5 / 95](https://pintia.cn/problem-sets/994805260223102976/problems)
+
+| 序号 | 题目 | 解答 |
+|:-:|:---:|:----:|
+|1001|[害死人不偿命的（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528)|[C](./src/乙级/1001.c)|
+|1002|[写出这个数](https://pintia.cn/problem-sets/994805260223102976/problems/994805324509200384)|[C++](./src/乙级/1002.cpp)|
+|1003|[我要通过！](https://pintia.cn/problem-sets/994805260223102976/problems/994805323154440192)|[C++](./src/乙级/1003.cpp)|
+|1004|[成绩排名](https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448)|[C++](./src/乙级/1004.cpp)|
+|1005|[继续（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776)|[C++](./src/乙级/1005.cpp)|
