@@ -1,4 +1,4 @@
-# [Advanced Level: 66 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
+# [Advanced Level: 70 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
