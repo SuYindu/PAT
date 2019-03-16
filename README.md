@@ -86,3 +86,8 @@
 |1003|[我要通过！](https://pintia.cn/problem-sets/994805260223102976/problems/994805323154440192)|[C++](./src/乙级/1003.cpp)|
 |1004|[成绩排名](https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448)|[C++](./src/乙级/1004.cpp)|
 |1005|[继续（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776)|[C++](./src/乙级/1005.cpp)|
+|1006|[换个格式输出整数](https://pintia.cn/problem-sets/994805260223102976/problems/994805318855278592)|[C](./src/乙级/1006.c)|
+|1007|[素数对猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805317546655744)|[C++](./src/乙级/1007.cpp)|
+|1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C++](./src/乙级/1008.cpp)|
+|1009|[说反话](https://pintia.cn/problem-sets/994805260223102976/problems/994805314941992960)|[C++](./src/乙级/1009.cpp)|
+|1010|[一元多项式求导](https://pintia.cn/problem-sets/994805260223102976/problems/994805313708867584)|[C](./src/乙级/1010.c)|
