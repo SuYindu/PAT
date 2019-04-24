@@ -93,3 +93,6 @@
 |1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C++](./src/乙级/1008.cpp)|
 |1009|[说反话](https://pintia.cn/problem-sets/994805260223102976/problems/994805314941992960)|[C++](./src/乙级/1009.cpp)|
 |1010|[一元多项式求导](https://pintia.cn/problem-sets/994805260223102976/problems/994805313708867584)|[C](./src/乙级/1010.c)|
+|1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C++](./src/乙级/1022.cpp)|
+|1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C++](./src/乙级/1032.cpp)|
+|1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
