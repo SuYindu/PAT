@@ -90,9 +90,14 @@
 |1005|[继续（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776)|[C++](./src/乙级/1005.cpp)|
 |1006|[换个格式输出整数](https://pintia.cn/problem-sets/994805260223102976/problems/994805318855278592)|[C](./src/乙级/1006.c)|
 |1007|[素数对猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805317546655744)|[C++](./src/乙级/1007.cpp)|
-|1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C++](./src/乙级/1008.cpp)|
+|1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C](./src/乙级/1008.c) [C++](./src/乙级/1008.cpp)|
 |1009|[说反话](https://pintia.cn/problem-sets/994805260223102976/problems/994805314941992960)|[C++](./src/乙级/1009.cpp)|
 |1010|[一元多项式求导](https://pintia.cn/problem-sets/994805260223102976/problems/994805313708867584)|[C](./src/乙级/1010.c)|
+|1011|[A+B 和 C](https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952)|[C](./src/乙级/1011.c)|
+|1012|[数字分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840)|[C++](./src/乙级/1012.cpp)|
+|1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C++](./src/乙级/1016.cpp)|
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C++](./src/乙级/1022.cpp)|
+|1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C++](./src/乙级/1032.cpp)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
+|1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
