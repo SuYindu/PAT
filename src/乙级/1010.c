@@ -8,6 +8,6 @@ int main() {
         printf("%d %d", c * e, e - 1);
         flag = 1;
     }
-    if (!flag) printf("0 0");
+    if (!flag) printf("0 0\n");
     return 0;
 }

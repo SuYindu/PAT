@@ -1,4 +1,4 @@
-## Reference: [liuchuo/PAT](https://github.com/liuchuo/PAT)
+## Reference: [liuchuo / PAT](https://github.com/liuchuo/PAT) & [《算法笔记》](https://book.douban.com/subject/26827295/)
 
 ## [Advanced Level: 70 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
 
@@ -86,7 +86,7 @@
 |1001|[害死人不偿命的（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528)|[C](./src/乙级/1001.c)|
 |1002|[写出这个数](https://pintia.cn/problem-sets/994805260223102976/problems/994805324509200384)|[C++](./src/乙级/1002.cpp)|
 |1003|[我要通过！](https://pintia.cn/problem-sets/994805260223102976/problems/994805323154440192)|[C++](./src/乙级/1003.cpp)|
-|1004|[成绩排名](https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448)|[C++](./src/乙级/1004.cpp)|
+|1004|[成绩排名](https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448)|[C](./src/乙级/1004.c)|
 |1005|[继续（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776)|[C++](./src/乙级/1005.cpp)|
 |1006|[换个格式输出整数](https://pintia.cn/problem-sets/994805260223102976/problems/994805318855278592)|[C](./src/乙级/1006.c)|
 |1007|[素数对猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805317546655744)|[C++](./src/乙级/1007.cpp)|
@@ -96,8 +96,11 @@
 |1011|[A+B 和 C](https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952)|[C](./src/乙级/1011.c)|
 |1012|[数字分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840)|[C++](./src/乙级/1012.cpp)|
 |1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C++](./src/乙级/1016.cpp)|
+|1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C++](./src/乙级/1022.cpp)|
 |1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
-|1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C++](./src/乙级/1032.cpp)|
+|1028|[人口普查](https://pintia.cn/problem-sets/994805260223102976/problems/994805293282607104)|[C++](./src/乙级/1028.cpp)|
+|1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
+|1041|[考试座位号](https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032)|[C](./src/乙级/1041.c)|
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
