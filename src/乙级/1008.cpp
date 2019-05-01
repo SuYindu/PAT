@@ -9,7 +9,7 @@ int main() {
     vector<int> nums(n);
     for (int i = 0; i < n; i++)
         cin >> nums[i];
-    m %= n;
+    m = m % n;
     reverse(nums.begin(), nums.end());
     reverse(nums.begin(), nums.begin() + m);
     reverse(nums.begin() + m, nums.end());
