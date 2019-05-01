@@ -4,6 +4,14 @@
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
+|1002|[A+B for Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000)|[C++](./src/甲级/1002.cpp)|
+|1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
+|1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
+|1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
+|1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
+|1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
+|1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
+|1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
 |1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[](./src/甲级/1090.cpp)|
