@@ -1,5 +1,5 @@
 # Contents:
-* [PAT(Adcanced Level) Solutions](#pat(adcanced level) solutions)
+* [PAT(Adcanced Level) Solutions](#pat(adcanced-level)-solutions)
 * [PAT乙级题解](#PAT乙级题解)
 * [Reference](#reference)
 
