@@ -1,11 +1,11 @@
 # Contents:
 * [PAT(Adcanced Level) Solutions](#pat(adcanced level) solutions)
-* [PAT 乙级题解](#PAT 乙级题解)
+* [PAT乙级题解](#PAT乙级题解)
 * [Reference](#reference)
 
 ------------------------------------------------------------
 
-### [PAT(Adcanced Level) Solutions](https://pintia.cn/problem-sets/994805342720868352/problems)
+### PAT(Adcanced Level) Solutions
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
@@ -92,7 +92,7 @@
 
 ------------------------------------------------------------
 
-### PAT 乙级题解
+### PAT乙级题解
 
 | 序号 | 题目 | 解答 |
 |:-:|:---:|:----:|
