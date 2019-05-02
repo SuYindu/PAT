@@ -1,6 +1,11 @@
-## Reference: [liuchuo / PAT](https://github.com/liuchuo/PAT) & [《算法笔记》](https://book.douban.com/subject/26827295/)
+# Contents:
+* [PAT(Adcanced Level) Solutions](#pat(adcanced level) solutions)
+* [PAT 乙级题解](#PAT 乙级题解)
+* [Reference](#reference)
 
-## [Advanced Level: 78 / 155](https://pintia.cn/problem-sets/994805342720868352/problems)
+------------------------------------------------------------
+
+### [PAT(Adcanced Level) Solutions](https://pintia.cn/problem-sets/994805342720868352/problems)
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
@@ -87,28 +92,39 @@
 
 ------------------------------------------------------------
 
-## [乙级: 21 / 95](https://pintia.cn/problem-sets/994805260223102976/problems)
+### PAT 乙级题解
 
 | 序号 | 题目 | 解答 |
 |:-:|:---:|:----:|
 |1001|[害死人不偿命的（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805325918486528)|[C](./src/乙级/1001.c)|
-|1002|[写出这个数](https://pintia.cn/problem-sets/994805260223102976/problems/994805324509200384)|[C++](./src/乙级/1002.cpp)|
+|1002|[写出这个数](https://pintia.cn/problem-sets/994805260223102976/problems/994805324509200384)|[C](./src/乙级/1002.c)|
 |1003|[我要通过！](https://pintia.cn/problem-sets/994805260223102976/problems/994805323154440192)|[C++](./src/乙级/1003.cpp)|
 |1004|[成绩排名](https://pintia.cn/problem-sets/994805260223102976/problems/994805321640296448)|[C](./src/乙级/1004.c)|
 |1005|[继续（3n+1）猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805320306507776)|[C++](./src/乙级/1005.cpp)|
 |1006|[换个格式输出整数](https://pintia.cn/problem-sets/994805260223102976/problems/994805318855278592)|[C](./src/乙级/1006.c)|
 |1007|[素数对猜想](https://pintia.cn/problem-sets/994805260223102976/problems/994805317546655744)|[C++](./src/乙级/1007.cpp)|
-|1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C](./src/乙级/1008.c) [C++](./src/乙级/1008.cpp)|
+|1008|[数组元素循环右移问题](https://pintia.cn/problem-sets/994805260223102976/problems/994805316250615808)|[C](./src/乙级/1008.c)|
 |1009|[说反话](https://pintia.cn/problem-sets/994805260223102976/problems/994805314941992960)|[C++](./src/乙级/1009.cpp)|
 |1010|[一元多项式求导](https://pintia.cn/problem-sets/994805260223102976/problems/994805313708867584)|[C](./src/乙级/1010.c)|
 |1011|[A+B 和 C](https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952)|[C](./src/乙级/1011.c)|
 |1012|[数字分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840)|[C++](./src/乙级/1012.cpp)|
+|1014|[福尔摩斯的约会](https://pintia.cn/problem-sets/994805260223102976/problems/994805308755394560)|[C](./src/乙级/1014.c)|
 |1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C++](./src/乙级/1016.cpp)|
 |1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
+|1021|[个位数统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296)|[C](./src/乙级/1021.c)|
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C++](./src/乙级/1022.cpp)|
+|1024|[]()|[C](./src/乙级/1024.c)|
 |1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
 |1028|[人口普查](https://pintia.cn/problem-sets/994805260223102976/problems/994805293282607104)|[C++](./src/乙级/1028.cpp)|
+|1031|[查验身份证](https://pintia.cn/problem-sets/994805260223102976/problems/994805290334011392)|[C](./src/乙级/1031.c)|
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
 |1041|[考试座位号](https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032)|[C](./src/乙级/1041.c)|
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
+|1048|[]()|[C](./src/乙级/1048.c)|
+
+------------------------------------------------------------
+
+### Reference:
+* [liuchuo / PAT](https://github.com/liuchuo/PAT)
+* [《算法笔记》](https://book.douban.com/subject/26827295/)
