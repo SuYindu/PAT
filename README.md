@@ -1,6 +1,6 @@
 # Contents:
-* [PAT(Advanced Level) Solutions](#PAT(Advanced-Level) Solutions)
-* [PAT(Basic Level) Solutions](#PAT(Basic Level)-Solutions)
+* [PAT(Advanced Level) Solutions](#PAT(Advanced-Level)-Solutions)
+* [PAT(Basic Level) Solutions](#PAT(Basic-Level)-Solutions)
 * [Reference](#Reference)
 
 ------------------------------------------------------------
