@@ -2,9 +2,9 @@
 
 int main() {
     char c;
-    int row, col;
+    int col;
     scanf("%d %c", &col, &c);
-    row = (col + 1) / 2;
+    int row = (col + 1) / 2;
     for (int i = 0; i < row; i++) {
         printf("%c", c);
         for (int j = 0; j < col - 2; j++)

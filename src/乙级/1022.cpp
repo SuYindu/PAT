@@ -8,7 +8,7 @@ int main() {
     int sum = a + b;
     string result;
     do {
-        result += (sum % d) + '0';
+        result += to_string(sum % d);
         sum /= d;
     } while (sum);
     reverse(result.begin(), result.end());
