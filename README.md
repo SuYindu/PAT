@@ -120,10 +120,10 @@
 |1011|[A+B 和 C](https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952)|[C](./src/乙级/1011.c)|
 |1012|[数字分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840)|[C++](./src/乙级/1012.cpp)|
 |1014|[福尔摩斯的约会](https://pintia.cn/problem-sets/994805260223102976/problems/994805308755394560)|[C](./src/乙级/1014.c)|
-|1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C++](./src/乙级/1016.cpp)|
+|1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C](./src/乙级/1016.c)|
 |1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
 |1021|[个位数统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296)|[C](./src/乙级/1021.c)|
-|1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C++](./src/乙级/1022.cpp)|
+|1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C](./src/乙级/1022.c)|
 |1024|[科学计数法](https://pintia.cn/problem-sets/994805260223102976/problems/994805297229447168)|[C](./src/乙级/1024.c)|
 |1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
 |1027|[打印沙漏](https://pintia.cn/problem-sets/994805260223102976/problems/994805294251491328)|[C](./src/乙级/1027.c)|
