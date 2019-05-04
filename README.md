@@ -1,7 +1,7 @@
 # Contents:
-* [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
-* [PAT(Basic Level) Solutions](#patbasic-level-solutions)
-* [Reference](#Reference)
+- [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
+- [PAT(Basic Level) Solutions](#patbasic-level-solutions)
+- [Reference:](#reference)
 
 ------------------------------------------------------------
 
@@ -9,19 +9,29 @@
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
+|1001|[A+B Format](https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400)|[C++](./src/甲级/1001.cpp)|
 |1002|[A+B for Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000)|[C++](./src/甲级/1002.cpp)|
+|1005|[Spell It Right](https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336)|[C++](./src/甲级/1005.cpp)|
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
+|1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
+|1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
+|1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
+|1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
+|1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
+|1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
+|1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
+|1082|[Read Number in Chinese](https://pintia.cn/problem-sets/994805342720868352/problems/994805385053978624)|[C++](./src/甲级/1082.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
-|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[](./src/甲级/1090.cpp)|
-|1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[](./src/甲级/1091.cpp)|
+|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[C++](./src/甲级/1090.cpp)|
+|1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[C++](./src/甲级/1091.cpp)|
 |1092|[To Buy or Not to Buy](https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368)|[C++](./src/甲级/1092.cpp)|
 |1093|[Count PAT's](https://pintia.cn/problem-sets/994805342720868352/problems/994805373582557184)|[C++](./src/甲级/1093.cpp)|
 |1094|[The Largest Generation](https://pintia.cn/problem-sets/994805342720868352/problems/994805372601090048)|[C++](./src/甲级/1094.cpp)|
@@ -131,7 +141,3 @@
 ## Reference:
 * [liuchuo / PAT](https://github.com/liuchuo/PAT)
 * [《算法笔记》](https://book.douban.com/subject/26827295/)
-
-------------------------------------------------------------
-
-## [Back to top](#contents)
