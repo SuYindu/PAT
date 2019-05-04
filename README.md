@@ -1,7 +1,7 @@
-# Contents:
+# Contents
 - [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
 - [PAT(Basic Level) Solutions](#patbasic-level-solutions)
-- [Reference:](#reference)
+- [Reference](#reference)
 
 ------------------------------------------------------------
 
@@ -138,6 +138,6 @@
 
 ------------------------------------------------------------
 
-## Reference:
+## Reference
 * [liuchuo / PAT](https://github.com/liuchuo/PAT)
 * [《算法笔记》](https://book.douban.com/subject/26827295/)
