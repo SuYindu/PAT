@@ -1,7 +1,8 @@
 # Contents
-- [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
-- [PAT(Basic Level) Solutions](#patbasic-level-solutions)
-- [Reference](#reference)
+- [Contents](#contents)
+  - [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
+  - [PAT(Basic Level) Solutions](#patbasic-level-solutions)
+  - [Reference](#reference)
 
 ------------------------------------------------------------
 
@@ -16,6 +17,7 @@
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
+|1025|[PAT Ranking](https://pintia.cn/problem-sets/994805342720868352/problems/994805474338127872)|[C++](./src/甲级/1025.cpp)|
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
