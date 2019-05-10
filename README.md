@@ -16,6 +16,7 @@
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
+|1015|[德才论](https://pintia.cn/problem-sets/994805260223102976/problems/994805307551629312)|[C++](./src/乙级/1015.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1025|[PAT Ranking](https://pintia.cn/problem-sets/994805342720868352/problems/994805474338127872)|[C++](./src/甲级/1025.cpp)|
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
@@ -26,6 +27,7 @@
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
 |1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
+|1062|[Talent and Virtue](https://pintia.cn/problem-sets/994805342720868352/problems/994805410555346944)|[C++](./src/甲级/1062.cpp)|
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
