@@ -1,5 +1,3 @@
-// 时间直接用字符串表示即可（便于排序），需要运算时再进行转换
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -11,7 +9,7 @@ struct Record {
     bool valid = false;
 };
 
-int GetTime(string in_time, string out_time) {
+int get_duration(string in_time, string out_time) {
     int hour   = stoi(out_time.substr(0, 2)) - stoi(in_time.substr(0, 2));
     int minite = stoi(out_time.substr(3, 2)) - stoi(in_time.substr(3, 2));
     int second = stoi(out_time.substr(6, 2)) - stoi(in_time.substr(6, 2));
@@ -24,15 +22,13 @@ int main() {
     vector<Record> records(n);
     for (int i = 0; i < n; i++)
         cin >> records[i].plate >> records[i].time >> records[i].state;
-    // 按车牌和时间排序，以便过滤无效记录
+    // 按车牌号和时间排序，以过滤无效记录
     sort(records.begin(), records.end(), [](Record r1, Record r2) {
         return r1.plate != r2.plate ? r1.plate < r2.plate : r1.time < r2.time;
     });
-    for (int i = 0; i < n - 1; i++) {
-        if (records[i].plate != records[i+1].plate) continue;
-        if (records[i].state == "in" && records[i+1].state == "out")
+    for (int i = 0; i < n - 1; i++)
+        if (records[i].plate == records[i+1].plate && records[i].state == "in" && records[i+1].state == "out")
             records[i].valid = records[i+1].valid = true;
-    }
     sort(records.begin(), records.end(), [](Record r1, Record r2) {
         return r1.time < r2.time;
     });
@@ -41,17 +37,15 @@ int main() {
     map<string, string> in_time;
     for (auto record : records) {
         if (!record.valid) continue;
-        string plate = record.plate;
-        string time = record.time;
         if (record.state == "in") {
-            in_time[plate] = time;
+            in_time[record.plate] = record.time;
             if (count.empty())
-                count[time] = 1;
+                count[record.time] = 1;
             else
-                count[time] = count.rbegin()->second + 1;
+                count[record.time] = count.rbegin()->second + 1; // 车辆增加
         } else {
-            durations[plate] += GetTime(in_time[plate], time);
-            count[time] = count.rbegin()->second - 1;
+            durations[record.plate] += get_duration(in_time[record.plate], record.time);
+            count[record.time] = count.rbegin()->second - 1; // 车辆减少
         }
     }
     auto cur  = count.begin();

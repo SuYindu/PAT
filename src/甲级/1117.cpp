@@ -1,5 +1,3 @@
-// 创建自定义 map 的语法 map<int, int, greater<int>>，注意不加括号（与排序的语法不同）
-
 #include <iostream>
 #include <map>
 using namespace std;
