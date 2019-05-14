@@ -16,7 +16,6 @@
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
-|1015|[德才论](https://pintia.cn/problem-sets/994805260223102976/problems/994805307551629312)|[C++](./src/乙级/1015.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1025|[PAT Ranking](https://pintia.cn/problem-sets/994805342720868352/problems/994805474338127872)|[C++](./src/甲级/1025.cpp)|
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
@@ -124,6 +123,7 @@
 |1011|[A+B 和 C](https://pintia.cn/problem-sets/994805260223102976/problems/994805312417021952)|[C](./src/乙级/1011.c)|
 |1012|[数字分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805311146147840)|[C++](./src/乙级/1012.cpp)|
 |1014|[福尔摩斯的约会](https://pintia.cn/problem-sets/994805260223102976/problems/994805308755394560)|[C](./src/乙级/1014.c)|
+|1015|[德才论](https://pintia.cn/problem-sets/994805260223102976/problems/994805307551629312)|[C++](./src/乙级/1015.cpp)|
 |1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C](./src/乙级/1016.c)|
 |1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
 |1021|[个位数统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296)|[C](./src/乙级/1021.c)|
