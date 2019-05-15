@@ -19,8 +19,7 @@ int main() {
     }
     vector<int> ans;
     for (auto num : nums)
-        if (!checked[num])
-            ans.push_back(num);
+        if (!checked[num]) ans.push_back(num);
     sort(ans.begin(), ans.end(), greater<int>());
     for (int i = 0; i < ans.size(); i++)
         cout << ans[i] << (i < ans.size() - 1 ? ' ' : '\n');
