@@ -6,20 +6,19 @@ int main() {
     int k;
     string str;
     cin >> k >> str;
-    set<char> normal;
-    int i = 0;
-    while (i < str.size()) {
+    set<char> unstuck;
+    for (int i = 0; i < str.size(); ) {
         char c = str[i];
         int count = 0;
-        while (str[i] == c && count < k) {
+        while (i < str.size() && str[i] == c && count < k) {
             count++;
             i++;
         }
-        if (count != k) normal.insert(c);
+        if (count != k) unstuck.insert(c);
     }
     set<char> printed;
     for (auto c : str) {
-        if (!normal.count(c) && !printed.count(c)) {
+        if (!unstuck.count(c) && !printed.count(c)) {
             cout << c;
             printed.insert(c);
         }
@@ -27,8 +26,7 @@ int main() {
     cout << endl;
     for (int i = 0; i < str.size(); i++) {
         cout << str[i];
-        if (!normal.count(str[i])) i += k - 1;
+        if (!unstuck.count(str[i])) i += k - 1;
     }
-    cout << endl;
     return 0;
 }
