@@ -1,9 +1,7 @@
 #include <iostream>
-#include <string>
-#include <vector>
 using namespace std;
 
-bool IsLegal(string s) {
+bool is_legal(string s) {
     char temp[100];
     double num;
     sscanf(s.c_str(), "%lf", &num);
@@ -14,13 +12,13 @@ bool IsLegal(string s) {
 }
 
 int main() {
-    double sum = 0.0;
     int n, count = 0;
+    double sum = 0.0;
     cin >> n;
     while (n--) {
         string s;
         cin >> s;
-        if (IsLegal(s)) { sum += stod(s); count++; }
+        if (is_legal(s)) { sum += stod(s); count++; }
         else printf("ERROR: %s is not a legal number\n", s.c_str());
     }
     if (count == 0)      printf("The average of 0 numbers is Undefined\n");

@@ -29,8 +29,10 @@
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
+|1060|[Are They Equal](https://pintia.cn/problem-sets/994805342720868352/problems/994805413520719872)|[C++](./src/甲级/1060.cpp)|
 |1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
 |1062|[Talent and Virtue](https://pintia.cn/problem-sets/994805342720868352/problems/994805410555346944)|[C++](./src/甲级/1062.cpp)|
+|1063|[Set Similarity](https://pintia.cn/problem-sets/994805342720868352/problems/994805409175420928)|[C++](./src/甲级/1063.cpp)|
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
@@ -56,7 +58,7 @@
 |1105|[Spiral Matrix](https://pintia.cn/problem-sets/994805342720868352/problems/994805363117768704)|[C++](./src/甲级/1105.cpp)|
 |1106|[Lowest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805362341822464)|[C++](./src/甲级/1106.cpp)|
 |1107|[Social Clusters](https://pintia.cn/problem-sets/994805342720868352/problems/994805361586847744)|[C++](./src/甲级/1107.cpp)|
-|1108|[Finding Average](https://pintia.cn/problem-sets/994805342720868352/problems/994805360777347072)|[C++](./src/甲级/1108_1.cpp) [C++](./src/甲级/1108_2.cpp)|
+|1108|[Finding Average](https://pintia.cn/problem-sets/994805342720868352/problems/994805360777347072)|[C++](./src/甲级/1108.cpp)|
 |1109|[Group Photo](https://pintia.cn/problem-sets/994805342720868352/problems/994805360043343872)|[C++](./src/甲级/1109.cpp)|
 |1110|[Complete Binary Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805359372255232)|[C++](./src/甲级/1110.cpp)|
 |1111|[Online Map](https://pintia.cn/problem-sets/994805342720868352/problems/994805358663417856)|[C++](./src/甲级/1111.cpp)|
@@ -151,7 +153,9 @@
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
 |1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
 |1048|[数字加密](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)|[C](./src/乙级/1048.c)|
+|1054|[求平均值](https://pintia.cn/problem-sets/994805260223102976/problems/994805272659214336)|[C++](./src/乙级/1054.cpp)|
 |1060|[爱丁顿数](https://pintia.cn/problem-sets/994805260223102976/problems/994805269312159744)|[C](./src/乙级/1060.c)|
+|1064|[朋友数](https://pintia.cn/problem-sets/994805260223102976/problems/994805267416334336)|[C++](./src/乙级/1064.cpp)|
 |1065|[单身狗](https://pintia.cn/problem-sets/994805260223102976/problems/994805266942377984)|[C++](./src/乙级/1065.cpp)|
 
 ------------------------------------------------------------
