@@ -35,8 +35,8 @@
 |1084|[Broken Keyboard](https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672)|[C++](./src/甲级/1084.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
-|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[C++](./src/甲级/1090.cpp)|
-|1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[C++](./src/甲级/1091.cpp)|
+|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[](./src/甲级/1090.cpp)|
+|1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[](./src/甲级/1091.cpp)|
 |1092|[To Buy or Not to Buy](https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368)|[C++](./src/甲级/1092.cpp)|
 |1093|[Count PAT's](https://pintia.cn/problem-sets/994805342720868352/problems/994805373582557184)|[C++](./src/甲级/1093.cpp)|
 |1094|[The Largest Generation](https://pintia.cn/problem-sets/994805342720868352/problems/994805372601090048)|[C++](./src/甲级/1094.cpp)|
@@ -146,6 +146,7 @@
 |1042|[字符统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805280817135616)|[C](./src/乙级/1042.c)|
 |1043|[输出PATest](https://pintia.cn/problem-sets/994805260223102976/problems/994805280074743808)|[C](./src/乙级/1043.c)|
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
+|1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
 |1048|[数字加密](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)|[C](./src/乙级/1048.c)|
 |1060|[爱丁顿数](https://pintia.cn/problem-sets/994805260223102976/problems/994805269312159744)|[C](./src/乙级/1060.c)|
 |1065|[单身狗](https://pintia.cn/problem-sets/994805260223102976/problems/994805266942377984)|[C++](./src/乙级/1065.cpp)|
