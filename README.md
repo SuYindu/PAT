@@ -23,8 +23,11 @@
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
+|1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
+|1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
+|1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
 |1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
 |1062|[Talent and Virtue](https://pintia.cn/problem-sets/994805342720868352/problems/994805410555346944)|[C++](./src/甲级/1062.cpp)|
