@@ -8,8 +8,8 @@ using namespace std;
 const int BASE = 13;
 
 string num2str(int num) {
-    static string digits1[BASE] {"tret", "jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
-    static string digits2[BASE] {"    ", "tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
+    static const string digits1[BASE] {"tret", "jan", "feb", "mar", "apr", "may", "jun", "jly", "aug", "sep", "oct", "nov", "dec"};
+    static const string digits2[BASE] {"    ", "tam", "hel", "maa", "huh", "tou", "kes", "hei", "elo", "syy", "lok", "mer", "jou"};
     string result;
     if (num / BASE) {
         result = digits2[num / BASE];

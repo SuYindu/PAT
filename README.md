@@ -30,7 +30,7 @@
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1020|[]()|[](./src/甲级/1020.cpp)|
 |1021|[]()|[](./src/甲级/1021.cpp)|
-|1022|[]()|[](./src/甲级/1022.cpp)|
+|1022|[Digital Library](https://pintia.cn/problem-sets/994805342720868352/problems/994805480801550336)|[C++](./src/甲级/1022.cpp)|
 |1023|[]()|[](./src/甲级/1023.cpp)|
 |1024|[]()|[](./src/甲级/1024.cpp)|
 |1025|[PAT Ranking](https://pintia.cn/problem-sets/994805342720868352/problems/994805474338127872)|[C++](./src/甲级/1025.cpp)|
@@ -59,13 +59,13 @@
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
 |1049|[]()|[](./src/甲级/1049.cpp)|
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
-|1051|[]()|[](./src/甲级/1015.cpp)|
-|1052|[]()|[](./src/甲级/1015.cpp)|
-|1053|[]()|[](./src/甲级/1015.cpp)|
-|1054|[]()|[](./src/甲级/1015.cpp)|
-|1055|[]()|[](./src/甲级/1015.cpp)|
-|1056|[]()|[](./src/甲级/1015.cpp)|
-|1057|[]()|[](./src/甲级/1015.cpp)|
+|1051|[]()|[](./src/甲级/1051.cpp)|
+|1052|[]()|[](./src/甲级/1052.cpp)|
+|1053|[]()|[](./src/甲级/1053.cpp)|
+|1054|[The Dominant Color](https://pintia.cn/problem-sets/994805342720868352/problems/994805422639136768)|[C++](./src/甲级/1054.cpp)|
+|1055|[]()|[](./src/甲级/1055.cpp)|
+|1056|[]()|[](./src/甲级/1056.cpp)|
+|1057|[]()|[](./src/甲级/1057.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
 |1059|[]()|[](./src/甲级/1059.cpp)|
 |1060|[Are They Equal](https://pintia.cn/problem-sets/994805342720868352/problems/994805413520719872)|[C++](./src/甲级/1060.cpp)|
@@ -79,7 +79,7 @@
 |1068|[]()|[](./src/甲级/1068.cpp)|
 |1069|[]()|[](./src/甲级/1069.cpp)|
 |1070|[]()|[](./src/甲级/1070.cpp)|
-|1071|[]()|[](./src/甲级/1071.cpp)|
+|1071|[Speech Patterns](https://pintia.cn/problem-sets/994805342720868352/problems/994805398257647616)|[C++](./src/甲级/1071.cpp)|
 |1072|[]()|[](./src/甲级/1072.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
 |1074|[]()|[](./src/甲级/1074.cpp)|
@@ -218,7 +218,7 @@
 |1041|[考试座位号](https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032)|[C](./src/乙级/1041.c)|
 |1042|[字符统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805280817135616)|[C](./src/乙级/1042.c)|
 |1043|[输出PATest](https://pintia.cn/problem-sets/994805260223102976/problems/994805280074743808)|[C](./src/乙级/1043.c)|
-|1044|[]()|[](./src/乙级/)|
+|1044|[火星数字](https://pintia.cn/problem-sets/994805260223102976/problems/994805279328157696)|[C++](./src/乙级/1044.cpp)|
 |1045|[]()|[](./src/乙级/)|
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
 |1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
