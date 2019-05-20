@@ -47,7 +47,7 @@
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
 |1037|[]()|[](./src/甲级/1037.cpp)|
 |1038|[]()|[](./src/甲级/1038.cpp)|
-|1039|[]()|[](./src/甲级/1039.cpp)|
+|1039|[Course List for Student](https://pintia.cn/problem-sets/994805342720868352/problems/994805447855292416)|[C++](./src/甲级/1039.cpp)|
 |1040|[]()|[](./src/甲级/1040.cpp)|
 |1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
@@ -55,7 +55,7 @@
 |1044|[]()|[](./src/甲级/1044.cpp)|
 |1045|[]()|[](./src/甲级/1045.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
-|1047|[]()|[](./src/甲级/1047.cpp)|
+|1047|[Student List for Course](https://pintia.cn/problem-sets/994805342720868352/problems/994805433955368960)|[C++](./src/甲级/1047.cpp)|
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
 |1049|[]()|[](./src/甲级/1049.cpp)|
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
