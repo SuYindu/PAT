@@ -88,10 +88,10 @@
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
 |1078|[Hashing](https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592)|[](./src/甲级/1078.cpp)|
 |1079|[Total Sales of Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805388447170560)|[](./src/甲级/1079.cpp)|
-|1080|[Graduate Admission](https://pintia.cn/problem-sets/994805342720868352/problems/994805387268571136)|[](./src/甲级/1080.cpp)|
+|1080|[Graduate Admission](https://pintia.cn/problem-sets/994805342720868352/problems/994805387268571136)|[C++](./src/甲级/1080.cpp)|
 |1081|[Rational Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805386161274880)|[](./src/甲级/1081.cpp)|
 |1082|[Read Number in Chinese](https://pintia.cn/problem-sets/994805342720868352/problems/994805385053978624)|[C++](./src/甲级/1082.cpp)|
-|1083|[List Grades](https://pintia.cn/problem-sets/994805342720868352/problems/994805383929905152)|[](./src/甲级/1083.cpp)|
+|1083|[List Grades](https://pintia.cn/problem-sets/994805342720868352/problems/994805383929905152)|[C++](./src/甲级/1083.cpp)|
 |1084|[Broken Keyboard](https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672)|[C++](./src/甲级/1084.cpp)|
 |1085|[Perfect Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805381845336064)|[](./src/甲级/1085.cpp)|
 |1086|[Tree Traversals Again](https://pintia.cn/problem-sets/994805342720868352/problems/994805380754817024)|[](./src/甲级/1086.cpp)|
