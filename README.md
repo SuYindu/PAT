@@ -78,7 +78,7 @@
 |1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[](./src/甲级/1067.cpp)|
 |1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[](./src/甲级/1068.cpp)|
 |1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[](./src/甲级/1069.cpp)|
-|1070|[Mooncake](https://pintia.cn/problem-sets/994805342720868352/problems/994805399578853376)|[](./src/甲级/1070.cpp)|
+|1070|[Mooncake](https://pintia.cn/problem-sets/994805342720868352/problems/994805399578853376)|[C++](./src/甲级/1070.cpp)|
 |1071|[Speech Patterns](https://pintia.cn/problem-sets/994805342720868352/problems/994805398257647616)|[C++](./src/甲级/1071.cpp)|
 |1072|[Gas Station](https://pintia.cn/problem-sets/994805342720868352/problems/994805396953219072)|[](./src/甲级/1072.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
@@ -194,10 +194,10 @@
 |1017|[]()|[](./src/乙级/)|
 |1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
 |1019|[]()|[](./src/乙级/)|
-|1020|[]()|[](./src/乙级/)|
+|1020|[月饼](https://pintia.cn/problem-sets/994805260223102976/problems/994805301562163200)|[C++](./src/乙级/1020.cpp)|
 |1021|[个位数统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296)|[C](./src/乙级/1021.c)|
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C](./src/乙级/1022.c)|
-|1023|[]()|[](./src/乙级/)|
+|1023|[组个最小数](https://pintia.cn/problem-sets/994805260223102976/problems/994805298269634560)|[C](./src/乙级/1023.c)|
 |1024|[科学计数法](https://pintia.cn/problem-sets/994805260223102976/problems/994805297229447168)|[C](./src/乙级/1024.c)|
 |1025|[]()|[](./src/乙级/)|
 |1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
