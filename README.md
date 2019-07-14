@@ -41,7 +41,7 @@
 |1030|[Travel Plan](https://pintia.cn/problem-sets/994805342720868352/problems/994805464397627392)|[](./src/甲级/1030.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[](./src/甲级/1032.cpp)|
-|1033|[To Fill or Not to Fill](https://pintia.cn/problem-sets/994805342720868352/problems/994805458722734080)|[](./src/甲级/1033.cpp)|
+|1033|[To Fill or Not to Fill](https://pintia.cn/problem-sets/994805342720868352/problems/994805458722734080)|[C++](./src/甲级/1033.cpp)|
 |1034|[Head of a Gang](https://pintia.cn/problem-sets/994805342720868352/problems/994805456881434624)|[](./src/甲级/1034.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
