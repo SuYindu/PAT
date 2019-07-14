@@ -45,8 +45,8 @@
 |1034|[Head of a Gang](https://pintia.cn/problem-sets/994805342720868352/problems/994805456881434624)|[](./src/甲级/1034.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
-|1037|[Magic Coupon](https://pintia.cn/problem-sets/994805342720868352/problems/994805451374313472)|[](./src/甲级/1037.cpp)|
-|1038|[Recover the Smallest Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805449625288704)|[](./src/甲级/1038.cpp)|
+|1037|[Magic Coupon](https://pintia.cn/problem-sets/994805342720868352/problems/994805451374313472)|[C++](./src/甲级/1037.cpp)|
+|1038|[Recover the Smallest Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805449625288704)|[C++](./src/甲级/1038.cpp)|
 |1039|[Course List for Student](https://pintia.cn/problem-sets/994805342720868352/problems/994805447855292416)|[C++](./src/甲级/1039.cpp)|
 |1040|[Longest Symmetric String](https://pintia.cn/problem-sets/994805342720868352/problems/994805446102073344)|[](./src/甲级/1040.cpp)|
 |1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
@@ -75,7 +75,7 @@
 |1064|[Complete Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805407749357568)|[](./src/甲级/1064.cpp)|
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
 |1066|[Root of AVL Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888)|[](./src/甲级/1066.cpp)|
-|1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[](./src/甲级/1067.cpp)|
+|1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[C++](./src/甲级/1067.cpp)|
 |1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[](./src/甲级/1068.cpp)|
 |1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[](./src/甲级/1069.cpp)|
 |1070|[Mooncake](https://pintia.cn/problem-sets/994805342720868352/problems/994805399578853376)|[C++](./src/甲级/1070.cpp)|
