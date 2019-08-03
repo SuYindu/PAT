@@ -214,12 +214,12 @@
 |1037|[在霍格沃茨找零钱](https://pintia.cn/problem-sets/994805260223102976/problems/994805284923359232)|[C](./src/乙级/1037.c)|
 |1038|[统计同成绩学生](https://pintia.cn/problem-sets/994805260223102976/problems/994805284092887040)|[C](./src/乙级/1038.c)|
 |1039|[到底买不买](https://pintia.cn/problem-sets/994805260223102976/problems/994805283241443328)|[C++](./src/乙级/1039.cpp)|
-|1040|[有几个PAT](https://pintia.cn/problem-sets/994805260223102976/problems/994805282389999616)|[](./src/乙级/1040.c)|
+|1040|[有几个PAT](https://pintia.cn/problem-sets/994805260223102976/problems/994805282389999616)|[C++](./src/乙级/1040.cpp)|
 |1041|[考试座位号](https://pintia.cn/problem-sets/994805260223102976/problems/994805281567916032)|[C](./src/乙级/1041.c)|
 |1042|[字符统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805280817135616)|[C](./src/乙级/1042.c)|
 |1043|[输出PATest](https://pintia.cn/problem-sets/994805260223102976/problems/994805280074743808)|[C](./src/乙级/1043.c)|
 |1044|[火星数字](https://pintia.cn/problem-sets/994805260223102976/problems/994805279328157696)|[C++](./src/乙级/1044.cpp)|
-|1045|[快速排序](https://pintia.cn/problem-sets/994805260223102976/problems/994805278589960192)|[](./src/乙级/1045.c)|
+|1045|[快速排序](https://pintia.cn/problem-sets/994805260223102976/problems/994805278589960192)|[C++](./src/乙级/1045.cpp)|
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
 |1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
 |1048|[数字加密](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)|[C](./src/乙级/1048.c)|
