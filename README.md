@@ -37,7 +37,7 @@
 |1026|[Table Tennis](https://pintia.cn/problem-sets/994805342720868352/problems/994805472333250560)|[](./src/甲级/1026.cpp)|
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
 |1028|[List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805468327690240)|[C++](./src/甲级/1028.cpp)|
-|1029|[Median](https://pintia.cn/problem-sets/994805342720868352/problems/994805466364755968)|[](./src/甲级/1029.cpp)|
+|1029|[Median](https://pintia.cn/problem-sets/994805342720868352/problems/994805466364755968)|[C++](./src/甲级/1029.cpp)|
 |1030|[Travel Plan](https://pintia.cn/problem-sets/994805342720868352/problems/994805464397627392)|[](./src/甲级/1030.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[](./src/甲级/1032.cpp)|
@@ -209,7 +209,7 @@
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1033|[旧键盘打字](https://pintia.cn/problem-sets/994805260223102976/problems/994805288530460672)|[C](./src/乙级/1033.c)|
 |1034|[有理数四则运算](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)|[](./src/乙级/1034.c)|
-|1035|[插入与归并](https://pintia.cn/problem-sets/994805260223102976/problems/994805286714327040)|[](./src/乙级/1035.c)|
+|1035|[插入与归并](https://pintia.cn/problem-sets/994805260223102976/problems/994805286714327040)|[C++](./src/乙级/1035.cpp)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
 |1037|[在霍格沃茨找零钱](https://pintia.cn/problem-sets/994805260223102976/problems/994805284923359232)|[C](./src/乙级/1037.c)|
 |1038|[统计同成绩学生](https://pintia.cn/problem-sets/994805260223102976/problems/994805284092887040)|[C](./src/乙级/1038.c)|
