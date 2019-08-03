@@ -18,7 +18,7 @@
 |1007|[Maximum Subsequence Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)|[](./src/甲级/1007.cpp)|
 |1008|[Elevator](https://pintia.cn/problem-sets/994805342720868352/problems/994805511923286016)|[](./src/甲级/1008.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
-|1010|[Radix](https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536)|[](./src/甲级/1010.cpp)|
+|1010|[Radix](https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536)|[C++](./src/甲级/1010.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
 |1012|[The Best Rank](https://pintia.cn/problem-sets/994805342720868352/problems/994805502658068480)|[C++](./src/甲级/1012.cpp)|
 |1013|[Battle Over Cities](https://pintia.cn/problem-sets/994805342720868352/problems/994805500414115840)|[](./src/甲级/1013.cpp)|
@@ -52,7 +52,7 @@
 |1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
 |1043|[Is It a Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805440976633856)|[](./src/甲级/1043.cpp)|
-|1044|[Shopping in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805439202443264)|[](./src/甲级/1044.cpp)|
+|1044|[Shopping in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805439202443264)|[C++](./src/甲级/1044.cpp)|
 |1045|[Favorite Color Stripe](https://pintia.cn/problem-sets/994805342720868352/problems/994805437411475456)|[](./src/甲级/1045.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
 |1047|[Student List for Course](https://pintia.cn/problem-sets/994805342720868352/problems/994805433955368960)|[C++](./src/甲级/1047.cpp)|
@@ -93,7 +93,7 @@
 |1082|[Read Number in Chinese](https://pintia.cn/problem-sets/994805342720868352/problems/994805385053978624)|[C++](./src/甲级/1082.cpp)|
 |1083|[List Grades](https://pintia.cn/problem-sets/994805342720868352/problems/994805383929905152)|[C++](./src/甲级/1083.cpp)|
 |1084|[Broken Keyboard](https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672)|[C++](./src/甲级/1084.cpp)|
-|1085|[Perfect Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805381845336064)|[](./src/甲级/1085.cpp)|
+|1085|[Perfect Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805381845336064)|[C++](./src/甲级/1085.cpp)|
 |1086|[Tree Traversals Again](https://pintia.cn/problem-sets/994805342720868352/problems/994805380754817024)|[](./src/甲级/1086.cpp)|
 |1087|[All Roads Lead to Rome](https://pintia.cn/problem-sets/994805342720868352/problems/994805379664297984)|[](./src/甲级/1087.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
@@ -204,7 +204,7 @@
 |1027|[打印沙漏](https://pintia.cn/problem-sets/994805260223102976/problems/994805294251491328)|[C](./src/乙级/1027.c)|
 |1028|[人口普查](https://pintia.cn/problem-sets/994805260223102976/problems/994805293282607104)|[C++](./src/乙级/1028.cpp)|
 |1029|[旧键盘](https://pintia.cn/problem-sets/994805260223102976/problems/994805292322111488)|[C++](./src/乙级/1029.cpp)|
-|1030|[完美数列](https://pintia.cn/problem-sets/994805260223102976/problems/994805291311284224)|[](./src/乙级/1030.c)|
+|1030|[完美数列](https://pintia.cn/problem-sets/994805260223102976/problems/994805291311284224)|[C++](./src/乙级/1030.cpp)|
 |1031|[查验身份证](https://pintia.cn/problem-sets/994805260223102976/problems/994805290334011392)|[C](./src/乙级/1031.c)|
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1033|[旧键盘打字](https://pintia.cn/problem-sets/994805260223102976/problems/994805288530460672)|[C](./src/乙级/1033.c)|
