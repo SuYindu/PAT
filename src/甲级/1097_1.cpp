@@ -6,16 +6,16 @@ using namespace std;
 
 struct ListNode {
     int val;
-    int next = -1;
+    int next;
 };
 
 const int MAXN = 100005;
 const int MAXK = 10005;
 
 vector<ListNode> nodes(MAXN);
-vector<bool> exist(MAXK, false);
+vector<bool> exist(MAXK);
 
-void Print(int head) {
+void print_list(int head) {
     while (nodes[head].next != -1) {
         printf("%05d %d %05d\n", head, nodes[head].val, nodes[head].next);
         head = nodes[head].next;
@@ -24,12 +24,10 @@ void Print(int head) {
 }
 
 int main() {
-    int n, head, addr;
+    int n, head, addr, tail = -1;
     cin >> head >> n;
-    while (n--)
-        cin >> addr >> nodes[addr].val >> nodes[addr].next;
-    int removed_head = -1, removed_tail;
-    int temp = head, tail = -1;
+    while (n--) cin >> addr >> nodes[addr].val >> nodes[addr].next;
+    int removed_head = -1, removed_tail, temp = head;
     while (temp != -1) {
         if (exist[abs(nodes[temp].val)]) {
             if (removed_head == -1) removed_head = temp;
@@ -43,10 +41,10 @@ int main() {
         temp = nodes[temp].next;
     }
     nodes[tail].next = -1;
-    Print(head);
+    print_list(head);
     if (removed_head != -1) {
         nodes[removed_tail].next = -1;
-        Print(removed_head);
+        print_list(removed_head);
     }
     return 0;
 }
