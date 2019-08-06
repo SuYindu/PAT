@@ -89,7 +89,7 @@
 |1078|[Hashing](https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592)|[](./src/甲级/1078.cpp)|
 |1079|[Total Sales of Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805388447170560)|[](./src/甲级/1079.cpp)|
 |1080|[Graduate Admission](https://pintia.cn/problem-sets/994805342720868352/problems/994805387268571136)|[C++](./src/甲级/1080.cpp)|
-|1081|[Rational Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805386161274880)|[](./src/甲级/1081.cpp)|
+|1081|[Rational Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805386161274880)|[C++](./src/甲级/1081.cpp)|
 |1082|[Read Number in Chinese](https://pintia.cn/problem-sets/994805342720868352/problems/994805385053978624)|[C++](./src/甲级/1082.cpp)|
 |1083|[List Grades](https://pintia.cn/problem-sets/994805342720868352/problems/994805383929905152)|[C++](./src/甲级/1083.cpp)|
 |1084|[Broken Keyboard](https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672)|[C++](./src/甲级/1084.cpp)|
@@ -208,7 +208,7 @@
 |1031|[查验身份证](https://pintia.cn/problem-sets/994805260223102976/problems/994805290334011392)|[C](./src/乙级/1031.c)|
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1033|[旧键盘打字](https://pintia.cn/problem-sets/994805260223102976/problems/994805288530460672)|[C](./src/乙级/1033.c)|
-|1034|[有理数四则运算](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)|[](./src/乙级/1034.c)|
+|1034|[有理数四则运算](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)|[C++](./src/乙级/1034.c)|
 |1035|[插入与归并](https://pintia.cn/problem-sets/994805260223102976/problems/994805286714327040)|[C++](./src/乙级/1035.cpp)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
 |1037|[在霍格沃茨找零钱](https://pintia.cn/problem-sets/994805260223102976/problems/994805284923359232)|[C](./src/乙级/1037.c)|

@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-int GCD(int a, int b) {
-    return b == 0 ? a : GCD(b, a % b);
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
 }
 
-void Print(long long n, long long d) {
+void print(long long n, long long d) {
     if (n == 0) { printf("0");   return; }
     if (d == 0) { printf("Inf"); return; }
     int sign1 = n > 0 ? +1 : -1;
@@ -19,23 +19,23 @@ void Print(long long n, long long d) {
     if (fraction == 0) {
         printf("%d", integer);
     } else {
-        int factor = GCD(fraction, d);
+        int factor = gcd(fraction, d);
         if (integer) printf("%d ", integer);
         printf("%d/%d", fraction / factor, (int)d / factor);
     }
     if (sign == -1) printf(")");
 }
 
-void Print(long long a, long long b, long long c, long long d, char op) {
-    Print(a, b);
+void print(long long a, long long b, long long c, long long d, char op) {
+    print(a, b);
     printf(" %c ", op);
-    Print(c, d);
+    print(c, d);
     printf(" = ");
     switch(op) {
-    case '+': Print(a * d + b * c, b * d); break;
-    case '-': Print(a * d - b * c, b * d); break;
-    case '*': Print(a * c, b * d);         break;
-    case '/': Print(a * d, b * c);         break;
+        case '+': print(a * d + b * c, b * d); break;
+        case '-': print(a * d - b * c, b * d); break;
+        case '*': print(a * c, b * d);         break;
+        case '/': print(a * d, b * c);         break;
     }
     printf("\n");
 }
@@ -43,9 +43,9 @@ void Print(long long a, long long b, long long c, long long d, char op) {
 int main() {
     long long a, b, c, d;
     scanf("%lld/%lld %lld/%lld", &a, &b, &c, &d);
-    Print(a, b, c, d, '+');
-    Print(a, b, c, d, '-');
-    Print(a, b, c, d, '*');
-    Print(a, b, c, d, '/');
+    print(a, b, c, d, '+');
+    print(a, b, c, d, '-');
+    print(a, b, c, d, '*');
+    print(a, b, c, d, '/');
     return 0;
 }
