@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool Accept(string s) {
+bool accept(string s) {
     int n = s.length(), p = -1, t = -1;
     for (int i = 0; i < n; i++) {
         switch(s[i]) {
@@ -19,11 +19,11 @@ bool Accept(string s) {
             return false;
         }
     }
-    if (p + 2 == t && p == n - 1 - t && s[p + 1] == 'A') return true;
+    if (p + 2 == t && 2 * p + 3 == n && s[p + 1] == 'A') return true;
     string a = s.substr(0, p);
     string b = s.substr(p + 1, t - p - 2);
     string c = s.substr(t + 1, n - 1 - p - t);
-    return Accept(a + "P" + b + "T" + c);
+    return accept(a + "P" + b + "T" + c);
 }
 
 int main() {
@@ -32,7 +32,7 @@ int main() {
     while (n--) {
         string s;
         cin >> s;
-        cout << (Accept(s) ? "YES" : "NO") << endl;
+        cout << (accept(s) ? "YES" : "NO") << endl;
     }
     return 0;
-}
+}  

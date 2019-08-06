@@ -16,7 +16,7 @@
 |1005|[Spell It Right](https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336)|[C++](./src/甲级/1005.cpp)|
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
 |1007|[Maximum Subsequence Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)|[](./src/甲级/1007.cpp)|
-|1008|[Elevator](https://pintia.cn/problem-sets/994805342720868352/problems/994805511923286016)|[](./src/甲级/1008.cpp)|
+|1008|[Elevator](https://pintia.cn/problem-sets/994805342720868352/problems/994805511923286016)|[C++](./src/甲级/1008.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1010|[Radix](https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536)|[C++](./src/甲级/1010.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
@@ -57,7 +57,7 @@
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
 |1047|[Student List for Course](https://pintia.cn/problem-sets/994805342720868352/problems/994805433955368960)|[C++](./src/甲级/1047.cpp)|
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
-|1049|[Counting Ones](https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456)|[](./src/甲级/1049.cpp)|
+|1049|[Counting Ones](https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456)|[C++](./src/甲级/1049.cpp)|
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
 |1051|[Pop Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805427332562944)|[C++](./src/甲级/1051.cpp)|
 |1052|[Linked List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805425780670464)|[C++](./src/甲级/1052.cpp)|
@@ -77,7 +77,7 @@
 |1066|[Root of AVL Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888)|[](./src/甲级/1066.cpp)|
 |1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[C++](./src/甲级/1067.cpp)|
 |1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[](./src/甲级/1068.cpp)|
-|1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[](./src/甲级/1069.cpp)|
+|1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[C++](./src/甲级/1069.cpp)|
 |1070|[Mooncake](https://pintia.cn/problem-sets/994805342720868352/problems/994805399578853376)|[C++](./src/甲级/1070.cpp)|
 |1071|[Speech Patterns](https://pintia.cn/problem-sets/994805342720868352/problems/994805398257647616)|[C++](./src/甲级/1071.cpp)|
 |1072|[Gas Station](https://pintia.cn/problem-sets/994805342720868352/problems/994805396953219072)|[](./src/甲级/1072.cpp)|
@@ -193,7 +193,7 @@
 |1016|[部分A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805306310115328)|[C](./src/乙级/1016.c)|
 |1017|[A除以B](https://pintia.cn/problem-sets/994805260223102976/problems/994805305181847552)|[](./src/乙级/1017.c)|
 |1018|[锤子剪刀布](https://pintia.cn/problem-sets/994805260223102976/problems/994805304020025344)|[C](./src/乙级/1018.c)|
-|1019|[数字黑洞](https://pintia.cn/problem-sets/994805260223102976/problems/994805302786899968)|[](./src/乙级/1019.c)|
+|1019|[数字黑洞](https://pintia.cn/problem-sets/994805260223102976/problems/994805302786899968)|[C++](./src/乙级/1019.cpp)|
 |1020|[月饼](https://pintia.cn/problem-sets/994805260223102976/problems/994805301562163200)|[C++](./src/乙级/1020.cpp)|
 |1021|[个位数统计](https://pintia.cn/problem-sets/994805260223102976/problems/994805300404535296)|[C](./src/乙级/1021.c)|
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C](./src/乙级/1022.c)|
@@ -223,9 +223,10 @@
 |1046|[划拳](https://pintia.cn/problem-sets/994805260223102976/problems/994805277847568384)|[C](./src/乙级/1046.c)|
 |1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
 |1048|[数字加密](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)|[C](./src/乙级/1048.c)|
-|1049|[数列的片段和](https://pintia.cn/problem-sets/994805260223102976/problems/994805275792359424)|[](./src/乙级/1049.c)|
+|1049|[数列的片段和](https://pintia.cn/problem-sets/994805260223102976/problems/994805275792359424)|[C](./src/乙级/1049.c)|
 |1050|[螺旋矩阵](https://pintia.cn/problem-sets/994805260223102976/problems/994805275146436608)|[](./src/乙级/1050.c)|
 |1054|[求平均值](https://pintia.cn/problem-sets/994805260223102976/problems/994805272659214336)|[C++](./src/乙级/1054.cpp)|
+|1055|[集体照](https://pintia.cn/problem-sets/994805260223102976/problems/994805272021680128)|[C++](./src/乙级/1055.cpp)|
 |1060|[爱丁顿数](https://pintia.cn/problem-sets/994805260223102976/problems/994805269312159744)|[C](./src/乙级/1060.c)|
 |1064|[朋友数](https://pintia.cn/problem-sets/994805260223102976/problems/994805267416334336)|[C++](./src/乙级/1064.cpp)|
 |1065|[单身狗](https://pintia.cn/problem-sets/994805260223102976/problems/994805266942377984)|[C++](./src/乙级/1065.cpp)|

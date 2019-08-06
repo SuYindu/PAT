@@ -1,12 +1,11 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     int n;
-    cin >> n;
-    double num, sum = 0.0;
+    scanf("%d", &n);
+    double num, sum = 0;
     for (int i = 1; i <= n; i++) {
-        cin >> num;
+        scanf("%lf", &num);
         sum += num * i * (n - i + 1);
     }
     printf("%.2f\n", sum);
