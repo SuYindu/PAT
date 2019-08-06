@@ -40,7 +40,7 @@
 |1029|[Median](https://pintia.cn/problem-sets/994805342720868352/problems/994805466364755968)|[C++](./src/甲级/1029.cpp)|
 |1030|[Travel Plan](https://pintia.cn/problem-sets/994805342720868352/problems/994805464397627392)|[](./src/甲级/1030.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
-|1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[](./src/甲级/1032.cpp)|
+|1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[C++](./src/甲级/1032.cpp)|
 |1033|[To Fill or Not to Fill](https://pintia.cn/problem-sets/994805342720868352/problems/994805458722734080)|[C++](./src/甲级/1033.cpp)|
 |1034|[Head of a Gang](https://pintia.cn/problem-sets/994805342720868352/problems/994805456881434624)|[](./src/甲级/1034.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
@@ -59,12 +59,12 @@
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
 |1049|[Counting Ones](https://pintia.cn/problem-sets/994805342720868352/problems/994805430595731456)|[](./src/甲级/1049.cpp)|
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
-|1051|[Pop Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805427332562944)|[](./src/甲级/1051.cpp)|
-|1052|[Linked List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805425780670464)|[](./src/甲级/1052.cpp)|
+|1051|[Pop Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805427332562944)|[C++](./src/甲级/1051.cpp)|
+|1052|[Linked List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805425780670464)|[C++](./src/甲级/1052.cpp)|
 |1053|[Path of Equal Weight](https://pintia.cn/problem-sets/994805342720868352/problems/994805424153280512)|[](./src/甲级/1053.cpp)|
 |1054|[The Dominant Color](https://pintia.cn/problem-sets/994805342720868352/problems/994805422639136768)|[C++](./src/甲级/1054.cpp)|
 |1055|[The World's Richest](https://pintia.cn/problem-sets/994805342720868352/problems/994805421066272768)|[C++](./src/甲级/1055.cpp)|
-|1056|[Mice and Rice](https://pintia.cn/problem-sets/994805342720868352/problems/994805419468242944)|[](./src/甲级/1056.cpp)|
+|1056|[Mice and Rice](https://pintia.cn/problem-sets/994805342720868352/problems/994805419468242944)|[C++](./src/甲级/1056.cpp)|
 |1057|[Stack](https://pintia.cn/problem-sets/994805342720868352/problems/994805417945710592)|[](./src/甲级/1057.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
 |1059|[Prime Factors](https://pintia.cn/problem-sets/994805342720868352/problems/994805415005503488)|[](./src/甲级/1059.cpp)|
@@ -82,7 +82,7 @@
 |1071|[Speech Patterns](https://pintia.cn/problem-sets/994805342720868352/problems/994805398257647616)|[C++](./src/甲级/1071.cpp)|
 |1072|[Gas Station](https://pintia.cn/problem-sets/994805342720868352/problems/994805396953219072)|[](./src/甲级/1072.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
-|1074|[Reversing Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805394512134144)|[](./src/甲级/1074.cpp)|
+|1074|[Reversing Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805394512134144)|[C++](./src/甲级/1074.cpp)|
 |1075|[PAT Judge](https://pintia.cn/problem-sets/994805342720868352/problems/994805393241260032)|[](./src/甲级/1075.cpp)|
 |1076|[Forwards on Weibo](https://pintia.cn/problem-sets/994805342720868352/problems/994805392092020736)|[](./src/甲级/1076.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
@@ -199,7 +199,7 @@
 |1022|[D进制的A+B](https://pintia.cn/problem-sets/994805260223102976/problems/994805299301433344)|[C](./src/乙级/1022.c)|
 |1023|[组个最小数](https://pintia.cn/problem-sets/994805260223102976/problems/994805298269634560)|[C](./src/乙级/1023.c)|
 |1024|[科学计数法](https://pintia.cn/problem-sets/994805260223102976/problems/994805297229447168)|[C](./src/乙级/1024.c)|
-|1025|[反转链表](https://pintia.cn/problem-sets/994805260223102976/problems/994805296180871168)|[](./src/乙级/1025.c)|
+|1025|[反转链表](https://pintia.cn/problem-sets/994805260223102976/problems/994805296180871168)|[C++](./src/乙级/1025.cpp)|
 |1026|[程序运行时间](https://pintia.cn/problem-sets/994805260223102976/problems/994805295203598336)|[C](./src/乙级/1026.c)|
 |1027|[打印沙漏](https://pintia.cn/problem-sets/994805260223102976/problems/994805294251491328)|[C](./src/乙级/1027.c)|
 |1028|[人口普查](https://pintia.cn/problem-sets/994805260223102976/problems/994805293282607104)|[C++](./src/乙级/1028.cpp)|

@@ -12,7 +12,7 @@ const int MAXK = 10005;
 vector<ListNode> nodes(MAXN);
 vector<int> exist(MAXK);
 
-void Print(vector<int> list) {
+void print_list(vector<int> list) {
     if (list.empty()) return;
     for (int i = 0; i < list.size() - 1; i++)
         printf("%05d %d %05d\n", list[i], nodes[list[i]].val, list[i+1]);
@@ -34,7 +34,7 @@ int main() {
         exist[abs(nodes[temp].val)] = true;
         temp = nodes[temp].next;
     }
-    Print(list1);
-    Print(list2);
+    print_list(list1);
+    print_list(list2);
     return 0;
 }
