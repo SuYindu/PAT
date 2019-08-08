@@ -1,29 +1,27 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include <stdio.h>
 
-const int MAXN = 10005;
+#define MAXN 10005
 
-bool is_prime(int num) {
+int visited[MAXN], rank[MAXN];
+
+int is_prime(int num) {
     if (num < 3) return num == 2;
-    if (num % 2 == 0) return false;
+    if (num % 2 == 0) return 0;
     for (int i = 3; i <= num / i; i += 2)
-        if (num % i == 0) return false;
-    return true;
+        if (num % i == 0) return 0;
+    return 1;
 }
 
 int main() {
-    vector<int> visited(MAXN);
-    vector<int> rank(MAXN);
     int n, k, id;
-    cin >> n;
+    scanf("%d", &n);
     for (int i = 0; i < n; i++) {
-        cin >> id;
+        scanf("%d", &id);
         rank[id] = i + 1;
     }
-    cin >> k;
+    scanf("%d", &k);
     while (k--) {
-        cin >> id;
+        scanf("%d", &id);
         printf("%04d: ", id);
         if (rank[id] == 0)
             printf("Are you kidding?\n");
@@ -35,7 +33,7 @@ int main() {
             printf("Minion\n");
         else
             printf("Chocolate\n");
-        visited[id] = true;
+        visited[id] = 1;
     }
     return 0;
 }
