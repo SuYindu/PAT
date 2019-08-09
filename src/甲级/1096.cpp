@@ -13,12 +13,12 @@ int main() {
         for (int begin = 2; begin <= n / begin; begin++) {
             product = 1;
             for (int i = begin; i < begin + len; i++) product *= i;
-            if (n % product == 0) {
-                cout << len << endl;
-                for (int i = begin; i < begin + len; i++)
-                    cout << i << (i < begin + len - 1 ? '*' : '\n');
-                return 0;
-            }
+            if (n % product) continue;
+            
+            cout << len << endl;
+            for (int i = begin; i < begin + len; i++)
+                cout << i << (i < begin + len - 1 ? '*' : '\n');
+            return 0;
         }
     }
     cout << 1 << endl << n << endl;

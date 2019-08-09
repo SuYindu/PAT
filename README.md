@@ -67,7 +67,7 @@
 |1056|[Mice and Rice](https://pintia.cn/problem-sets/994805342720868352/problems/994805419468242944)|[C++](./src/甲级/1056.cpp)|
 |1057|[Stack](https://pintia.cn/problem-sets/994805342720868352/problems/994805417945710592)|[](./src/甲级/1057.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
-|1059|[Prime Factors](https://pintia.cn/problem-sets/994805342720868352/problems/994805415005503488)|[](./src/甲级/1059.cpp)|
+|1059|[Prime Factors](https://pintia.cn/problem-sets/994805342720868352/problems/994805415005503488)|[C++](./src/甲级/1059.cpp)|
 |1060|[Are They Equal](https://pintia.cn/problem-sets/994805342720868352/problems/994805413520719872)|[C++](./src/甲级/1060.cpp)|
 |1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
 |1062|[Talent and Virtue](https://pintia.cn/problem-sets/994805342720868352/problems/994805410555346944)|[C++](./src/甲级/1062.cpp)|
