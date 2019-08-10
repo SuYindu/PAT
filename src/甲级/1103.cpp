@@ -5,37 +5,30 @@
 #include <vector>
 using namespace std;
 
-int max_sum = 0;
-vector<int> pow_cache;
-vector<int> solution, best_solution;
+int N, K, P, max_sum;
+vector<int> tmp, ans, cache;
 
-void FindSolution(int n, int k, int p, int sum, int index) {
-    if (n <= 0 || k <= 0) {
-        if (n == 0 && k == 0 && sum > max_sum) {
-            best_solution = solution;
-            max_sum = sum;
-        }
-        return;
+void dfs(int n, int k, int sum, int num) {
+    if (n == N && k == K && sum > max_sum) {
+        max_sum = sum;
+        ans = tmp;
     }
-    for (int i = index; i >= 1; i--) {
-        solution.push_back(i);
-        FindSolution(n - pow_cache[i], k - 1, p, sum + i, i);
-        solution.pop_back();
-    }
+    if (n > N || k > K || num < 1) return;
+    
+    tmp.push_back(num);
+    dfs(n + cache[num], k + 1, sum + num, num);
+    tmp.pop_back();
+    dfs(n, k, sum, num - 1);
 }
 
 int main() {
-    int n, k, p;
-    cin >> n >> k >> p;
-    for (int i = 0; pow(i, p) <= n; i++)
-        pow_cache.push_back(pow(i, p));
-    FindSolution(n, k, p, 0, pow_cache.size() - 1);
-    if (best_solution.empty()) { printf("Impossible\n"); return 0; }
-    printf("%d = ", n);
-    for (int i = 0; i < k; i++) {
-        if (i != 0) printf(" + ");
-        printf("%d^%d", best_solution[i], p);
-    }
-    printf("\n");
+    cin >> N >> K >> P;
+    for (int i = 0; pow(i, P) <= N; i++)
+        cache.push_back(pow(i, P));
+    dfs(0, 0, 0, cache.size() - 1);
+    if (ans.empty()) { printf("Impossible\n"); return 0; }
+    printf("%d = %d^%d", N, ans.front(), P);
+    for (int i = 1; i < K; i++)
+        printf(" + %d^%d", ans[i], P);
     return 0;
 }
