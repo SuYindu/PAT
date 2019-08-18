@@ -5,45 +5,44 @@ using namespace std;
 
 struct TreeNode {
     int key;
-    TreeNode *left  = NULL;
-    TreeNode *right = NULL;
+    TreeNode *left  = nullptr;
+    TreeNode *right = nullptr;
 };
 
-void InvertTree(TreeNode *node) {
-    if (node == NULL) return;
+void invert(TreeNode *node) {
+    if (node == nullptr) return;
+    invert(node->left);
+    invert(node->right);
     swap(node->left, node->right);
-    InvertTree(node->left);
-    InvertTree(node->right);
 }
 
-void LevelOrder(TreeNode *root) {
+void bfs(TreeNode *root) {
     queue<TreeNode*> q;
     q.push(root);
     while (!q.empty()) {
         TreeNode *temp = q.front(); q.pop();
-        if (temp != root) cout << ' ';
-        cout << temp->key;
         if (temp->left)  q.push(temp->left);
         if (temp->right) q.push(temp->right);
+        cout << temp->key << (!q.empty() ? ' ' : '\n');
     }
-    cout << endl;
 }
 
-void InOrder(TreeNode *node, vector<int> &inorder) {
-    if (node == NULL) return;
-    InOrder(node->left,  inorder);
-    inorder.push_back(node->key);
-    InOrder(node->right, inorder);
+void print(TreeNode *node) {
+    static bool flag = false;
+    if (flag) cout << ' ';
+    cout << node->key;
+    flag = true;
 }
 
-void InOrder(TreeNode *root) {
-    vector<int> inorder;
-    InOrder(root, inorder);
-    for (int i = 0; i < inorder.size(); i++)
-        cout << inorder[i] << (i < inorder.size() - 1 ? ' ' : '\n');
+void in_order(TreeNode *node) {
+    if (node == nullptr) return;
+
+    in_order(node->left);
+    print(node);
+    in_order(node->right);
 }
 
-TreeNode* FindRoot(vector<TreeNode> &nodes) {
+TreeNode* find_root(vector<TreeNode> &nodes) {
     const int n = nodes.size();
     vector<bool> is_root(n, true);
     for (auto node : nodes) {
@@ -66,9 +65,9 @@ int main() {
         if (l != "-") nodes[i].left  = &nodes[stoi(l)];
         if (r != "-") nodes[i].right = &nodes[stoi(r)];
     }
-    TreeNode *root = FindRoot(nodes);
-    InvertTree(root);
-    LevelOrder(root);
-    InOrder(root);
+    TreeNode *root = find_root(nodes);
+    invert(root);
+    bfs(root);
+    in_order(root);
     return 0;
 }

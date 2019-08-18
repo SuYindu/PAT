@@ -28,7 +28,7 @@
 |1017|[Queueing at Bank](https://pintia.cn/problem-sets/994805342720868352/problems/994805491530579968)|[](./src/甲级/1017.cpp)|
 |1018|[Public Bike Management](https://pintia.cn/problem-sets/994805342720868352/problems/994805489282433024)|[](./src/甲级/1018.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
-|1020|[Tree Traversals](https://pintia.cn/problem-sets/994805342720868352/problems/994805485033603072)|[](./src/甲级/1020.cpp)|
+|1020|[Tree Traversals](https://pintia.cn/problem-sets/994805342720868352/problems/994805485033603072)|[C++](./src/甲级/1020.cpp)|
 |1021|[Deepest Root](https://pintia.cn/problem-sets/994805342720868352/problems/994805482919673856)|[](./src/甲级/1021.cpp)|
 |1022|[Digital Library](https://pintia.cn/problem-sets/994805342720868352/problems/994805480801550336)|[C++](./src/甲级/1022.cpp)|
 |1023|[Have Fun with Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805478658260992)|[C++](./src/甲级/1023.cpp)|
@@ -94,7 +94,7 @@
 |1083|[List Grades](https://pintia.cn/problem-sets/994805342720868352/problems/994805383929905152)|[C++](./src/甲级/1083.cpp)|
 |1084|[Broken Keyboard](https://pintia.cn/problem-sets/994805342720868352/problems/994805382902300672)|[C++](./src/甲级/1084.cpp)|
 |1085|[Perfect Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805381845336064)|[C++](./src/甲级/1085.cpp)|
-|1086|[Tree Traversals Again](https://pintia.cn/problem-sets/994805342720868352/problems/994805380754817024)|[](./src/甲级/1086.cpp)|
+|1086|[Tree Traversals Again](https://pintia.cn/problem-sets/994805342720868352/problems/994805380754817024)|[C++](./src/甲级/1086.cpp)|
 |1087|[All Roads Lead to Rome](https://pintia.cn/problem-sets/994805342720868352/problems/994805379664297984)|[](./src/甲级/1087.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|

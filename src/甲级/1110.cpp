@@ -1,6 +1,3 @@
-// 注意输入树节点的左右孩子时使用 string，避免 bug
-// 注意掌握 DFS
-
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -13,7 +10,7 @@ struct TreeNode {
 };
 vector<TreeNode> nodes;
 
-int FindRoot() {
+int find_root() {
     set<int> children;
     for (auto node : nodes) {
         children.insert(node.left);
@@ -25,7 +22,7 @@ int FindRoot() {
 }
 
 int last;
-bool IsComplete(int root) {
+bool is_complete(int root) {
     queue<int> q;
     q.push(root);
     while (true) {
@@ -52,8 +49,8 @@ int main() {
         if (left  != "-") nodes[i].left  = stoi(left);
         if (right != "-") nodes[i].right = stoi(right);
     }
-    int root = FindRoot();
-    if (IsComplete(root)) printf("YES %d\n", last);
-    else                  printf("NO %d\n" , root);
+    int root = find_root();
+    if (is_complete(root)) printf("YES %d\n", last);
+    else                   printf("NO %d\n" , root);
     return 0;
 }
