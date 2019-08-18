@@ -3,39 +3,34 @@
 using namespace std;
 
 struct TreeNode {
-    int level;
     vector<TreeNode*> children;
 };
 
-void Traversal(TreeNode *node) {
-    if (node == NULL) return;
-    for (auto child : node->children) {
-        child->level = node->level + 1;
-        Traversal(child);
-    }
+#define MAX_N 105
+vector<TreeNode> nodes(MAX_N);
+vector<int> count(MAX_N);
+
+void dfs(TreeNode *node, int level) {
+    if (node == nullptr) return;
+    count[level]++;
+    for (auto child : node->children)
+        dfs(child, level + 1);
 }
 
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<TreeNode> nodes(n + 1);
     while (m--) {
-        int id, k;
+        int id, k, child;
         cin >> id >> k;
-        nodes[id].children.resize(k);
-        for (int i = 0; i < k; i++) {
-            int child;
+        while (k--) {
             cin >> child;
-            nodes[id].children[i] = &nodes[child];
+            nodes[id].children.push_back(&nodes[child]);
         }
     }
     TreeNode *root = &nodes[1];
-    root->level = 1;
-    Traversal(root);
-    vector<int> count(n + 1, 0);
-    for (int i = 1; i <= n; i++)
-        count[nodes[i].level]++;
-    int max = 0;
+    dfs(root, 1);
+    int max = 1;
     for (int i = 1; i <= n; i++)
         if (count[i] > count[max]) max = i;
     printf("%d %d\n", count[max], max);

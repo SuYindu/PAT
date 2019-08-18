@@ -12,7 +12,7 @@
 |1001|[A+B Format](https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400)|[C++](./src/甲级/1001.cpp)|
 |1002|[A+B for Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000)|[C++](./src/甲级/1002.cpp)|
 |1003|[Emergency](https://pintia.cn/problem-sets/994805342720868352/problems/994805523835109376)|[](./src/甲级/1003.cpp)|
-|1004|[Counting Leaves](https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184)|[](./src/甲级/1004.cpp)|
+|1004|[Counting Leaves](https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184)|[C++](./src/甲级/1004.cpp)|
 |1005|[Spell It Right](https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336)|[C++](./src/甲级/1005.cpp)|
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
 |1007|[Maximum Subsequence Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)|[](./src/甲级/1007.cpp)|
@@ -61,7 +61,7 @@
 |1050|[String Subtraction](https://pintia.cn/problem-sets/994805342720868352/problems/994805429018673152)|[C++](./src/甲级/1050.cpp)|
 |1051|[Pop Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805427332562944)|[C++](./src/甲级/1051.cpp)|
 |1052|[Linked List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805425780670464)|[C++](./src/甲级/1052.cpp)|
-|1053|[Path of Equal Weight](https://pintia.cn/problem-sets/994805342720868352/problems/994805424153280512)|[](./src/甲级/1053.cpp)|
+|1053|[Path of Equal Weight](https://pintia.cn/problem-sets/994805342720868352/problems/994805424153280512)|[C++](./src/甲级/1053.cpp)|
 |1054|[The Dominant Color](https://pintia.cn/problem-sets/994805342720868352/problems/994805422639136768)|[C++](./src/甲级/1054.cpp)|
 |1055|[The World's Richest](https://pintia.cn/problem-sets/994805342720868352/problems/994805421066272768)|[C++](./src/甲级/1055.cpp)|
 |1056|[Mice and Rice](https://pintia.cn/problem-sets/994805342720868352/problems/994805419468242944)|[C++](./src/甲级/1056.cpp)|
@@ -87,7 +87,7 @@
 |1076|[Forwards on Weibo](https://pintia.cn/problem-sets/994805342720868352/problems/994805392092020736)|[](./src/甲级/1076.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
 |1078|[Hashing](https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592)|[C++](./src/甲级/1078.cpp)|
-|1079|[Total Sales of Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805388447170560)|[](./src/甲级/1079.cpp)|
+|1079|[Total Sales of Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805388447170560)|[C++](./src/甲级/1079.cpp)|
 |1080|[Graduate Admission](https://pintia.cn/problem-sets/994805342720868352/problems/994805387268571136)|[C++](./src/甲级/1080.cpp)|
 |1081|[Rational Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805386161274880)|[C++](./src/甲级/1081.cpp)|
 |1082|[Read Number in Chinese](https://pintia.cn/problem-sets/994805342720868352/problems/994805385053978624)|[C++](./src/甲级/1082.cpp)|
@@ -98,7 +98,7 @@
 |1087|[All Roads Lead to Rome](https://pintia.cn/problem-sets/994805342720868352/problems/994805379664297984)|[](./src/甲级/1087.cpp)|
 |1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
-|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[](./src/甲级/1090.cpp)|
+|1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[C++](./src/甲级/1090.cpp)|
 |1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[C++](./src/甲级/1091.cpp)|
 |1092|[To Buy or Not to Buy](https://pintia.cn/problem-sets/994805342720868352/problems/994805374509498368)|[C++](./src/甲级/1092.cpp)|
 |1093|[Count PAT's](https://pintia.cn/problem-sets/994805342720868352/problems/994805373582557184)|[C++](./src/甲级/1093.cpp)|
