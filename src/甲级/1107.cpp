@@ -4,27 +4,26 @@
 using namespace std;
 
 struct UnionFind {
-    vector<int> id;
-    vector<int> sz;
+    vector<int> id, sz;
 
     UnionFind(int n) : id(n), sz(n, 1) {
         for (int i = 0; i < n; i++)
             id[i] = i;
     }
 
-    int Find(int x) {
+    int find(int x) {
         if (id[x] == x) return x;
-        return id[x] = Find(id[x]);
+        return id[x] = find(id[x]);
     }
 
-    void Union(int x, int y) {
-        int i = Find(x), j = Find(y);
+    void union_sets(int x, int y) {
+        int i = find(x), j = find(y);
         if (i == j) return;
         if (sz[i] >= sz[j]) { id[j] = i; sz[i] += sz[j]; }
         else                { id[i] = j; sz[j] += sz[i]; }
     }
 
-    void Output() {
+    void print() {
         vector<int> ans;
         for (int i = 0; i < id.size(); i++)
             if (id[i] == i) ans.push_back(sz[i]);
@@ -35,25 +34,25 @@ struct UnionFind {
     }
 };
 
-const int MAX_HOBBY_NUM = 1005;
+const int MAX_H = 1005;
 
 int main() {
     int n, k, h;
     scanf("%d", &n);
-    vector<int> hobbies[n], people[MAX_HOBBY_NUM];
+    vector<int> hobbies[MAX_H];
     UnionFind uf(n);
     for (int i = 0; i < n; i++) {
         scanf("%d:", &k);
         while (k--) {
             scanf("%d", &h);
-            hobbies[i].push_back(h);
-            people[h].push_back(i);
+            hobbies[h].push_back(i);
         }
     }
-    for (int i = 0; i < n; i++)
-        for (auto hobby : hobbies[i])
-            for (auto j : people[hobby])
-                uf.Union(i, j);
-    uf.Output();
+    for (auto hobby : hobbies) {
+        if (hobby.empty()) continue;
+        for (auto person : hobby)
+            uf.union_sets(person, hobby.front());
+    }
+    uf.print();
     return 0;
 }
