@@ -4,43 +4,43 @@
 #include <queue>
 using namespace std;
 
+const int ROOT = 0;
+
 struct TreeNode {
     int key;
-    TreeNode *left  = NULL;
-    TreeNode *right = NULL;
+    TreeNode *left  = nullptr;
+    TreeNode *right = nullptr;
 };
 
-int Size(TreeNode *node) {
-    if (node == NULL) return 0;
-    return 1 + Size(node->left) + Size(node->right);
+int size(TreeNode *node) {
+    if (node == nullptr) return 0;
+    return 1 + size(node->left) + size(node->right);
 }
 
 typedef vector<int>::iterator Iterator;
 
-void FillKeys(TreeNode *node, Iterator begin, Iterator end) {
-    if (node == NULL) return;
-    int n = Size(node->left);
-    node->key = *(begin + n);
-    FillKeys(node->left, begin, begin + n - 1);
-    FillKeys(node->right, begin + n + 1, end);
+void fill_keys(TreeNode *node, Iterator begin, Iterator end) {
+    if (node == nullptr) return;
+    int n = size(node->left);
+    node->key = begin[n];
+    fill_keys(node->left, begin, begin + n - 1);
+    fill_keys(node->right, begin + n + 1, end);
 }
 
-void BuildBinarySearchTree(vector<TreeNode> &nodes, vector<int> &keys) {
+void build(vector<TreeNode> &nodes, vector<int> &keys) {
     sort(keys.begin(), keys.end());
-    FillKeys(&nodes[0], keys.begin(), keys.end());
+    fill_keys(&nodes[ROOT], keys.begin(), keys.end());
 }
 
-void LevelOrder(TreeNode *root) {
+void bfs(TreeNode *root) {
     queue<TreeNode*> q;
     q.push(root);
     while (!q.empty()) {
         TreeNode *temp = q.front(); q.pop();
-        if (temp != root) cout << ' ';
-        cout << temp->key;
-        if (temp->left  != NULL) q.push(temp->left );
-        if (temp->right != NULL) q.push(temp->right);
+        if (temp->left  != nullptr) q.push(temp->left );
+        if (temp->right != nullptr) q.push(temp->right);
+        cout << temp->key << (!q.empty() ? ' ' : '\n');
     }
-    cout << endl;
 }
 
 int main() {
@@ -54,8 +54,9 @@ int main() {
         if (r != -1) nodes[i].right = &nodes[r];
     }
     vector<int> keys(n);
-    for (int i = 0; i < n; i++) cin >> keys[i];
-    BuildBinarySearchTree(nodes, keys);
-    LevelOrder(&nodes[0]);
+    for (int i = 0; i < n; i++)
+        cin >> keys[i];
+    build(nodes, keys);
+    bfs(&nodes[ROOT]);
     return 0;
 }

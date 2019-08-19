@@ -51,7 +51,7 @@
 |1040|[Longest Symmetric String](https://pintia.cn/problem-sets/994805342720868352/problems/994805446102073344)|[](./src/甲级/1040.cpp)|
 |1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
-|1043|[Is It a Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805440976633856)|[](./src/甲级/1043.cpp)|
+|1043|[Is It a Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805440976633856)|[C++](./src/甲级/1043.cpp)|
 |1044|[Shopping in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805439202443264)|[C++](./src/甲级/1044.cpp)|
 |1045|[Favorite Color Stripe](https://pintia.cn/problem-sets/994805342720868352/problems/994805437411475456)|[](./src/甲级/1045.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
@@ -72,9 +72,9 @@
 |1061|[Dating](https://pintia.cn/problem-sets/994805342720868352/problems/994805411985604608)|[C++](./src/甲级/1061.cpp)|
 |1062|[Talent and Virtue](https://pintia.cn/problem-sets/994805342720868352/problems/994805410555346944)|[C++](./src/甲级/1062.cpp)|
 |1063|[Set Similarity](https://pintia.cn/problem-sets/994805342720868352/problems/994805409175420928)|[C++](./src/甲级/1063.cpp)|
-|1064|[Complete Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805407749357568)|[](./src/甲级/1064.cpp)|
+|1064|[Complete Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805407749357568)|[C++](./src/甲级/1064.cpp)|
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
-|1066|[Root of AVL Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888)|[](./src/甲级/1066.cpp)|
+|1066|[Root of AVL Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888)|[C++](./src/甲级/1066.cpp)|
 |1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[C++](./src/甲级/1067.cpp)|
 |1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[](./src/甲级/1068.cpp)|
 |1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[C++](./src/甲级/1069.cpp)|

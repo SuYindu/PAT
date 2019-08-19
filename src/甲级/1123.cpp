@@ -11,85 +11,83 @@ struct TreeNode {
     TreeNode *left;
     TreeNode *right;
 
-    TreeNode(int key) : key(key), left(NULL), right(NULL) {}
+    TreeNode(int key) : key(key), left(nullptr), right(nullptr) {}
 };
 
 struct AVLTree {
-    TreeNode *root = NULL;
+    TreeNode *root = nullptr;
 
-    TreeNode* LeftRotate(TreeNode *node) {
+    TreeNode* left_rotate(TreeNode *node) {
         TreeNode *temp = node->right;
         node->right = temp->left;
         temp->left = node;
         return temp;
     }
 
-    TreeNode* RightRotate(TreeNode *node) {
+    TreeNode* right_rotate(TreeNode *node) {
         TreeNode *temp = node->left;
         node->left = temp->right;
         temp->right = node;
         return temp;
     }
 
-    TreeNode* LeftRightRotate(TreeNode *node) {
-        node->left = LeftRotate(node->left);
-        return RightRotate(node);
+    TreeNode* left_right_rotate(TreeNode *node) {
+        node->left = left_rotate(node->left);
+        return right_rotate(node);
     }
 
-    TreeNode* RightLeftRotate(TreeNode *node) {
-        node->right = RightRotate(node->right);
-        return LeftRotate(node);
+    TreeNode* right_left_rotate(TreeNode *node) {
+        node->right = right_rotate(node->right);
+        return left_rotate(node);
     }
 
-    int GetHeight(TreeNode *node) {
-        if (node == NULL) return 0;
-        int l = GetHeight(node->left);
-        int r = GetHeight(node->right);
+    int get_height(TreeNode *node) {
+        if (node == nullptr) return 0;
+        int l = get_height(node->left);
+        int r = get_height(node->right);
         return max(l, r) + 1;
     }
 
-    TreeNode* Insert(int key, TreeNode *node) {
-        if (node == NULL) node = new TreeNode(key);
+    TreeNode* insert(int key, TreeNode *node) {
+        if (node == nullptr) node = new TreeNode(key);
         if (key < node->key) {
-            node->left = Insert(key, node->left);
-            if (GetHeight(node->left) - GetHeight(node->right) >= 2)
-                node = key < node->left->key ? RightRotate(node) : LeftRightRotate(node);
+            node->left = insert(key, node->left);
+            if (get_height(node->left) - get_height(node->right) >= 2)
+                node = key < node->left->key ? right_rotate(node) : left_right_rotate(node);
         } else if (key > node->key) {
-            node->right = Insert(key, node->right);
-            if (GetHeight(node->right) - GetHeight(node->left) >= 2)
-                node = key > node->right->key ? LeftRotate(node) : RightLeftRotate(node);
+            node->right = insert(key, node->right);
+            if (get_height(node->right) - get_height(node->left) >= 2)
+                node = key > node->right->key ? left_rotate(node) : right_left_rotate(node);
         }
         return node;
     }
 
-    void Insert(int key) {
-        root = Insert(key, root);
+    void insert(int key) {
+        root = insert(key, root);
     }
 
-    void LevelOrder() {
+    void bfs() {
         queue<TreeNode*> q;
         q.push(root);
         while (!q.empty()) {
             TreeNode *temp = q.front(); q.pop();
-            if (temp != root) cout << ' ';
-            cout << temp->key;
             if (temp->left)  q.push(temp->left);
             if (temp->right) q.push(temp->right);
+            cout << temp->key << (!q.empty() ? ' ' : '\n');
         }
-        cout << endl;
     }
 
-    bool IsComplete() {
+    bool is_complete() {
         queue<TreeNode*> q;
         q.push(root);
         while (true) {
             TreeNode *temp = q.front(); q.pop();
-            if (temp == NULL) break;
+            if (temp == nullptr) break;
             q.push(temp->left);
             q.push(temp->right);
         }
         while (!q.empty()) {
-            if (q.front() != NULL) return false;
+            if (q.front()) return false;
             q.pop();
         }
         return true;
@@ -98,14 +96,13 @@ struct AVLTree {
 
 int main() {
     AVLTree tree;
-    int n;
+    int n, key;
     cin >> n;
     while (n--) {
-        int key;
         cin >> key;
-        tree.Insert(key);
+        tree.insert(key);
     }
-    tree.LevelOrder();
-    cout << (tree.IsComplete() ? "YES" : "NO") << endl;
+    tree.bfs();
+    cout << (tree.is_complete() ? "YES" : "NO") << endl;
     return 0;
 }
