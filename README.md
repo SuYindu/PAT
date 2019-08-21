@@ -21,7 +21,7 @@
 |1010|[Radix](https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536)|[C++](./src/甲级/1010.cpp)|
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
 |1012|[The Best Rank](https://pintia.cn/problem-sets/994805342720868352/problems/994805502658068480)|[C++](./src/甲级/1012.cpp)|
-|1013|[Battle Over Cities](https://pintia.cn/problem-sets/994805342720868352/problems/994805500414115840)|[](./src/甲级/1013.cpp)|
+|1013|[Battle Over Cities](https://pintia.cn/problem-sets/994805342720868352/problems/994805500414115840)|[C++](./src/甲级/1013.cpp)|
 |1014|[Waiting in Line](https://pintia.cn/problem-sets/994805342720868352/problems/994805498207911936)|[](./src/甲级/1014.cpp)|
 |1015|[Reversible Primes](https://pintia.cn/problem-sets/994805342720868352/problems/994805495863296000)|[C++](./src/甲级/1015.cpp)|
 |1016|[Phone Bills](https://pintia.cn/problem-sets/994805342720868352/problems/994805493648703488)|[C++](./src/甲级/1016.cpp)|
@@ -29,7 +29,7 @@
 |1018|[Public Bike Management](https://pintia.cn/problem-sets/994805342720868352/problems/994805489282433024)|[](./src/甲级/1018.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1020|[Tree Traversals](https://pintia.cn/problem-sets/994805342720868352/problems/994805485033603072)|[C++](./src/甲级/1020.cpp)|
-|1021|[Deepest Root](https://pintia.cn/problem-sets/994805342720868352/problems/994805482919673856)|[](./src/甲级/1021.cpp)|
+|1021|[Deepest Root](https://pintia.cn/problem-sets/994805342720868352/problems/994805482919673856)|[C++](./src/甲级/1021.cpp)|
 |1022|[Digital Library](https://pintia.cn/problem-sets/994805342720868352/problems/994805480801550336)|[C++](./src/甲级/1022.cpp)|
 |1023|[Have Fun with Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805478658260992)|[C++](./src/甲级/1023.cpp)|
 |1024|[Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805476473028608)|[C++](./src/甲级/1024.cpp)|
@@ -42,7 +42,7 @@
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[C++](./src/甲级/1032.cpp)|
 |1033|[To Fill or Not to Fill](https://pintia.cn/problem-sets/994805342720868352/problems/994805458722734080)|[C++](./src/甲级/1033.cpp)|
-|1034|[Head of a Gang](https://pintia.cn/problem-sets/994805342720868352/problems/994805456881434624)|[](./src/甲级/1034.cpp)|
+|1034|[Head of a Gang](https://pintia.cn/problem-sets/994805342720868352/problems/994805456881434624)|[C++](./src/甲级/1034.cpp)|
 |1035|[Password](https://pintia.cn/problem-sets/994805342720868352/problems/994805454989803520)|[C++](./src/甲级/1035.cpp)|
 |1036|[Boys vs Girls](https://pintia.cn/problem-sets/994805342720868352/problems/994805453203030016)|[C++](./src/甲级/1036.cpp)|
 |1037|[Magic Coupon](https://pintia.cn/problem-sets/994805342720868352/problems/994805451374313472)|[C++](./src/甲级/1037.cpp)|
@@ -84,7 +84,7 @@
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
 |1074|[Reversing Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805394512134144)|[C++](./src/甲级/1074.cpp)|
 |1075|[PAT Judge](https://pintia.cn/problem-sets/994805342720868352/problems/994805393241260032)|[](./src/甲级/1075.cpp)|
-|1076|[Forwards on Weibo](https://pintia.cn/problem-sets/994805342720868352/problems/994805392092020736)|[](./src/甲级/1076.cpp)|
+|1076|[Forwards on Weibo](https://pintia.cn/problem-sets/994805342720868352/problems/994805392092020736)|[C++](./src/甲级/1076.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
 |1078|[Hashing](https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592)|[C++](./src/甲级/1078.cpp)|
 |1079|[Total Sales of Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805388447170560)|[C++](./src/甲级/1079.cpp)|
@@ -208,7 +208,7 @@
 |1031|[查验身份证](https://pintia.cn/problem-sets/994805260223102976/problems/994805290334011392)|[C](./src/乙级/1031.c)|
 |1032|[挖掘机技术哪家强](https://pintia.cn/problem-sets/994805260223102976/problems/994805289432236032)|[C](./src/乙级/1032.c)|
 |1033|[旧键盘打字](https://pintia.cn/problem-sets/994805260223102976/problems/994805288530460672)|[C](./src/乙级/1033.c)|
-|1034|[有理数四则运算](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)|[C++](./src/乙级/1034.c)|
+|1034|[有理数四则运算](https://pintia.cn/problem-sets/994805260223102976/problems/994805287624491008)|[C++](./src/乙级/1034.cpp)|
 |1035|[插入与归并](https://pintia.cn/problem-sets/994805260223102976/problems/994805286714327040)|[C++](./src/乙级/1035.cpp)|
 |1036|[跟奥巴马一起编程](https://pintia.cn/problem-sets/994805260223102976/problems/994805285812551680)|[C](./src/乙级/1036.c)|
 |1037|[在霍格沃茨找零钱](https://pintia.cn/problem-sets/994805260223102976/problems/994805284923359232)|[C](./src/乙级/1037.c)|

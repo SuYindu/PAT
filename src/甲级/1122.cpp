@@ -3,16 +3,16 @@
 #include <set>
 using namespace std;
 
-bool IsHamiltonianCycle(set<pair<int, int>> &edges, vector<int> &path, int n) {
-    if (path.size() != n + 1) return false;
+bool judge(set<pair<int, int>> &edges, vector<int> &path, int n) {
+    if (path.size() != n + 1)        return false;
     if (path.front() != path.back()) return false;
 
-    set<int> s;
+    set<int> vertices;
     for (int i = 0; i < path.size() - 1; i++) {
         if (!edges.count({path[i], path[i+1]})) return false;
-        s.insert(path[i]);
+        vertices.insert(path[i]);
     }
-    return s.size() == n;
+    return vertices.size() == n;
 }
 
 int main() {
@@ -32,7 +32,7 @@ int main() {
         vector<int> path(len);
         for (int i = 0; i < len; i++)
             cin >> path[i];
-        cout << (IsHamiltonianCycle(edges, path, n) ? "YES" : "NO") << endl;
+        cout << (judge(edges, path, n) ? "YES" : "NO") << endl;
     }
     return 0;
 }
