@@ -11,7 +11,7 @@
 |:-:|:-----:|:---------:|
 |1001|[A+B Format](https://pintia.cn/problem-sets/994805342720868352/problems/994805528788582400)|[C++](./src/甲级/1001.cpp)|
 |1002|[A+B for Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805526272000000)|[C++](./src/甲级/1002.cpp)|
-|1003|[Emergency](https://pintia.cn/problem-sets/994805342720868352/problems/994805523835109376)|[](./src/甲级/1003.cpp)|
+|1003|[Emergency](https://pintia.cn/problem-sets/994805342720868352/problems/994805523835109376)|[C++](./src/甲级/1003.cpp)|
 |1004|[Counting Leaves](https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184)|[C++](./src/甲级/1004.cpp)|
 |1005|[Spell It Right](https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336)|[C++](./src/甲级/1005.cpp)|
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
