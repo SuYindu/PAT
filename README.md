@@ -26,7 +26,7 @@
 |1015|[Reversible Primes](https://pintia.cn/problem-sets/994805342720868352/problems/994805495863296000)|[C++](./src/甲级/1015.cpp)|
 |1016|[Phone Bills](https://pintia.cn/problem-sets/994805342720868352/problems/994805493648703488)|[C++](./src/甲级/1016.cpp)|
 |1017|[Queueing at Bank](https://pintia.cn/problem-sets/994805342720868352/problems/994805491530579968)|[](./src/甲级/1017.cpp)|
-|1018|[Public Bike Management](https://pintia.cn/problem-sets/994805342720868352/problems/994805489282433024)|[](./src/甲级/1018.cpp)|
+|1018|[Public Bike Management](https://pintia.cn/problem-sets/994805342720868352/problems/994805489282433024)|[C++](./src/甲级/1018.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1020|[Tree Traversals](https://pintia.cn/problem-sets/994805342720868352/problems/994805485033603072)|[C++](./src/甲级/1020.cpp)|
 |1021|[Deepest Root](https://pintia.cn/problem-sets/994805342720868352/problems/994805482919673856)|[C++](./src/甲级/1021.cpp)|
@@ -38,7 +38,7 @@
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
 |1028|[List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805468327690240)|[C++](./src/甲级/1028.cpp)|
 |1029|[Median](https://pintia.cn/problem-sets/994805342720868352/problems/994805466364755968)|[C++](./src/甲级/1029.cpp)|
-|1030|[Travel Plan](https://pintia.cn/problem-sets/994805342720868352/problems/994805464397627392)|[](./src/甲级/1030.cpp)|
+|1030|[Travel Plan](https://pintia.cn/problem-sets/994805342720868352/problems/994805464397627392)|[C++](./src/甲级/1030.cpp)|
 |1031|[Hello World for U](https://pintia.cn/problem-sets/994805342720868352/problems/994805462535356416)|[C++](./src/甲级/1031.cpp)|
 |1032|[Sharing](https://pintia.cn/problem-sets/994805342720868352/problems/994805460652113920)|[C++](./src/甲级/1032.cpp)|
 |1033|[To Fill or Not to Fill](https://pintia.cn/problem-sets/994805342720868352/problems/994805458722734080)|[C++](./src/甲级/1033.cpp)|
