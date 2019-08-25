@@ -2,41 +2,32 @@
 #include <vector>
 using namespace std;
 
-vector<int> heap;
-bool is_max_heap = true;
-bool is_min_heap = true;
+vector<int> tree, path;
+bool is_max_heap = true, is_min_heap = true;
 
-void GetPath(int index, vector<int> path) {
-    if (index >= heap.size()) return;
-    
-    path.push_back(heap[index]);
-    int left = index * 2 + 1;
-    int right = index * 2 + 2;
-    // 若该节点为叶节点
-    if (left >= heap.size()) {
+void dfs(int id) {
+    path.push_back(tree[id]);
+    if (2 * id + 1 >= tree.size()) {
         for (int i = 0; i < path.size() - 1; i++) {
-            cout << path[i] << ' ';
-            if (path[i] < path[i + 1]) is_max_heap = false;
-            if (path[i] > path[i + 1]) is_min_heap = false;
+            if (path[i] < path[i+1]) is_max_heap = false;
+            if (path[i] > path[i+1]) is_min_heap = false;
+            cout << path[i] << " ";
         }
         cout << path.back() << endl;
-        return;
+    } else {
+        if (2 * id + 2 < tree.size()) dfs(2 * id + 2);
+        dfs(2 * id + 1);
     }
-    if (right < heap.size())
-        GetPath(right, path);
-    // if (left < heap.size())
-    GetPath(left, path);
+    path.pop_back();
 }
 
 int main() {
     int n;
     cin >> n;
-    heap.resize(n);
-    vector<int> path;
-    for (int i = 0; i < n; i++)
-        cin >> heap[i];
-    GetPath(0, path);
-    if (is_max_heap)      cout << "Max Heap" << endl;
+    tree.resize(n);
+    for (int i = 0; i < n; i++) cin >> tree[i];
+    dfs(0);
+    if      (is_max_heap) cout << "Max Heap" << endl;
     else if (is_min_heap) cout << "Min Heap" << endl;
     else                  cout << "Not Heap" << endl;
     return 0;

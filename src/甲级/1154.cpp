@@ -1,34 +1,33 @@
-// 对于稀疏图，注意防止内存超限（存储边）
-
 #include <iostream>
 #include <vector>
 #include <set>
 using namespace std;
 
-vector<pair<int, int>> edges;
-
-bool IsProper(const vector<int> &colors) {
-    for (int i = 0; i < edges.size(); i++)
-        if (colors[edges[i].first] == colors[edges[i].second])
-            return false;
-    return true;
-}
+using Edge = pair<int, int>;
 
 int main() {
     int n, m, k;
-    cin >> n >> m;
-    edges.resize(m);
-    for (int i = 0; i < m; i++) { int u, v; cin >> u >> v; edges[i] = {u, v}; }
-    cin >> k;
+    scanf("%d%d", &n, &m);
+    vector<Edge> edges;
+    while (m--) {
+        int v, w;
+        scanf("%d%d", &v, &w);
+        edges.push_back({v, w});
+    }
+    scanf("%d", &k);
     while (k--) {
+        bool flag = true;
         vector<int> colors(n);
-        set<int> diff_color;
+        set<int> count;
         for (int i = 0; i < n; i++) {
             cin >> colors[i];
-            diff_color.insert(colors[i]);
+            count.insert(colors[i]);
         }
-        if (IsProper(colors)) printf("%d-coloring\n", diff_color.size());
-        else                  printf("No\n");
+        for (auto edge : edges)
+            if (colors[edge.first] == colors[edge.second])
+                flag = false;
+        if (flag) printf("%lu-coloring\n", count.size());
+        else      printf("No\n");
     }
     return 0;
 }
