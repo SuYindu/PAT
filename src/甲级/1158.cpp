@@ -3,71 +3,64 @@
 #include <vector>
 using namespace std;
 
-struct UnionFind {
+struct UnionFindSet {
     vector<int> id;
-    vector<int> sz;
 
-    UnionFind(int n) : id(n), sz(n, 1) {
+    UnionFindSet(int n) : id(n) {
         for (int i = 0; i < n; i++)
             id[i] = i;
     }
 
-    int Find(int x) {
+    int find(int x) {
         if (id[x] == x) return x;
-        return id[x] = Find(id[x]);
+        return id[x] = find(id[x]);
     }
 
-    void Union(int x, int y) {
-        int i = Find(x);
-        int j = Find(y);
-        if (i == j) return;
-        if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
-        else               { id[j] = i; sz[i] += sz[j]; }
+    void union_set(int a, int b) {
+        int x = find(a), y = find(b);
+        if (x != y) id[x] = y;
     }
 };
+
+const int N = 1005;
+int graph[N][N];
 
 int main() {
     int k, n, m;
     cin >> k >> n >> m;
-    vector<vector<int>> durations(n + 1, vector<int>(n + 1));
     while (m--) {
-        int c, r, d;
-        cin >> c >> r >> d;
-        durations[c][r] += d;
+        int v, w, t;
+        cin >> v >> w >> t;
+        graph[v][w] += t;
     }
-    vector<int> suspects;
-    for (int i = 1; i <= n; i++) {
-        int count = 0, call_back = 0;
-        for (int j = 1; j <= n; j++) {
-            if (durations[i][j] > 0 && durations[i][j] <= 5) {
-                count++;
-                call_back += (durations[j][i] != 0);
+    vector<int> evil;
+    for (int v = 1; v <= n; v++) {
+        int call = 0, back = 0;
+        for (int w = 1; w <= n; w++) {
+            if (graph[v][w] > 0 && graph[v][w] <= 5) {
+                call++;
+                back += graph[w][v] > 0;
             }
         }
-        if (count > k && call_back <= 0.2 * count)
-            suspects.push_back(i);
+        if (call > k && back <= 0.2 * call)
+            evil.push_back(v);
     }
-    if (suspects.empty()) {
-        cout << "None" << endl;
-        return 0;
-    }
-    UnionFind uf(n + 1);
-    for (int i = 0; i < suspects.size(); i++)
-        for (int j = i + 1; j < suspects.size(); j++)
-            if (durations[suspects[i]][suspects[j]] != 0 && durations[suspects[j]][suspects[i]] != 0)
-                uf.Union(suspects[i], suspects[j]);
-    vector<int> temp[n + 1];
-    for (auto x : suspects)
-        temp[uf.Find(x)].push_back(x);
-    vector<vector<int>> ans;
-    for (auto gang : temp)
-        if (!gang.empty())
-            ans.push_back(gang);
-    sort(ans.begin(), ans.end(), [](vector<int> v1, vector<int> v2) {
-        return v1.front() < v2.front();
+    UnionFindSet uf(n + 1);
+    for (int i = 0; i < evil.size(); i++)
+        for (int j = i + 1; j < evil.size(); j++)
+            if (graph[evil[i]][evil[j]] && graph[evil[j]][evil[i]])
+                uf.union_set(evil[i], evil[j]);
+    vector<vector<int>> tmp(n), ans;
+    for (auto v : evil)
+        tmp[uf.find(v)].push_back(v);
+    for (auto gang : tmp)
+        if (!gang.empty()) ans.push_back(gang);
+    sort(ans.begin(), ans.end(), [](vector<int> a, vector<int> b) {
+        return a.front() < b.front();
     });
     for (auto gang : ans)
         for (int i = 0; i < gang.size(); i++)
             cout << gang[i] << (i < gang.size() - 1 ? ' ' : '\n');
+    if (ans.empty()) cout << "None" << endl;
     return 0;
 }

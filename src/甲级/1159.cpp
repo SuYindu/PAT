@@ -1,78 +1,85 @@
 #include <iostream>
 #include <string>
-#include <unordered_map>
+#include <map>
 using namespace std;
 
 struct TreeNode {
     int key, level;
-    TreeNode* parent;
-    TreeNode* left;
-    TreeNode* right;
+    TreeNode *parent;
+    TreeNode *lchild;
+    TreeNode *rchild;
 
-    TreeNode(int key) : key(key) {}
+    TreeNode(int key) : key(key) { parent = lchild = rchild = nullptr; }
 };
 
-bool is_full = true;
-unordered_map<int, TreeNode*> nodes;
+map<int, TreeNode*> nodes;
 
-TreeNode* Build(int* postorder, int* inorder, int n) {
-    if (n <= 0) return nullptr;
-    TreeNode* root = new TreeNode(postorder[n - 1]);
-    nodes[root->key] = root;
-    int i;
-    for (i = 0; i < n && inorder[i] != root->key; i++);
-    root->left  = Build(postorder, inorder, i);
-    root->right = Build(postorder + i, inorder + i + 1, n - i - 1);
-    if (root->left)  root->left->parent  = root;
-    if (root->right) root->right->parent = root;
-    return root;
-}
+struct Tree {
+    TreeNode *root;
+    bool is_full = true;
 
-void Traversal(TreeNode* root) {
-    if (!root) return;
-    if (root->parent) root->level = root->parent->level + 1;
-    if (root->left && !root->right) is_full = false;
-    if (!root->left && root->right) is_full = false;
-    Traversal(root->left);
-    Traversal(root->right);
-}
+    TreeNode* build(int *in, int *post, int n) {
+        if (n <= 0) return nullptr;
+
+        int i;
+        TreeNode *node = new TreeNode(post[n - 1]);
+        for (i = 0; i < n && in[i] != node->key; i++);
+        node->lchild = build(in, post, i);
+        node->rchild = build(in + i + 1, post + i, n - i - 1);
+        if (node->lchild) node->lchild->parent = node;
+        if (node->rchild) node->rchild->parent = node;
+        return nodes[node->key] = node;
+    }
+
+    void dfs(TreeNode *node) {
+        if (node == nullptr) return;
+        if (node->parent) node->level = node->parent->level + 1;
+        if (node->lchild && !node->rchild) is_full = false;
+        if (!node->lchild && node->rchild) is_full = false;
+        dfs(node->lchild);
+        dfs(node->rchild);
+    }
+
+    Tree(int *in, int *post, int n) {
+        root = build(in, post, n);
+        root->level = 0;
+        dfs(root);
+    }
+};
 
 int main() {
     int n, m;
     cin >> n;
-    int* postorder = new int[n];
-    int* inorder   = new int[n];
-    for (int i = 0; i < n; i++) cin >> postorder[i];
-    for (int i = 0; i < n; i++) cin >> inorder[i];
-    TreeNode* root = Build(postorder, inorder, n);
-    root->level = 1;
-    Traversal(root);
+    int in[n], post[n];
+    for (int i = 0; i < n; i++) cin >> post[i];
+    for (int i = 0; i < n; i++) cin >> in[i];
+    Tree tree(in, post, n);
     cin >> m; getchar();
     while (m--) {
         bool flag;
         int a, b;
-        string statement;
-        getline(cin, statement);
-        if (statement.find("root") != string::npos) {
-            sscanf(statement.c_str(), "%d is the root", &a);
-            flag = (a == root->key);
-        } else if (statement.find("siblings") != string::npos) {
-            sscanf(statement.c_str(), "%d and %d are siblings", &a, &b);
+        string stat;
+        getline(cin, stat);
+        if (stat.find("root") != string::npos) {
+            sscanf(stat.c_str(), "%d is the root", &a);
+            flag = (tree.root->key == a);
+        } else if (stat.find("siblings") != string::npos) {
+            sscanf(stat.c_str(), "%d and %d are siblings", &a, &b);
             flag = (nodes[a]->parent == nodes[b]->parent);
-        } else if (statement.find("parent") != string::npos) {
-            sscanf(statement.c_str(), "%d is the parent of %d", &a, &b);
+        } else if (stat.find("parent") != string::npos) {
+            sscanf(stat.c_str(), "%d is the parent of %d", &a, &b);
             flag = (nodes[b]->parent == nodes[a]);
-        } else if (statement.find("left child") != string::npos) {
-            sscanf(statement.c_str(), "%d is the left child of %d", &a, &b);
-            flag = (nodes[b]->left == nodes[a]);
-        } else if (statement.find("right child") != string::npos) {
-            sscanf(statement.c_str(), "%d is the right child of %d", &a, &b);
-            flag = (nodes[b]->right == nodes[a]);
-        } else if (statement.find("same level") != string::npos) {
-            sscanf(statement.c_str(), "%d and %d are on the same level", &a, &b);
+        } else if (stat.find("left") != string::npos) {
+            sscanf(stat.c_str(), "%d is the left child of %d", &a, &b);
+            flag = (nodes[b]->lchild == nodes[a]);
+        } else if (stat.find("right") != string::npos) {
+            sscanf(stat.c_str(), "%d is the right child of %d", &a, &b);
+            flag = (nodes[b]->rchild == nodes[a]);
+        } else if (stat.find("level") != string::npos) {
+            sscanf(stat.c_str(), "%d and %d are on the same level", &a, &b);
             flag = (nodes[a]->level == nodes[b]->level);
         } else {
-            flag = is_full;
+            flag = tree.is_full;
         }
         cout << (flag ? "Yes" : "No") << endl;
     }

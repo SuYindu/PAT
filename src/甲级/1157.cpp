@@ -2,27 +2,33 @@
 #include <unordered_set>
 using namespace std;
 
+string find_min(const unordered_set<string> &s) {
+    string res = *s.begin();
+    for (auto id : s)
+        if (id.substr(6, 8) < res.substr(6, 8))
+            res = id;
+    return res;
+}
+
 int main() {
-    string id, oldest = "999999999999999999";
-    unordered_set<string> alumnus;
-    int n, m, count = 0;
+    int n, m;
+    string id;
+    unordered_set<string> s1, s2;
+
     cin >> n;
     while (n--) {
         cin >> id;
-        alumnus.insert(id);
+        s1.insert(id);
     }
     cin >> m;
     while (m--) {
         cin >> id;
-        if (alumnus.count(id)) {
-            count++;
-            if (count == 0 || stoi(id.substr(6, 8)) < stoi(oldest.substr(6, 8)))
-                oldest = id;
-        } else {
-            if (count == 0 && stoi(id.substr(6, 8)) < stoi(oldest.substr(6, 8)))
-                oldest = id;
-        }
+        s2.insert(id);
     }
-    cout << count << endl << oldest << endl;
+
+    int count = 0;
+    for (auto id : s2) count += s1.count(id);
+    cout << count << endl;
+    cout << (count ? find_min(s1) : find_min(s2)) << endl;
     return 0;
 }
