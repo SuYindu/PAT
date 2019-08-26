@@ -1,95 +1,63 @@
-#include <cstdio>
 #include <iostream>
-#include <algorithm>
 #include <vector>
 #include <map>
 using namespace std;
 
 struct TreeNode {
-    int key;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode *parent;
+    int key, level;
+    TreeNode *lchild = nullptr;
+    TreeNode *rchild = nullptr;
+    TreeNode *parent = nullptr;
 
-    TreeNode(int x) : key(x), left(NULL), right(NULL), parent(NULL) {}
+    TreeNode(int key, int level) : key(key), level(level) {}
 };
 
-map<int, TreeNode*> key2node;
+map<int, TreeNode*> nodes;
 
-bool FindKeys(int u, int v) {
-    switch(key2node.count(u) * 2 + key2node.count(v)) {
-    case 0:
-        printf("ERROR: %d and %d are not found.\n", u, v); return false;
-    case 1:
-        printf("ERROR: %d is not found.\n", u); return false;
-    case 2:
-        printf("ERROR: %d is not found.\n", v); return false;
-    case 3:
-        return true;
-    }
-}
-
-void FindLCA(int u, int v, vector<int> &v1, vector<int> &v2) {
-    sort(v1.begin(), v1.end());
-    for (auto key : v2) {
-        if (binary_search(v1.begin(), v1.end(), key)) {
-            printf("LCA of %d and %d is %d.\n", u, v, key);
-            return;
-        }
-    }
-}
-
-void FindLCA(int u, int v, TreeNode *root) {
-    if (!FindKeys(u, v)) return;
-    vector<int> ancestors_u;
-    vector<int> ancestors_v;
-    TreeNode *temp = key2node[u];
-    while (temp != NULL) {
-        ancestors_u.push_back(temp->key);
-        temp = temp->parent;
-    }
-    temp = key2node[v];
-    while (temp != NULL) {
-        ancestors_v.push_back(temp->key);
-        temp = temp->parent;
-    }
-    for (auto key : ancestors_u)
-        if (key == v) { printf("%d is an ancestor of %d.\n", v, u); return; }
-    for (auto key : ancestors_v)
-        if (key == u) { printf("%d is an ancestor of %d.\n", u, v); return; }
-    if (ancestors_u.size() > ancestors_v.size())
-        FindLCA(u, v, ancestors_u, ancestors_v);
-    else
-        FindLCA(u, v, ancestors_v, ancestors_u);
-}
-
-TreeNode* ConstructTree(int *preorder, int *inorder, int n) {
+TreeNode* build(int *in, int *pre, int n, int level) {
+    if (n <= 0) return nullptr;
+    TreeNode *node = new TreeNode(*pre, level);
     int i;
-    if (n <= 0) return NULL;
-    int root_key = *preorder;
-    TreeNode *root = new TreeNode(root_key);
-    for (i = 0; i < n; i++)
-        if (inorder[i] == root_key) break;
-    root->left = ConstructTree(preorder + 1, inorder, i);
-    root->right = ConstructTree(preorder + i + 1, inorder + i + 1, n - i - 1);
-    if (root->left) root->left->parent = root;
-    if (root->right) root->right->parent = root;
-    key2node.insert({root->key, root});
-    return root;
+    for (i = 0; i < n && in[i] != node->key; i++);
+    node->lchild = build(in, pre + 1, i, level + 1);
+    node->rchild = build(in + i + 1, pre + i + 1, n - i - 1, level + 1);
+    if (node->lchild) node->lchild->parent = node;
+    if (node->rchild) node->rchild->parent = node;
+    return nodes[node->key] = node;
 }
 
 int main() {
     int m, n;
     cin >> m >> n;
-    int *inorder, *preorder;
-    inorder = new int[n], preorder = new int[n];
-    for (int i = 0; i < n; i++) cin >> inorder[i];
-    for (int i = 0; i < n; i++) cin >> preorder[i];
-    TreeNode *root = ConstructTree(preorder, inorder, n);
+    int in[n], pre[n];
+    for (int i = 0; i < n; i++) cin >> in[i];
+    for (int i = 0; i < n; i++) cin >> pre[i];
+    TreeNode *root = build(in, pre, n, 0);
     while (m--) {
         int u, v;
         cin >> u >> v;
-        FindLCA(u, v, root);
+        TreeNode *node1 = nodes[u], *node2 = nodes[v];
+        if (!node1 && !node2) {
+            printf("ERROR: %d and %d are not found.\n", u, v);
+        } else if (node1 && !node2) {
+            printf("ERROR: %d is not found.\n", v);
+        } else if (!node1 && node2) {
+            printf("ERROR: %d is not found.\n", u);
+        } else {
+            bool flag = node2->level < node1->level;
+            if (node2->level < node1->level) swap(node1, node2);
+            while (node1->level < node2->level)
+                node2 = node2->parent;
+            if (node1 == node2) { // 测试点 2：两节点相同（题目没有说明）
+                printf("%d is an ancestor of %d.\n", node1->key, flag ? u : v);
+            } else {
+                while (node1 != node2) {
+                    node1 = node1->parent;
+                    node2 = node2->parent;
+                }
+                printf("LCA of %d and %d is %d.\n", u, v, node1->key);
+            }
+        }
     }
     return 0;
 }

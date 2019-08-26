@@ -1,85 +1,69 @@
-// 注意用邻接矩阵表示无向图时边的输入（两个方向）
-
 #include <iostream>
-#include <algorithm>
 #include <vector>
 #include <set>
 using namespace std;
 
-typedef pair<int, int> Edge;
-const int NOT_A_EDGE = -1;
-const int NOT_A_PATH = -1;
-const int MAXN = 205;
-vector<vector<int>> graph(MAXN, vector<int>(MAXN, NOT_A_EDGE));
-vector<Edge> paths;
+const int INF = 0x3f3f3f3f;
 
-bool IsTSCycle(vector<int> path, int n) {
+int n, m;
+const int N = 205;
+int graph[N][N];
+
+vector<string> descriptions {
+    "Not a TS cycle",
+    "Not a TS cycle",
+    "TS cycle",
+    "TS simple cycle",
+};
+
+int get_dist(const vector<int> &path) {
+    int res = 0;
+    for (int i = 0; i < path.size() - 1; i++) {
+        int len = graph[path[i]][path[i+1]];
+        if (!len) return INF;
+        res += len;
+    }
+    return res;
+}
+
+bool is_ts_cycle(const vector<int> &path) {
     for (int i = 0; i < path.size() - 1; i++)
-        if (graph[path[i]][path[i + 1]] == NOT_A_EDGE)
+        if (!graph[path[i]][path[i+1]])
             return false;
-    set<int> visited;
-    for (auto v : path)
-        visited.insert(v);
+    set<int> visited(path.begin(), path.end());
     return visited.size() == n && path.front() == path.back();
 }
 
-bool IsSimple(vector<int> path) {
-    set<Edge> visited;
-    for (int i = 0; i < path.size() - 1; i++) {
-        int u = path[i], v = path[i + 1];
-        if (visited.count({u, v})) return false;
-        visited.insert({u, v});
-        visited.insert({v, u});
-    }
-    return true;
-}
-
-int GetDistance(vector<int> path) {
-    int dist = 0;
-    for (int i = 0; i < path.size() - 1; i++) {
-        int edge = graph[path[i]][path[i + 1]];
-        if (edge == NOT_A_EDGE) return NOT_A_PATH;
-        dist += edge;
-    }
-    return dist;
-}
-
-void PrintResult(bool is_tscycle, bool is_simple, int dist) {
-    static int kase = 0;
-    printf("Path %d: ", ++kase);
-    if (is_tscycle && dist != NOT_A_PATH)
-        paths.push_back({kase, dist});
-    if (dist != NOT_A_PATH) cout << dist << " ";
-    else                    cout << "NA" << " ";
-    
-    if (!is_tscycle)     cout << "(Not a TS cycle)" << endl;
-    else if (!is_simple) cout << "(TS cycle)" << endl;
-    else                 cout << "(TS simple cycle)" << endl;
+bool is_simple(const vector<int> &path) {
+    set<int> visited(path.begin(), path.end());
+    return path.size() == visited.size() + 1 && path.front() == path.back();
 }
 
 int main() {
-    int m, n, k, l;
     cin >> n >> m;
-    for (int i = 0; i < m; i++) {
-        int u, v, dist;
-        cin >> u >> v >> dist;
-        graph[u][v] = dist;
-        graph[v][u] = dist;
+    while (m--) {
+        int v, w;
+        cin >> v >> w >> graph[v][w];
+        graph[w][v] = graph[v][w];
     }
+    int min_dist = INF, min_idx, k;
     cin >> k;
-    while (k--) {
+    for (int i = 1; i <= k; i++) {
+        int l;
         cin >> l;
         vector<int> path(l);
-        for (int i = 0; i < l; i++)
-            cin >> path[i];
-        PrintResult(IsTSCycle(path, n), IsSimple(path), GetDistance(path));
+        for (int j = 0; j < l; j++)
+            cin >> path[j];
+        int dist = get_dist(path);
+        string dist_str = dist == INF ? "NA" : to_string(dist);
+        int idx = is_ts_cycle(path) * 2 + is_simple(path);
+        string description = descriptions[idx];
+        printf("Path %d: %s (%s)\n", i, dist_str.c_str(), description.c_str());
+        if (idx >= 2 && dist < min_dist) {
+            min_dist = dist;
+            min_idx = i;
+        }
     }
-    sort(paths.begin(), paths.end(), 
-    [](Edge a, Edge b) {
-        return a.second < b.second;
-    });
-    int best_index = (*paths.begin()).first;
-    int min_dist = (*paths.begin()).second;
-    printf("Shortest Dist(%d) = %d\n", best_index, min_dist);
+    printf("Shortest Dist(%d) = %d\n", min_idx, min_dist);
     return 0;
 }
