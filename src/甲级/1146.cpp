@@ -1,33 +1,31 @@
 #include <iostream>
 #include <vector>
-#include <set>
 using namespace std;
 
-typedef pair<int, int> Edge;
-set<Edge> edges;
-
-bool IsTopologicalOrder(vector<int> perm) {
-    for (int i = 0; i < perm.size() - 1; i++)
-        if (edges.count({perm[i + 1], perm[i]}))
-            return false;
-    return true;
-}
-
 int main() {
-    vector<int> result;
-    int n, m, k, index = 0;
+    int n, m, k;
     cin >> n >> m;
-    while (m--) { int u, v; cin >> u >> v; edges.insert({u, v}); }
-    cin >> k;
-    while (k--) {
-        vector<int> perm(n);
-        for (int i = 0; i < n; i++)
-            cin >> perm[i];
-        if (!IsTopologicalOrder(perm))
-            result.push_back(index);
-        index++;
+    vector<pair<int, int>> edges;
+    while (m--) {
+        int v, w;
+        cin >> v >> w;
+        edges.push_back({v, w});
     }
-    for (int i = 0; i < result.size(); i++)
-        cout << result[i] << (i < result.size() - 1 ? ' ' : '\n');
+    vector<int> ans, pos(n + 1);
+    cin >> k;
+    for (int i = 0; i < k; i++) {
+        bool flag = true;
+        for (int j = 0; j < n; j++) {
+            int v;
+            cin >> v;
+            pos[v] = j;
+        }
+        for (auto edge : edges)
+            if (pos[edge.first] > pos[edge.second])
+                flag = false;
+        if (!flag) ans.push_back(i);
+    }
+    for (int i = 0; i < ans.size(); i++)
+        cout << ans[i] << (i < ans.size() - 1 ? ' ' : '\n');
     return 0;
 }

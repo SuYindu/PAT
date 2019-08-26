@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    set<int> nums;
     int n, num;
+    set<int> nums;
     cin >> n;
     while (n--) {
         cin >> num;

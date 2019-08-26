@@ -2,44 +2,36 @@
 #include <vector>
 using namespace std;
 
-enum IsHeap { MAX_HEAP, MIN_HEAP, NOT_HEAP };
+bool is_max_heap, is_min_heap;
 
-IsHeap TestHeap(const vector<int> &heap) {
-    int flag = heap[0] > heap[1] ? +1 : -1;
-    for (int i = 0; i * 2 + 1 < heap.size() && flag; i++) {
-        int left = i * 2 + 1, right = i * 2 + 2;
-        if (flag == +1 && (heap[i] < heap[left] || right < heap.size() && heap[i] < heap[right]))
-            flag = 0;
-        if (flag == -1 && (heap[i] > heap[left] || right < heap.size() && heap[i] > heap[right]))
-            flag = 0;
-    }
-    if (flag == 0) return NOT_HEAP;
-    return flag == 1 ? MAX_HEAP : MIN_HEAP;
+void test_heap(vector<int> &heap, int id, int child) {
+    if (child >= heap.size()) return;
+    if (heap[child] > heap[id]) is_max_heap = false;
+    if (heap[child] < heap[id]) is_min_heap = false;
 }
 
-void PostOrderTraversal(int index, const vector<int> &heap) {
-    if (index >= heap.size()) return;
-    PostOrderTraversal(index * 2 + 1, heap);
-    PostOrderTraversal(index * 2 + 2, heap);
-    cout << heap[index] << (index != 0 ? ' ' : '\n');
+void dfs(int id, vector<int> &heap, vector<int> &ans) {
+    if (id >= heap.size()) return;
+    int lchild = id * 2 + 1, rchild = id * 2 + 2;
+    test_heap(heap, id, lchild);
+    test_heap(heap, id, rchild);
+    dfs(lchild, heap, ans);
+    dfs(rchild, heap, ans);
+    ans.push_back(heap[id]);
 }
 
 int main() {
     int m, n;
     cin >> m >> n;
-    vector<int> heap(n);
     while (m--) {
+        vector<int> heap(n), ans;
         for (int i = 0; i < n; i++)
             cin >> heap[i];
-        switch(TestHeap(heap)) {
-        case MAX_HEAP:
-            cout << "Max Heap" << endl; break;
-        case MIN_HEAP:
-            cout << "Min Heap" << endl; break;
-        case NOT_HEAP:
-            cout << "Not Heap" << endl; break;
-        }
-        PostOrderTraversal(0, heap);
+        is_max_heap = is_min_heap = true;
+        dfs(0, heap, ans);
+        cout << (is_max_heap ? "Max Heap" : is_min_heap ? "Min Heap" : "Not Heap") << endl;
+        for (int i = 0; i < n; i++)
+            cout << ans[i] << (i < n - 1 ? ' ' : '\n');
     }
     return 0;
 }
