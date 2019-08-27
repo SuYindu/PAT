@@ -3,52 +3,44 @@
 #include <set>
 using namespace std;
 
-void Output(bool is_clique, bool is_max) {
-    if (!is_clique)
-        cout << "Not a Clique" << endl;
-    else if (!is_max)
-        cout << "Not Maximal" << endl;
-    else
-        cout << "Yes" << endl;
+int n, m;
+const int N = 205;
+bool graph[N][N];
+
+bool is_clique(const vector<int> &clique) {
+    for (int i = 0; i < clique.size(); i++)
+        for (int j = i + 1; j < clique.size(); j++)
+            if (!graph[clique[i]][clique[j]]) return false;
+    return true;
 }
 
-void IsMaxClique(vector<int> vertices, vector<vector<int>> graph) {
-    set<int> s;
-    bool is_clique = true;
-    bool is_max = true;
-    for (auto u : vertices) s.insert(u);
-    for (auto u : vertices) {
-        int count = 0;
-        for (auto v : graph[u])
-            count += s.count(v);
-        if (count < vertices.size() - 1) { is_clique = false; break; }
+bool is_max(const vector<int> &clique) {
+    set<int> vetices(clique.begin(), clique.end());
+    for (int v = 1; v <= n; v++) {
+        if (vetices.count(v)) continue;
+        bool flag = true;
+        for (auto w : clique)
+            if (!graph[v][w]) flag = false;
+        if (flag) return false;
     }
-    for (int u = 1; u < graph.size() && is_max; u++) {
-        if (s.count(u)) continue;
-        int count = 0;
-        for (auto v : graph[u]) count += s.count(v);
-        if (count >= vertices.size()) is_max = false;
-    }
-    Output(is_clique, is_max);
+    return true;
 }
 
 int main() {
-    int nv, ne, m, k;
-    cin >> nv >> ne;
-    vector<vector<int>> graph(nv + 1);
-    while (ne--) {
-        int u, v;
-        cin >> u >> v;
-        graph[u].push_back(v);
-        graph[v].push_back(u);
+    int k, l;
+    cin >> n >> m;
+    for (int i = 0; i < m; i++) {
+        int v, w;
+        cin >> v >> w;
+        graph[v][w] = graph[w][v] = true;
     }
-    cin >> m;
-    while (m--) {
-        cin >> k;
-        vector<int> vertices(k);
-        for (int i = 0; i < k; i++)
-            cin >> vertices[i];
-        IsMaxClique(vertices, graph);
+    cin >> k;
+    while (k--) {
+        cin >> l;
+        vector<int> clique(l);
+        for (int i = 0; i < l; i++)
+            cin >> clique[i];
+        cout << (!is_clique(clique) ? "Not a Clique" : !is_max(clique) ? "Not Maximal" : "Yes") << endl;
     }
     return 0;
 }

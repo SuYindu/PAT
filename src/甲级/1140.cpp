@@ -1,27 +1,25 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
-vector<int> LookAndSay(const vector<int> &s) {
-    vector<int> result;
-    int i = 0, j;
-    while (i < s.size()) {
-        j = i++;
-        while (i < s.size() && s[i] == s[j]) i++;
-        result.push_back(s[j]);
-        result.push_back(i - j);
+string describe(const string &num) {
+    string res;
+    for (int i = 0; i < num.size();) {
+        char c = num[i];
+        int count = 0;
+        while (i < num.size() && num[i] == c) {
+            i++;
+            count++;
+        }
+        res += c + to_string(count);
     }
-    return result;
+    return res;
 }
 
 int main() {
-    int d, n;
-    cin >> d >> n;
-    vector<int> result {d};
-    while (--n)
-        result = LookAndSay(result);
-    for (auto digit : result)
-        cout << digit;
-    cout << endl;
+    int n;
+    string ans;
+    cin >> ans >> n;
+    while (--n) ans = describe(ans);
+    cout << ans << endl;
     return 0;
 }
