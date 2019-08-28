@@ -1,48 +1,37 @@
-// 注意题目中的 C 和 D 不能是 A 或 B 本人
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
 #include <set>
+#include <map>
 using namespace std;
 
-const int MAXN = 10000;
-vector<int> same_sex_friends[MAXN];
-set<pair<int, int>> relations;
-
-vector<pair<int, int>> FindFriends(int A, int B) {
-    vector<pair<int, int>> result;
-    for (auto C : same_sex_friends[A]) {
-        if (C == B) continue;
-        for (auto D : same_sex_friends[B])
-            if (D != A && relations.count({C, D}))
-                result.push_back({C, D});
-    }
-    return result;
-}
+const int N = 10000;
+set<int> graph[N];
 
 int main() {
-    int a, b;
-    int n, m, k;
+    int n, m, k, a, b;
     cin >> n >> m;
     while (m--) {
         cin >> a >> b;
-        int A = abs(a), B = abs(b);
-        relations.insert({A, B});
-        relations.insert({B, A});
-        if (a * b < 0) continue;
-        same_sex_friends[A].push_back(B);
-        same_sex_friends[B].push_back(A);
+        graph[abs(a)].insert(b);
+        graph[abs(b)].insert(a);
     }
     cin >> k;
     while (k--) {
+        vector<pair<int, int>> ans;
         cin >> a >> b;
-        vector<pair<int, int>> result = FindFriends(abs(a), abs(b));
-        sort(result.begin(), result.end(), [](pair<int, int> a, pair<int, int> b) {
-            return a.first != b.first ? a.first < b.first : a.second < b.second;
+        for (auto c : graph[abs(a)]) {
+            if (c * a < 0 || c == b) continue;
+            for (auto d : graph[abs(c)]) {
+                if (d * b < 0 || d == a) continue;
+                if (graph[abs(d)].count(b)) ans.push_back({abs(c), abs(d)});
+            }
+        }
+        sort(ans.begin(), ans.end(), [](pair<int, int> p1, pair<int, int> p2) {
+            return p1.first != p2.first ? p1.first < p2.first : p1.second < p2.second;
         });
-        printf("%d\n", (int)result.size());
-        for (auto pair : result)
+        printf("%lu\n", ans.size());
+        for (auto pair : ans)
             printf("%04d %04d\n", pair.first, pair.second);
     }
     return 0;

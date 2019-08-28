@@ -1,74 +1,61 @@
-// 使用 void reverse( BidirIt first, BidirIt last ) 来翻转字符串
-// 注意操作符重载的语法
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
 using namespace std;
 
-struct BigDecimal {
-    static const int DECIMAL = 10;
+struct BigInt {
     vector<int> digits;
 
-    BigDecimal() {}
-    BigDecimal(vector<int> digits) : digits(digits) {}
+    BigInt(vector<int> digits) : digits(digits) {}
 
-    friend istream& operator>>(istream& in, BigDecimal& x) {
-        char c;
-        while (in >> c) x.digits.push_back(c - '0');
-        reverse(x.digits.begin(), x.digits.end());
-        return in;
+    BigInt reversed() {
+        vector<int> tmp(digits);
+        reverse(tmp.begin(), tmp.end());
+        return BigInt(tmp);
     }
 
-    friend ostream& operator<<(ostream& out, const BigDecimal& x) {
-        for (int i = x.digits.size() - 1; i >= 0; i--)
-            out << x.digits[i];
-        return out;
+    bool is_palindromic() {
+        for (int i = 0, j = digits.size() - 1; i < j; i++, j--)
+            if (digits[i] != digits[j])
+                return false;
+        return true;
     }
 
-    BigDecimal& operator+=(const BigDecimal& y) {
-        const int n = max(digits.size(), y.digits.size());
-        digits.resize(n);
+    friend BigInt operator+(BigInt a, BigInt b) {
+        const int n = a.digits.size(), m = b.digits.size();
+        vector<int> tmp(max(n, m));
         int carry = 0;
-        for (int i = 0; i < n; i++) {
-            int a = i < digits.size() ? digits[i] : 0;
-            int b = i < y.digits.size() ? y.digits[i] : 0;
-            int sum = a + b + carry;
-            digits[i] = sum % DECIMAL;
-            carry = sum / DECIMAL;
+        for (int i = 0; i < tmp.size(); i++) {
+            int sum = carry;
+            sum += i < n ? a.digits[i] : 0;
+            sum += i < m ? b.digits[i] : 0;
+            tmp[i] = sum % 10;
+            carry = sum / 10;
         }
-        if (carry > 0) digits.push_back(carry);
-        return *this;
+        if (carry) tmp.push_back(carry);
+        return BigInt(tmp);
     }
 
-    BigDecimal Reverse() {
-        BigDecimal reversed(digits);
-        reverse(reversed.digits.begin(), reversed.digits.end());
-        return reversed;
+    friend ostream& operator<<(ostream &out, const BigInt &x) {
+        for (auto it = x.digits.rbegin(); it != x.digits.rend(); it++)
+            out << *it;
+        return out;
     }
 };
 
-bool IsPalindromic(BigDecimal x) {
-    for (int i = 0, j = x.digits.size() - 1; i < j; i++, j--)
-        if (x.digits[i] != x.digits[j]) return false;
-    return true;
-}
-
 int main() {
-    const int MAX_ITER = 10;
+    char c;
     int count = 0;
-    BigDecimal x;
-    cin >> x;
-    while (!IsPalindromic(x) && count < MAX_ITER) {
+    vector<int> tmp;
+    while (cin >> c) tmp.push_back(c - '0');
+    reverse(tmp.begin(), tmp.end());
+    BigInt a(tmp);
+    while (count < 10 && !a.is_palindromic()) {
+        BigInt b = a.reversed();
+        cout << a << " + " << b << " = " << (a = a + b) << endl;
         count++;
-        BigDecimal y = x.Reverse();
-        cout << x << " + " << y << " = ";
-        x += y;
-        cout << x << endl;
     }
-    if (count < MAX_ITER)
-        cout << x << " is a palindromic number." << endl;
-    else
-        cout << "Not found in " << MAX_ITER << " iterations." << endl;
+    if (count < 10) cout << a << " is a palindromic number." << endl;
+    else            cout << "Not found in 10 iterations." << endl;
     return 0;
 }
