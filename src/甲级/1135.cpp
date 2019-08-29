@@ -1,64 +1,21 @@
-// 注意每次迭代之后再次初始化全局变量
-
 #include <iostream>
-#include <vector>
 using namespace std;
 
-enum Color {RED, BLACK};
+const int INF = 0x3f3f3f3f;
 
-struct TreeNode {
-    int key;
-    Color color;
-    TreeNode *left;
-    TreeNode *right;
-
-    TreeNode(int key) : left(NULL), right(NULL) {
-        this->key = key > 0 ? key : -key;
-        color = key > 0 ? BLACK : RED;
+bool flag;
+int black_height;
+int dfs(int *pre, int n, int count) {
+    if (n <= 0) {
+        if (black_height == 0) black_height = count;
+        if (count != black_height) flag = false;
+        return INF;
     }
-};
-
-void BlackDepth(TreeNode *root, int count, vector<int> &black_depth) {
-    if (root == NULL) { black_depth.push_back(++count); return; }
-
-    if (root->color == BLACK) count++;
-    BlackDepth(root->left, count, black_depth);
-    BlackDepth(root->right, count, black_depth);
-}
-
-bool HasTwoBlackChildren(TreeNode *root) {
-    if (root == NULL) return true;
-
-    if (root->color == RED)
-        if ((root->left && root->left->color == RED) 
-        || (root->right && root->right->color == RED))
-            return false;
-
-    return HasTwoBlackChildren(root->left)
-        && HasTwoBlackChildren(root->right);
-}
-
-bool IsRedBlackTree(TreeNode *root) {
-    if (root->color != BLACK) return false;
-    if (!HasTwoBlackChildren(root->left)) return false;
-    if (!HasTwoBlackChildren(root->right)) return false;
-    vector<int> black_depth;
-    BlackDepth(root, 0, black_depth);
-    for (auto depth : black_depth)
-        if (depth != black_depth.front())
-            return false;
-    return true;
-}
-
-TreeNode* ConstructTree(int *preorder, int n) {
-    if (n <= 0) return NULL;
-
-    int i;
-    TreeNode *root = new TreeNode(*preorder);
-    for (i = 1; i < n; i++)
-        if (abs(preorder[i]) >= root->key) break;
-    root->left = ConstructTree(preorder + 1, i - 1);
-    root->right = ConstructTree(preorder + i, n - i);
+    int root = pre[0], i = 1;
+    while (i < n && abs(pre[i]) < abs(root)) i++;
+    int lchild = dfs(pre + 1, i - 1, count + (root > 0));
+    int rchild = dfs(pre + i, n - i, count + (root > 0));
+    if (root < 0 && (lchild < 0 || rchild < 0)) flag = false;
     return root;
 }
 
@@ -67,11 +24,12 @@ int main() {
     cin >> k;
     while (k--) {
         cin >> n;
-        int *preorder = new int[n];
-        for (int i = 0; i < n; i++)
-            cin >> preorder[i];
-        TreeNode *root = ConstructTree(preorder, n);
-        cout << (IsRedBlackTree(root) ? "Yes" : "No") << endl;
+        int pre[n];
+        for (int i = 0; i < n; i++) cin >> pre[i];
+        flag = true;
+        black_height = 0;
+        dfs(pre, n, 0);
+        cout << (flag && pre[0] > 0 ? "Yes" : "No") << endl;
     }
     return 0;
 }

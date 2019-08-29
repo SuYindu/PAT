@@ -1,22 +1,20 @@
-// 除法或取模运算之前检查除数是否为零，以避免浮点错误
-
 #include <iostream>
 #include <string>
 using namespace std;
 
-bool CutInteger(string s) {
-    int A = stoi(s.substr(0, s.size() / 2));
-    int B = stoi(s.substr(s.size() / 2));
-    return A * B != 0 && stoi(s) % (A * B) == 0;
+bool judge(int num) {
+    string tmp = to_string(num);
+    int a = stoi(tmp.substr(0, tmp.size() / 2));
+    int b = stoi(tmp.substr(tmp.size() / 2));
+    return a * b != 0 && num % (a * b) == 0;
 }
 
 int main() {
-    string s;
-    int n;
+    int n, num;
     cin >> n;
     while (n--) {
-        cin >> s;
-        cout << (CutInteger(s) ? "Yes" : "No") << endl;
+        cin >> num;
+        cout << (judge(num) ? "Yes" : "No") << endl;
     }
     return 0;
 }
