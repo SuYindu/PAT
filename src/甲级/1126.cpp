@@ -1,23 +1,21 @@
-// 注意判别图是否联通
-
 #include <iostream>
 #include <vector>
 using namespace std;
 
-const int MAXN = 505;
-vector<int> graph[MAXN];
+const int N = 505;
+vector<int> graph[N];
 
-void DFS(int index, vector<bool> &visited) {
-    visited[index] = true;
-    for (auto v : graph[index])
-        if (!visited[v]) DFS(v, visited);
+bool mark[N];
+void dfs(int v) {
+    mark[v] = true;
+    for (auto w : graph[v])
+        if (!mark[w]) dfs(w);
 }
 
-bool IsConnected(int n) {
-    vector<bool> visited(n + 1, false);
-    DFS(1, visited);
-    for (int i = 1; i <= n; i++)
-        if (!visited[i]) return false;
+bool is_connected(int n) {
+    dfs(1);
+    for (int v = 1; v <= n; v++)
+        if (!mark[v]) return false;
     return true;
 }
 
@@ -25,22 +23,19 @@ int main() {
     int n, m;
     cin >> n >> m;
     while (m--) {
-        int u, v;
-        cin >> u >> v;
-        graph[u].push_back(v);
-        graph[v].push_back(u);
+        int v, w;
+        cin >> v >> w;
+        graph[v].push_back(w);
+        graph[w].push_back(v);
     }
-    int odd_count = 0;
-    for (int i = 1; i <= n; i++) {
-        cout << graph[i].size() << (i < n ? ' ' : '\n');
-        if (graph[i].size() % 2 == 1) odd_count++;
+    int count = 0;
+    for (int v = 1; v <= n; v++) {
+        count += graph[v].size() & 1;
+        cout << graph[v].size() << (v < n ? ' ' : '\n');
     }
-    bool is_connected = IsConnected(n);
-    if (is_connected && odd_count == 0)
-        cout << "Eulerian" << endl;
-    else if (is_connected && odd_count == 2)
-        cout << "Semi-Eulerian" << endl;
-    else 
-        cout << "Non-Eulerian" << endl;
+    if (!is_connected(n)) cout << "Non-Eulerian" << endl;
+    else if (count == 0)  cout << "Eulerian" << endl;
+    else if (count == 2)  cout << "Semi-Eulerian" << endl;
+    else                  cout << "Non-Eulerian" << endl;
     return 0;
 }
