@@ -2,10 +2,10 @@
 #include <vector>
 using namespace std;
 
-bool IsSolution(vector<int> config) {
-    for (int i = 0; i < config.size(); i++)
-        for (int j = i + 1; j < config.size(); j++)
-            if (config[i] == config[j] || abs(config[j] - config[i]) == j - i)
+bool judge(const vector<int> &pos) {
+    for (int i = 0; i < pos.size(); i++)
+        for (int j = i + 1; j < pos.size(); j++)
+            if (pos[i] == pos[j] || abs(pos[j] - pos[i]) == j - i)
                 return false;
     return true;
 }
@@ -15,10 +15,10 @@ int main() {
     cin >> k;
     while (k--) {
         cin >> n;
-        vector<int> config(n);
+        vector<int> pos(n);
         for (int i = 0; i < n; i++)
-            cin >> config[i];
-        cout << (IsSolution(config) ? "YES" : "NO") << endl;
+            cin >> pos[i];
+        cout << (judge(pos) ? "YES" : "NO") << endl;
     }
     return 0;
 }

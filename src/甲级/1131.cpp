@@ -1,92 +1,92 @@
-// 按边存储线路，DFS + 回朔
-// 注意数据输出格式：4 位数字用 %04d 输出
-
-#include <climits>
 #include <iostream>
 #include <vector>
+#include <queue>
 #include <map>
 using namespace std;
 
-const int MAXN = 10000;
-vector<int> graph[MAXN];
-map<pair<int, int>, int> line;
+const int N = 10000;
+vector<int> graph[N];
+map<pair<int, int>, int> lines;
 
-int min_count, min_transfer;
-vector<bool> visited(MAXN, false);
-vector<int> path, best_path;
+vector<vector<int>> bfs(int src, int dest) {
+    vector<bool> mark(N);
+    vector<int> dist(N + 1, N);
+    vector<vector<int>> path(N);
+    queue<int> q;
+    dist[src] = 0;
+    q.push(src);
 
-void Output(int start) {
-    printf("%d\n", min_count);
-    int last_transfer = start, last_line = 0;
-    for (int i = 1; i < best_path.size(); i++) {
-        if (line[{best_path[i - 1], best_path[i]}] != last_line) {
-            if (last_line != 0) printf("Take Line#%d from %04d to %04d.\n", last_line, last_transfer, best_path[i - 1]);
-            last_line = line[{best_path[i - 1], best_path[i]}];
-            last_transfer = best_path[i - 1];
+    while (!q.empty()) {
+        int v = q.front(); q.pop();
+        if (v == dest) break;
+        mark[v] = true;
+        for (auto w : graph[v]) {
+            if (mark[w]) continue;
+            if (dist[w] > dist[v] + 1) {
+                dist[w] = dist[v] + 1;
+                path[w].clear();
+                path[w].push_back(v);
+                q.push(w);
+            } else if (dist[w] == dist[v] + 1) {
+                path[w].push_back(v);
+            }
         }
     }
-    printf("Take Line#%d from %04d to %04d.\n", last_line, last_transfer, best_path.back());
+    return path;
 }
 
-int Transfer(vector<int> path) {
-    int count = 0, last_line = 0;
-    for (int i = 1; i < path.size(); i++) {
-        if (line[{path[i - 1], path[i]}] != last_line) count++;
-        last_line = line[{path[i - 1], path[i]}];
-    }
-    return count;
-}
-
-void DFS(int stop, int count, int dest) {
-    if (stop == dest) {
-        int transfer = Transfer(path);
-        if (count < min_count || (count == min_count && transfer < min_transfer)) {
-            min_count = count;
-            min_transfer = transfer;
-            best_path = path;
+int min_cnt;
+vector<int> tmp, ans;
+void dfs(vector<vector<int>> &path, int src, int v, int line, int cnt) {
+    tmp.push_back(v);
+    if (v == src) {
+        if (cnt < min_cnt) {
+            min_cnt = cnt;
+            ans = tmp;
         }
-        return;
+    } else {
+        for (auto w : path[v])
+            dfs(path, src, w, lines[{v, w}], lines[{v, w}] == line ? cnt : cnt + 1);
     }
-    for (auto next_stop : graph[stop]) {
-        if (visited[next_stop]) continue;
-        path.push_back(next_stop);
-        visited[next_stop] = true;
-        DFS(next_stop, count + 1, dest);
-        visited[next_stop] = false;
-        path.pop_back();
-    }
+    tmp.pop_back();
 }
 
-void FindBestPath(int start, int dest) {
-    min_count = min_transfer = INT_MAX;
-    path.clear();
-    path.push_back(start);
-    visited[start] = true;
-    DFS(start, 0, dest);
-    visited[start] = false;
-    Output(start);
+void print() {
+    int n = ans.size(), line = lines[{ans[n - 1], ans[n - 2]}], from = ans[n - 1];
+    printf("%lu\n", ans.size() - 1);
+    for (int i = n - 2; i >= 0; i--) {
+        if (lines[{ans[i+1], ans[i]}] != line) {
+            printf("Take Line#%d from %04d to %04d.\n", line, from, ans[i+1]);
+            line = lines[{ans[i+1], ans[i]}];
+            from = ans[i+1];
+        }
+    }
+    printf("Take Line#%d from %04d to %04d.\n", line, from, ans.front());
 }
 
 int main() {
     int n, m, k;
     cin >> n;
-    // 线路从 1 开始编号
     for (int i = 1; i <= n; i++) {
-        int stop, last_stop;
-        cin >> m >> last_stop;
-        for (int j = 1; j < m; j++) {
-            cin >> stop;
-            graph[last_stop].push_back(stop);
-            graph[stop].push_back(last_stop);
-            line[{last_stop, stop}] = line[{stop, last_stop}] = i;
-            last_stop = stop;
+        int v, w;
+        cin >> m >> v;
+        while (--m) {
+            cin >> w;
+            graph[v].push_back(w);
+            graph[w].push_back(v);
+            lines[{v, w}] = lines[{w, v}] = i;
+            v = w;
         }
     }
     cin >> k;
-    for (int i = 0; i < k; i++) {
-        int start, dest;
-        cin >> start >> dest;
-        FindBestPath(start, dest);
+    while (k--) {
+        int src, dest;
+        cin >> src >> dest;
+        auto path = bfs(src, dest);
+        min_cnt = N;
+        tmp.clear();
+        dfs(path, src, dest, 0, 0);
+        print();
     }
     return 0;
 }
