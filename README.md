@@ -15,7 +15,7 @@
 |1004|[Counting Leaves](https://pintia.cn/problem-sets/994805342720868352/problems/994805521431773184)|[C++](./src/甲级/1004.cpp)|
 |1005|[Spell It Right](https://pintia.cn/problem-sets/994805342720868352/problems/994805519074574336)|[C++](./src/甲级/1005.cpp)|
 |1006|[Sign In and Sign Out](https://pintia.cn/problem-sets/994805342720868352/problems/994805516654460928)|[C++](./src/甲级/1006.cpp)|
-|1007|[Maximum Subsequence Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)|[](./src/甲级/1007.cpp)|
+|1007|[Maximum Subsequence Sum](https://pintia.cn/problem-sets/994805342720868352/problems/994805514284679168)|[C++](./src/甲级/1007.cpp)|
 |1008|[Elevator](https://pintia.cn/problem-sets/994805342720868352/problems/994805511923286016)|[C++](./src/甲级/1008.cpp)|
 |1009|[Product of Polynomials](https://pintia.cn/problem-sets/994805342720868352/problems/994805509540921344)|[C++](./src/甲级/1009.cpp)|
 |1010|[Radix](https://pintia.cn/problem-sets/994805342720868352/problems/994805507225665536)|[C++](./src/甲级/1010.cpp)|
@@ -48,12 +48,12 @@
 |1037|[Magic Coupon](https://pintia.cn/problem-sets/994805342720868352/problems/994805451374313472)|[C++](./src/甲级/1037.cpp)|
 |1038|[Recover the Smallest Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805449625288704)|[C++](./src/甲级/1038.cpp)|
 |1039|[Course List for Student](https://pintia.cn/problem-sets/994805342720868352/problems/994805447855292416)|[C++](./src/甲级/1039.cpp)|
-|1040|[Longest Symmetric String](https://pintia.cn/problem-sets/994805342720868352/problems/994805446102073344)|[](./src/甲级/1040.cpp)|
+|1040|[Longest Symmetric String](https://pintia.cn/problem-sets/994805342720868352/problems/994805446102073344)|[C++](./src/甲级/1040.cpp)|
 |1041|[Be Unique](https://pintia.cn/problem-sets/994805342720868352/problems/994805444361437184)|[C++](./src/甲级/1041.cpp)|
 |1042|[Shuffling Machine](https://pintia.cn/problem-sets/994805342720868352/problems/994805442671132672)|[C++](./src/甲级/1042.cpp)|
 |1043|[Is It a Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805440976633856)|[C++](./src/甲级/1043.cpp)|
 |1044|[Shopping in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805439202443264)|[C++](./src/甲级/1044.cpp)|
-|1045|[Favorite Color Stripe](https://pintia.cn/problem-sets/994805342720868352/problems/994805437411475456)|[](./src/甲级/1045.cpp)|
+|1045|[Favorite Color Stripe](https://pintia.cn/problem-sets/994805342720868352/problems/994805437411475456)|[C++](./src/甲级/1045.cpp)|
 |1046|[Shortest Distance](https://pintia.cn/problem-sets/994805342720868352/problems/994805435700199424)|[C++](./src/甲级/1046.cpp)|
 |1047|[Student List for Course](https://pintia.cn/problem-sets/994805342720868352/problems/994805433955368960)|[C++](./src/甲级/1047.cpp)|
 |1048|[Find Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805432256675840)|[C++](./src/甲级/1048.cpp)|
@@ -76,7 +76,7 @@
 |1065|[A+B and C (64bit)](https://pintia.cn/problem-sets/994805342720868352/problems/994805406352654336)|[C++](./src/甲级/1065.cpp)|
 |1066|[Root of AVL Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805404939173888)|[C++](./src/甲级/1066.cpp)|
 |1067|[Sort with Swap(0, i)](https://pintia.cn/problem-sets/994805342720868352/problems/994805403651522560)|[C++](./src/甲级/1067.cpp)|
-|1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[](./src/甲级/1068.cpp)|
+|1068|[Find More Coins](https://pintia.cn/problem-sets/994805342720868352/problems/994805402305150976)|[C++](./src/甲级/1068.cpp)|
 |1069|[The Black Hole of Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805400954585088)|[C++](./src/甲级/1069.cpp)|
 |1070|[Mooncake](https://pintia.cn/problem-sets/994805342720868352/problems/994805399578853376)|[C++](./src/甲级/1070.cpp)|
 |1071|[Speech Patterns](https://pintia.cn/problem-sets/994805342720868352/problems/994805398257647616)|[C++](./src/甲级/1071.cpp)|
