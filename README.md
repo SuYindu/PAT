@@ -224,13 +224,24 @@
 |1047|[编程团体赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805277163896832)|[C](./src/乙级/1047.c)|
 |1048|[数字加密](https://pintia.cn/problem-sets/994805260223102976/problems/994805276438282240)|[C](./src/乙级/1048.c)|
 |1049|[数列的片段和](https://pintia.cn/problem-sets/994805260223102976/problems/994805275792359424)|[C](./src/乙级/1049.c)|
-|1050|[螺旋矩阵](https://pintia.cn/problem-sets/994805260223102976/problems/994805275146436608)|[](./src/乙级/1050.c)|
+|1050|[螺旋矩阵](https://pintia.cn/problem-sets/994805260223102976/problems/994805275146436608)|[C++](./src/乙级/1050.cpp)|
 |1054|[求平均值](https://pintia.cn/problem-sets/994805260223102976/problems/994805272659214336)|[C++](./src/乙级/1054.cpp)|
 |1055|[集体照](https://pintia.cn/problem-sets/994805260223102976/problems/994805272021680128)|[C++](./src/乙级/1055.cpp)|
 |1059|[C语言竞赛](https://pintia.cn/problem-sets/994805260223102976/problems/994805269828059136)|[C](./src/乙级/1059.c)|
 |1060|[爱丁顿数](https://pintia.cn/problem-sets/994805260223102976/problems/994805269312159744)|[C](./src/乙级/1060.c)|
 |1064|[朋友数](https://pintia.cn/problem-sets/994805260223102976/problems/994805267416334336)|[C++](./src/乙级/1064.cpp)|
 |1065|[单身狗](https://pintia.cn/problem-sets/994805260223102976/problems/994805266942377984)|[C++](./src/乙级/1065.cpp)|
+|1069|[微博转发抽奖](https://pintia.cn/problem-sets/994805260223102976/problems/994805265159798784)|[C++](./src/乙级/1069.cpp)|
+|1070|[结绳](https://pintia.cn/problem-sets/994805260223102976/problems/994805264706813952)|[C++](./src/乙级/1070.cpp)|
+|1075|[链表元素分类](https://pintia.cn/problem-sets/994805260223102976/problems/994805262953594880)|[C++](./src/乙级/1075.cpp)|
+|1079|[延迟的回文数](https://pintia.cn/problem-sets/994805260223102976/problems/994805261754023936)|[C++](./src/乙级/1079.cpp)|
+|1080|[MOOC期终成绩](https://pintia.cn/problem-sets/994805260223102976/problems/994805261493977088)|[C++](./src/乙级/1080.cpp)|
+|1084|[外观数列](https://pintia.cn/problem-sets/994805260223102976/problems/994805260583813120)|[C++](./src/乙级/1084.cpp)|
+|1085|[PAT单位排行](https://pintia.cn/problem-sets/994805260223102976/problems/994805260353126400)|[C++](./src/乙级/1085.cpp)|
+|1089|[狼人杀-简单版](https://pintia.cn/problem-sets/994805260223102976/problems/1038429385296453632)|[C++](./src/乙级/1089.cpp)|
+|1090|[危险品装箱](https://pintia.cn/problem-sets/994805260223102976/problems/1038429484026175488)|[C++](./src/乙级/1090.cpp)|
+|1094|[谷歌的招聘](https://pintia.cn/problem-sets/994805260223102976/problems/1071785997033074688)|[C++](./src/乙级/1094.cpp)|
+|1095|[解码PAT准考证](https://pintia.cn/problem-sets/994805260223102976/problems/1071786104348536832)|[C++](./src/乙级/1095.cpp)|
 
 ------------------------------------------------------------
 
