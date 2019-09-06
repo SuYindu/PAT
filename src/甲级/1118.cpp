@@ -1,63 +1,52 @@
 #include <iostream>
 #include <vector>
-#include <set>
 using namespace std;
 
-const int MAXN = 10005;
-
-struct UnionFind {
+struct UnionFindSet {
     vector<int> id;
-    vector<int> sz;
 
-    UnionFind(int n) : id(n), sz(n, 1) {
-        for (int i = 0; i < n; i++) id[i] = i;
+    UnionFindSet(int size) : id(size + 1) {
+        for (int i = 1; i <= size; i++)
+            id[i] = i;
     }
 
-    int Find(int x) {
+    int find(int x) {
         if (id[x] == x) return x;
-        return id[x] = Find(id[x]);
+        return id[x] = find(id[x]);
     }
 
-    void Union(int x, int y) {
-        int i = Find(x);
-        int j = Find(y);
-        if (i == j) return;
-        if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
-        else               { id[j] = i; sz[i] += sz[j]; }
+    void union_sets(int x, int y) {
+        int a = find(x), b = find(y);
+        id[a] = b;
     }
 
-    int Count(int n) {
-        int count = 0;
-        for (int i = 1; i <= n; i++)
-            if (id[i] == i) count++;
-        return count;
-    }
-
-    bool Connected(int x, int y) {
-        return Find(x) == Find(y);
+    bool connected(int x, int y) {
+        return find(x) == find(y);
     }
 };
 
+const int N = 10005;
+UnionFindSet s(N);
+
 int main() {
-    int n, m, k, x, y;
+    int n, m, k, x, y, num = 0, cnt = 0;
     cin >> n;
-    set<int> s;
-    UnionFind uf(MAXN);
     while (n--) {
-        cin >> m;
-        cin >> x;
-        s.insert(x);
+        cin >> m >> x;
+        num = max(x, num);
         while (--m) {
             cin >> y;
-            s.insert(y);
-            uf.Union(x, y);
+            s.union_sets(x, y);
+            num = max(y, num);
         }
     }
-    cout << uf.Count(s.size()) << " " << s.size() << endl;
+    for (int i = 1; i <= num; i++)
+        cnt += s.id[i] == i;
+    cout << cnt << " " << num << endl;
     cin >> k;
     while (k--) {
         cin >> x >> y;
-        cout << (uf.Connected(x, y) ? "Yes" : "No") << endl;
+        cout << (s.connected(x, y) ? "Yes" : "No") << endl;
     }
     return 0;
 }
