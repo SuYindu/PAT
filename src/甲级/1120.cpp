@@ -2,22 +2,16 @@
 #include <set>
 using namespace std;
 
-int digit_sum(int num) {
-    int res = 0;
-    while (num) {
-        res += num % 10;
-        num /= 10;
-    }
-    return res;
-}
-
 int main() {
-    set<int> s;
-    int n, num;
+    int n;
     cin >> n;
-    while (n--) { 
+    set<int> s;
+    while (n--) {
+        string num;
+        int sum = 0;
         cin >> num;
-        s.insert(digit_sum(num));
+        for (auto c : num) sum += c - '0';
+        s.insert(sum);
     }
     cout << s.size() << endl;
     for (auto it = s.begin(); it != s.end(); it++) {

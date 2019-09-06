@@ -3,36 +3,35 @@
 #include <set>
 using namespace std;
 
-bool judge(set<pair<int, int>> &edges, vector<int> &path, int n) {
-    if (path.size() != n + 1)        return false;
-    if (path.front() != path.back()) return false;
+const int N = 205;
+bool graph[N][N];
+int n, m;
 
-    set<int> vertices;
+bool judge(const vector<int> &path) {
+    if (path.size() != n + 1 || path.front() != path.back()) return false;
+    set<int> s;
     for (int i = 0; i < path.size() - 1; i++) {
-        if (!edges.count({path[i], path[i+1]})) return false;
-        vertices.insert(path[i]);
+        if (!graph[path[i]][path[i+1]]) return false;
+        s.insert(path[i]);
     }
-    return vertices.size() == n;
+    return s.size() == n;
 }
 
 int main() {
-    int n, m, k;
     cin >> n >> m;
-    set<pair<int, int>> edges;
-    while (m--) {
-        int u, v;
-        cin >> u >> v;
-        edges.insert({u, v});
-        edges.insert({v, u});
+    for (int i = 0; i < m; i++) {
+        int v, w;
+        cin >> v >> w;
+        graph[v][w] = graph[w][v] = true;
     }
+    int k;
     cin >> k;
     while (k--) {
-        int len;
-        cin >> len;
-        vector<int> path(len);
-        for (int i = 0; i < len; i++)
-            cin >> path[i];
-        cout << (judge(edges, path, n) ? "YES" : "NO") << endl;
+        int l;
+        cin >> l;
+        vector<int> path(l);
+        for (int i = 0; i < l; i++) cin >> path[i];
+        cout << (judge(path) ? "YES" : "NO") << endl;
     }
     return 0;
 }

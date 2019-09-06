@@ -3,26 +3,23 @@
 using namespace std;
 
 int main() {
-    int n, m, x, y;
-    set<int> guests;
-    set<pair<int, int>> couple;
+    int n, m, v, w;
+    set<int> ans;
+    set<pair<int, int>> edges;
     cin >> n;
-    while (n--) { cin >> x >> y; couple.insert({x, y}); }
+    while (n--) { cin >> v >> w; edges.insert({v, w}); }
     cin >> m;
-    while (m--) { cin >> x; guests.insert(x); }
-
-    for (auto pair : couple) {
-        x = pair.first; y = pair.second;
-        if (guests.count(x) && guests.count(y)) {
-            guests.erase(x);
-            guests.erase(y);
+    while (m--) { cin >> v; ans.insert(v); }
+    for (auto edge : edges) {
+        int v = edge.first, w = edge.second;
+        if (ans.count(v) && ans.count(w)) {
+            ans.erase(v);
+            ans.erase(w);
         }
     }
-
-    if (guests.empty()) { printf("0\n"); return 0; }
-    printf("%lu\n", guests.size());
-    for (auto it = guests.begin(); it != guests.end(); it++) {
-        if (it != guests.begin()) printf(" ");
+    printf("%lu\n", ans.size());
+    for (auto it = ans.begin(); it != ans.end(); it++) {
+        if (it != ans.begin()) printf(" ");
         printf("%05d", *it);
     }
     return 0;
