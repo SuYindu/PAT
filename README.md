@@ -25,7 +25,7 @@
 |1014|[Waiting in Line](https://pintia.cn/problem-sets/994805342720868352/problems/994805498207911936)|[](./src/甲级/1014.cpp)|
 |1015|[Reversible Primes](https://pintia.cn/problem-sets/994805342720868352/problems/994805495863296000)|[C++](./src/甲级/1015.cpp)|
 |1016|[Phone Bills](https://pintia.cn/problem-sets/994805342720868352/problems/994805493648703488)|[C++](./src/甲级/1016.cpp)|
-|1017|[Queueing at Bank](https://pintia.cn/problem-sets/994805342720868352/problems/994805491530579968)|[](./src/甲级/1017.cpp)|
+|1017|[Queueing at Bank](https://pintia.cn/problem-sets/994805342720868352/problems/994805491530579968)|[C++](./src/甲级/1017.cpp)|
 |1018|[Public Bike Management](https://pintia.cn/problem-sets/994805342720868352/problems/994805489282433024)|[C++](./src/甲级/1018.cpp)|
 |1019|[General Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805487143337984)|[C++](./src/甲级/1019.cpp)|
 |1020|[Tree Traversals](https://pintia.cn/problem-sets/994805342720868352/problems/994805485033603072)|[C++](./src/甲级/1020.cpp)|
@@ -65,7 +65,7 @@
 |1054|[The Dominant Color](https://pintia.cn/problem-sets/994805342720868352/problems/994805422639136768)|[C++](./src/甲级/1054.cpp)|
 |1055|[The World's Richest](https://pintia.cn/problem-sets/994805342720868352/problems/994805421066272768)|[C++](./src/甲级/1055.cpp)|
 |1056|[Mice and Rice](https://pintia.cn/problem-sets/994805342720868352/problems/994805419468242944)|[C++](./src/甲级/1056.cpp)|
-|1057|[Stack](https://pintia.cn/problem-sets/994805342720868352/problems/994805417945710592)|[](./src/甲级/1057.cpp)|
+|1057|[Stack](https://pintia.cn/problem-sets/994805342720868352/problems/994805417945710592)|[C++](./src/甲级/1057.cpp)|
 |1058|[A+B in Hogwarts](https://pintia.cn/problem-sets/994805342720868352/problems/994805416519647232)|[C++](./src/甲级/1058.cpp)|
 |1059|[Prime Factors](https://pintia.cn/problem-sets/994805342720868352/problems/994805415005503488)|[C++](./src/甲级/1059.cpp)|
 |1060|[Are They Equal](https://pintia.cn/problem-sets/994805342720868352/problems/994805413520719872)|[C++](./src/甲级/1060.cpp)|
@@ -83,7 +83,7 @@
 |1072|[Gas Station](https://pintia.cn/problem-sets/994805342720868352/problems/994805396953219072)|[C++](./src/甲级/1072.cpp)|
 |1073|[Scientific Notation](https://pintia.cn/problem-sets/994805342720868352/problems/994805395707510784)|[C++](./src/甲级/1073.cpp)|
 |1074|[Reversing Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805394512134144)|[C++](./src/甲级/1074.cpp)|
-|1075|[PAT Judge](https://pintia.cn/problem-sets/994805342720868352/problems/994805393241260032)|[](./src/甲级/1075.cpp)|
+|1075|[PAT Judge](https://pintia.cn/problem-sets/994805342720868352/problems/994805393241260032)|[C++](./src/甲级/1075.cpp)|
 |1076|[Forwards on Weibo](https://pintia.cn/problem-sets/994805342720868352/problems/994805392092020736)|[C++](./src/甲级/1076.cpp)|
 |1077|[Kuchiguse](https://pintia.cn/problem-sets/994805342720868352/problems/994805390896644096)|[C++](./src/甲级/1077.cpp)|
 |1078|[Hashing](https://pintia.cn/problem-sets/994805342720868352/problems/994805389634158592)|[C++](./src/甲级/1078.cpp)|
