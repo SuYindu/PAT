@@ -1,20 +1,15 @@
 #include <iostream>
 #include <algorithm>
-#include <vector>
 using namespace std;
 
 int main() {
-    int n;
+    int n, ans = 0;
     cin >> n;
-    vector<int> nums(n);
+    int nums[n];
+    for (int i = 0; i < n; i++) cin >> nums[i];
+    sort(nums, nums + n, greater<int>());
     for (int i = 0; i < n; i++)
-        cin >> nums[i];
-    sort(nums.begin(), nums.end(), greater<int>());
-    if (n & 1) nums.push_back(0); // 补为偶数
-    int sum1 = 0, sum2 = 0;
-    int m = nums.size();
-    for (int i = 0; i < m / 2; i++) sum1 += nums[i];
-    for (int i = m / 2; i < m; i++) sum2 += nums[i];
-    printf("%d %d\n", n & 1, sum1 - sum2);
+        ans += i < (n + 1) / 2 ? nums[i] : -nums[i];
+    printf("%d %d\n", n & 1, ans);
     return 0;
 }

@@ -1,32 +1,26 @@
 #include <iostream>
-#include <set>
+#include <vector>
 using namespace std;
+
+const int ASCII = 128;
+vector<bool> stuck(ASCII, true);
+vector<bool> marked(ASCII, false);
 
 int main() {
     int k;
     string str;
     cin >> k >> str;
-    set<char> unstuck;
-    for (int i = 0; i < str.size(); ) {
-        char c = str[i];
-        int count = 0;
-        while (i < str.size() && str[i] == c && count < k) {
-            count++;
-            i++;
-        }
-        if (count != k) unstuck.insert(c);
+    for (int i = 0, j; i < str.size(); i = j) {
+        j = i + 1;
+        while (str[j] == str[i] && j - i < k) j++;
+        if (j - i != k) stuck[str[i]] = false;
     }
-    set<char> printed;
     for (auto c : str) {
-        if (!unstuck.count(c) && !printed.count(c)) {
-            cout << c;
-            printed.insert(c);
-        }
+        if (stuck[c] && !marked[c]) cout << c;
+        marked[c] = true;
     }
     cout << endl;
-    for (int i = 0; i < str.size(); i++) {
+    for (int i = 0; i < str.size(); i += stuck[str[i]] ? k : 1)
         cout << str[i];
-        if (!unstuck.count(str[i])) i += k - 1;
-    }
     return 0;
 }

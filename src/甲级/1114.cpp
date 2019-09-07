@@ -3,75 +3,73 @@
 #include <vector>
 using namespace std;
 
-struct UnionFind {
-    vector<int> id;
-    vector<int> sz;
+struct Family {
+    int id, count;
+    double sets, area;
+};
 
-    UnionFind(int n) : id(n), sz(n, 1) {
-        for (int i = 0; i < n; i++)
+const int N = 10005;
+int sets[N], area[N];
+Family families[N];
+
+struct UnionFindSet {
+    vector<int> id;
+
+    UnionFindSet(int size) : id(size + 1) {
+        for (int i = 0; i <= size; i++)
             id[i] = i;
     }
 
-    int Find(int x) {
-        if (id[x] == x) return x;
-        return id[x] = Find(id[x]);
+    int find(int f) {
+        if (id[f] == f) return f;
+        return id[f] = find(id[f]);
     }
 
-    void Union(int x, int y) {
-        int i = Find(x);
-        int j = Find(y);
-        if (i == j) return;
-        if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
-        else               { id[j] = i; sz[i] += sz[j]; }
+    bool connected(int f, int y) {
+        return find(f) == find(y);
+    }
+
+    void union_sets(int f, int y) {
+        int i = find(f), j = find(y);
+        if (i < j) id[j] = i;
+        else       id[i] = j;
     }
 };
-
-struct Family {
-    int id, count;
-    double num, area;
-};
-
-const int MAX_ID = 10005;
 
 int main() {
-    UnionFind uf(MAX_ID);
-    vector<bool> exist(MAX_ID);
-    vector<int> nums(MAX_ID);
-    vector<int> areas(MAX_ID);
     int n;
     cin >> n;
+    UnionFindSet uf(N);
     while (n--) {
-        int id, dad, mom, k, child;
-        cin >> id >> dad >> mom >> k;
-        exist[id] = true;
-        if (dad != -1) { exist[dad] = true; uf.Union(id, dad); }
-        if (mom != -1) { exist[mom] = true; uf.Union(id, mom); }
-        while (k--) { cin >> child; exist[child] = true; uf.Union(id, child); }
-        cin >> nums[id] >> areas[id];
+        int id, father, mather, child, k;
+        cin >> id >> father >> mather >> k;
+        if (father != -1) uf.union_sets(id, father);
+        if (mather != -1) uf.union_sets(id, mather);
+        while (k--) {
+            cin >> child;
+            uf.union_sets(id, child);
+        }
+        cin >> sets[id] >> area[id];
     }
-    vector<Family> result(MAX_ID, {MAX_ID, 0, 0, 0});
-    for (int i = 0; i < MAX_ID; i++) {
-        if (!exist[i]) continue;
-        Family &f = result[uf.Find(i)];
-        f.id = min(i, f.id);
-        f.count++;
-        f.num += nums[i];
-        f.area += areas[i];
+    for (int i = 0; i < N; i++) {
+        int id = uf.find(i);
+        families[id].id = id;
+        families[id].count++;
+        families[id].sets += sets[i];
+        families[id].area += area[i];
     }
-    int count = 0;
-    for (auto &f : result) {
-        if (f.count == 0) continue;
-        f.num /= f.count;
-        f.area /= f.count;
-        count++;
+    vector<Family> ans;
+    for (auto family : families) {
+        if (!family.sets) continue;
+        family.sets /= family.count;
+        family.area /= family.count;
+        ans.push_back(family);
     }
-    sort(result.begin(), result.end(), [](Family x, Family y) {
-        return x.area != y.area ? x.area > y.area : x.id < y.id;
+    sort(ans.begin(), ans.end(), [](Family a, Family b) {
+        return a.area != b.area ? a.area > b.area : a.id < b.id;
     });
-    printf("%d\n", count);
-    for (auto f : result) {
-        if (f.count == 0) break;
-        printf("%04d %d %.3lf %.3lf\n", f.id, f.count, f.num, f.area);
-    }
+    printf("%lu\n", ans.size());
+    for (auto f : ans)
+        printf("%04d %d %.3f %.3f\n", f.id, f.count, f.sets, f.area);
     return 0;
 }

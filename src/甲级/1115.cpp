@@ -1,54 +1,40 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 struct TreeNode {
     int key;
-    TreeNode *left;
-    TreeNode *right;
+    TreeNode *lchild = nullptr;
+    TreeNode *rchild = nullptr;
 
-    TreeNode(int key) : key(key), left(NULL), right(NULL) {}
+    TreeNode(int key) : key(key) {}
 };
 
-struct BST {
-    TreeNode *root;
-    vector<int> count;
-    int max_depth;
+void insert(TreeNode *&node, int key) {
+    if (node == nullptr)       node = new TreeNode(key);
+    else if (key <= node->key) insert(node->lchild, key);
+    else                       insert(node->rchild, key);
+}
 
-    BST(int n) : root(NULL), count(n, 0), max_depth(-1) {}
-
-    TreeNode* Insert(int key, TreeNode *node) {
-        if (node == NULL) return new TreeNode(key);
-        if (key <= node->key)
-            node->left  = Insert(key, node->left);
-        else if (key > node->key)
-            node->right = Insert(key, node->right);
-        return node;
-    }
-
-    void Insert(int key) {
-        root = Insert(key, root);
-    }
-
-    void DFS(TreeNode *node, int depth) {
-        if (node == NULL) { max_depth = max(depth - 1, max_depth); return; }
-        count[depth]++;
-        DFS(node->left,  depth + 1);
-        DFS(node->right, depth + 1);
-    }
-
-    void Output() {
-        DFS(root, 0);
-        int n1 = count[max_depth], n2 = count[max_depth - 1];
-        printf("%d + %d = %d\n", n1, n2, n1 + n2);
-    }
-};
+const int N = 1005;
+int max_level, cnt[N];
+void dfs(TreeNode *node, int level) {
+    if (node == nullptr) return;
+    max_level = max(level, max_level);
+    cnt[level]++;
+    dfs(node->lchild, level + 1);
+    dfs(node->rchild, level + 1);
+}
 
 int main() {
-    int n;
+    int n, key;
+    TreeNode *root = nullptr;
     cin >> n;
-    BST tree(n);
-    while (n--) { int key; cin >> key; tree.Insert(key); }
-    tree.Output();
+    while (n--) {
+        cin >> key;
+        insert(root, key);
+    }
+    dfs(root, 0);
+    int n1 = cnt[max_level], n2 = cnt[max_level - 1];
+    printf("%d + %d = %d\n", n1, n2, n1 + n2);
     return 0;
 }
