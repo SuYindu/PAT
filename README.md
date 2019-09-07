@@ -22,7 +22,7 @@
 |1011|[World Cup Betting](https://pintia.cn/problem-sets/994805342720868352/problems/994805504927186944)|[C++](./src/甲级/1011.cpp)|
 |1012|[The Best Rank](https://pintia.cn/problem-sets/994805342720868352/problems/994805502658068480)|[C++](./src/甲级/1012.cpp)|
 |1013|[Battle Over Cities](https://pintia.cn/problem-sets/994805342720868352/problems/994805500414115840)|[C++](./src/甲级/1013.cpp)|
-|1014|[Waiting in Line](https://pintia.cn/problem-sets/994805342720868352/problems/994805498207911936)|[](./src/甲级/1014.cpp)|
+|1014|[Waiting in Line](https://pintia.cn/problem-sets/994805342720868352/problems/994805498207911936)|[C++](./src/甲级/1014.cpp)|
 |1015|[Reversible Primes](https://pintia.cn/problem-sets/994805342720868352/problems/994805495863296000)|[C++](./src/甲级/1015.cpp)|
 |1016|[Phone Bills](https://pintia.cn/problem-sets/994805342720868352/problems/994805493648703488)|[C++](./src/甲级/1016.cpp)|
 |1017|[Queueing at Bank](https://pintia.cn/problem-sets/994805342720868352/problems/994805491530579968)|[C++](./src/甲级/1017.cpp)|
@@ -34,7 +34,7 @@
 |1023|[Have Fun with Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805478658260992)|[C++](./src/甲级/1023.cpp)|
 |1024|[Palindromic Number](https://pintia.cn/problem-sets/994805342720868352/problems/994805476473028608)|[C++](./src/甲级/1024.cpp)|
 |1025|[PAT Ranking](https://pintia.cn/problem-sets/994805342720868352/problems/994805474338127872)|[C++](./src/甲级/1025.cpp)|
-|1026|[Table Tennis](https://pintia.cn/problem-sets/994805342720868352/problems/994805472333250560)|[](./src/甲级/1026.cpp)|
+|1026|[Table Tennis](https://pintia.cn/problem-sets/994805342720868352/problems/994805472333250560)|[C++](./src/甲级/1026.cpp)|
 |1027|[Colors in Mars](https://pintia.cn/problem-sets/994805342720868352/problems/994805470349344768)|[C++](./src/甲级/1027.cpp)|
 |1028|[List Sorting](https://pintia.cn/problem-sets/994805342720868352/problems/994805468327690240)|[C++](./src/甲级/1028.cpp)|
 |1029|[Median](https://pintia.cn/problem-sets/994805342720868352/problems/994805466364755968)|[C++](./src/甲级/1029.cpp)|
