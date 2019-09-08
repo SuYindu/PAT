@@ -27,8 +27,6 @@ int main() {
     tree.resize(n);
     for (int i = 0; i < n; i++) cin >> tree[i];
     dfs(0);
-    if      (is_max_heap) cout << "Max Heap" << endl;
-    else if (is_min_heap) cout << "Min Heap" << endl;
-    else                  cout << "Not Heap" << endl;
+    cout << (is_max_heap ? "Max Heap" : is_min_heap ? "Min Heap" : "Not Heap") << endl;
     return 0;
 }

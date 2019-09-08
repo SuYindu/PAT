@@ -46,7 +46,7 @@ void dfs(vector<vector<int>> &path, int src, int v, int line, int cnt) {
         }
     } else {
         for (auto w : path[v])
-            dfs(path, src, w, lines[{v, w}], lines[{v, w}] == line ? cnt : cnt + 1);
+            dfs(path, src, w, lines[{v, w}], cnt + (lines[{v, w}] != line));
     }
     tmp.pop_back();
 }

@@ -58,7 +58,7 @@ void query_by_date(string date) {
         return a.second != b.second ? a.second > b.second : a.first < b.first;
     });
     
-    if (result.empty()) { printf("NA\n"); return; }
+    if (result.empty()) printf("NA\n");
     for (auto site : result)
         printf("%d %d\n", site.first, site.second);
 }

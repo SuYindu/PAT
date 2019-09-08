@@ -1,6 +1,4 @@
 #include <iostream>
-#include <algorithm>
-#include <vector>
 #include <map>
 using namespace std;
 
@@ -15,7 +13,7 @@ struct TreeNode {
 
 map<int, TreeNode*> nodes;
 
-TreeNode* build(vector<int>::iterator pre, int n, int level) {
+TreeNode* build(int *pre, int n, int level) {
     if (n <= 0) return nullptr;
     TreeNode *node = new TreeNode(*pre, level);
     int i = 1;
@@ -30,9 +28,9 @@ TreeNode* build(vector<int>::iterator pre, int n, int level) {
 int main() {
     int m, n;
     cin >> m >> n;
-    vector<int> pre(n);
+    int pre[n];
     for (int i = 0; i < n; i++) cin >> pre[i];
-    build(pre.begin(), n, 0);
+    build(pre, n, 0);
     while (m--) {
         int v, w;
         cin >> v >> w;

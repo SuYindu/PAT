@@ -3,12 +3,10 @@
 #include <set>
 using namespace std;
 
-using Edge = pair<int, int>;
-
 int main() {
     int n, m, k;
     scanf("%d%d", &n, &m);
-    vector<Edge> edges;
+    vector<pair<int, int>> edges;
     while (m--) {
         int v, w;
         scanf("%d%d", &v, &w);

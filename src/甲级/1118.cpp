@@ -29,7 +29,8 @@ const int N = 10005;
 UnionFindSet s(N);
 
 int main() {
-    int n, m, k, x, y, num = 0, cnt = 0;
+    int n, m, k, x, y;
+    int num = 0, cnt = 0;
     cin >> n;
     while (n--) {
         cin >> m >> x;

@@ -33,18 +33,14 @@ void insert(TreeNode *&node, int key) {
     if (node == nullptr) { node = new TreeNode(key); return; }
     if (key < node->key) {
         insert(node->lchild, key);
-        if (height(node->lchild) - height(node->rchild) == 2) {
-            if (key > node->lchild->key)
-                left_rotate(node->lchild);
-            right_rotate(node);
-        }
+        if (height(node->lchild) - height(node->rchild) < 2) return;
+        if (key > node->lchild->key) left_rotate(node->lchild);
+        right_rotate(node);
     } else if (key > node->key) {
         insert(node->rchild, key);
-        if (height(node->rchild) - height(node->lchild) == 2) {
-            if (key < node->rchild->key)
-                right_rotate(node->rchild);
-            left_rotate(node);
-        }
+        if (height(node->rchild) - height(node->lchild) < 2) return;
+        if (key < node->rchild->key) right_rotate(node->rchild);
+        left_rotate(node);
     }
 }
 

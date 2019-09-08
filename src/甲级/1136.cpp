@@ -9,8 +9,7 @@ struct BigInt {
     BigInt(vector<int> digits) : digits(digits) {}
 
     BigInt reversed() {
-        vector<int> tmp(digits);
-        reverse(tmp.begin(), tmp.end());
+        vector<int> tmp(digits.rbegin(), digits.rend());
         return BigInt(tmp);
     }
 

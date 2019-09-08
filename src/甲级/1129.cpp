@@ -28,8 +28,7 @@ int main() {
         }
         auto it = nodes.find(Node{val, counts[val]});
         if (it != nodes.end()) nodes.erase(it);
-        counts[val]++;
-        nodes.insert(Node{val, counts[val]});
+        nodes.insert(Node{val, ++counts[val]});
     }
     return 0;
 }

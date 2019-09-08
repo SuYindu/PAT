@@ -33,9 +33,9 @@ int main() {
         count += graph[v].size() & 1;
         cout << graph[v].size() << (v < n ? ' ' : '\n');
     }
-    if (!is_connected(n)) cout << "Non-Eulerian" << endl;
-    else if (count == 0)  cout << "Eulerian" << endl;
+    if (!is_connected(n)) cout << "Non-Eulerian"  << endl;
+    else if (count == 0)  cout << "Eulerian"      << endl;
     else if (count == 2)  cout << "Semi-Eulerian" << endl;
-    else                  cout << "Non-Eulerian" << endl;
+    else                  cout << "Non-Eulerian"  << endl;
     return 0;
 }

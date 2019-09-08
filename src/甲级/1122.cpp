@@ -9,11 +9,9 @@ int n, m;
 
 bool judge(const vector<int> &path) {
     if (path.size() != n + 1 || path.front() != path.back()) return false;
-    set<int> s;
-    for (int i = 0; i < path.size() - 1; i++) {
+    for (int i = 0; i < path.size() - 1; i++)
         if (!graph[path[i]][path[i+1]]) return false;
-        s.insert(path[i]);
-    }
+    set<int> s(path.begin(), path.end());
     return s.size() == n;
 }
 

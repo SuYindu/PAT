@@ -10,8 +10,8 @@ int main() {
         cin >> num;
         nums.insert(num);
     }
-    num = 1;
-    while (nums.count(num)) num++;
-    cout << num << endl;
+    int ans = 1;
+    while (nums.count(ans)) ans++;
+    cout << ans << endl;
     return 0;
 }
