@@ -168,6 +168,10 @@
 |1157|[Anniversary](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274881)|[C++](./src/甲级/1157.cpp)|
 |1158|[Telefraud Detection](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274882)|[C++](./src/甲级/1158.cpp)|
 |1159|[Structure of a Binary Tree](https://pintia.cn/problem-sets/1099547861265756160/problems/1099650747249274883)|[C++](./src/甲级/1159.cpp)|
+|1160|[Forever](https://pintia.cn/problem-sets/1167848804855861248/problems/1168102790225743872)|[C++](./src/甲级/1160.cpp)|
+|1161|[Merging Linked Lists](https://pintia.cn/problem-sets/1167848804855861248/problems/1168102790225743873)|[C++](./src/甲级/1161.cpp)|
+|1162|[Postfix Expression](https://pintia.cn/problem-sets/1167848804855861248/problems/1168102790225743874)|[C++](./src/甲级/1162.cpp)|
+|1163|[Dijkstra Sequence](https://pintia.cn/problem-sets/1167848804855861248/problems/1168102790225743875)|[C++](./src/甲级/1163.cpp)|
 
 ------------------------------------------------------------
 
