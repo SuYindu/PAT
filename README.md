@@ -1,11 +1,11 @@
 # Contents
-  - [PAT(Advanced Level) Solutions](#patadvanced-level-solutions)
-  - [PAT(Basic Level) Solutions](#patbasic-level-solutions)
+  - [Advanced Level](#advanced-level)
+  - [Basic Level](#basic-level)
   - [Reference](#reference)
 
 ------------------------------------------------------------
 
-## PAT(Advanced Level) Solutions
+## Advanced Level
 
 | No. | Title | Solutions |
 |:-:|:-----:|:---------:|
@@ -96,7 +96,7 @@
 |1085|[Perfect Sequence](https://pintia.cn/problem-sets/994805342720868352/problems/994805381845336064)|[C++](./src/甲级/1085.cpp)|
 |1086|[Tree Traversals Again](https://pintia.cn/problem-sets/994805342720868352/problems/994805380754817024)|[C++](./src/甲级/1086.cpp)|
 |1087|[All Roads Lead to Rome](https://pintia.cn/problem-sets/994805342720868352/problems/994805379664297984)|[C++](./src/甲级/1087.cpp)|
-|1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088_1.cpp) [C++](./src/甲级/1088_2.cpp)|
+|1088|[Rational Arithmetic](https://pintia.cn/problem-sets/994805342720868352/problems/994805378443755520)|[C++](./src/甲级/1088.cpp)|
 |1089|[Insert or Merge](https://pintia.cn/problem-sets/994805342720868352/problems/994805377432928256)|[C++](./src/甲级/1089.cpp)|
 |1090|[Highest Price in Supply Chain](https://pintia.cn/problem-sets/994805342720868352/problems/994805376476626944)|[C++](./src/甲级/1090.cpp)|
 |1091|[Acute Stroke](https://pintia.cn/problem-sets/994805342720868352/problems/994805375457411072)|[C++](./src/甲级/1091.cpp)|
@@ -105,7 +105,7 @@
 |1094|[The Largest Generation](https://pintia.cn/problem-sets/994805342720868352/problems/994805372601090048)|[C++](./src/甲级/1094.cpp)|
 |1095|[Cars on Campus](https://pintia.cn/problem-sets/994805342720868352/problems/994805371602845696)|[C++](./src/甲级/1095.cpp)|
 |1096|[Consecutive Factors](https://pintia.cn/problem-sets/994805342720868352/problems/994805370650738688)|[C++](./src/甲级/1096.cpp)|
-|1097|[Deduplication on a Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805369774129152)|[C++](./src/甲级/1097_1.cpp) [C++](./src/甲级/1097_2.cpp)|
+|1097|[Deduplication on a Linked List](https://pintia.cn/problem-sets/994805342720868352/problems/994805369774129152)|[C++](./src/甲级/1097.cpp)|
 |1098|[Insertion or Heap Sort](https://pintia.cn/problem-sets/994805342720868352/problems/994805368847187968)|[C++](./src/甲级/1098.cpp)|
 |1099|[Build A Binary Search Tree](https://pintia.cn/problem-sets/994805342720868352/problems/994805367987355648)|[C++](./src/甲级/1099.cpp)|
 |1100|[Mars Numbers](https://pintia.cn/problem-sets/994805342720868352/problems/994805367156883456)|[C++](./src/甲级/1100.cpp)|

@@ -6,11 +6,11 @@ struct ListNode {
     int val, next;
 };
 
-const int MAXN = 100005;
-const int MAXK = 10005;
+const int N = 100005;
+const int K = 10005;
 
-vector<ListNode> nodes(MAXN);
-vector<int> exist(MAXK);
+vector<ListNode> nodes(N);
+vector<int> exist(K);
 
 void print_list(vector<int> list) {
     if (list.empty()) return;

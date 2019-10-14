@@ -1,5 +1,3 @@
-// 注意判断符号不要直接用两数相乘
-
 #include <iostream>
 using namespace std;
 
@@ -11,7 +9,7 @@ struct Rational {
     Rational(long long n, long long d) {
         int sign1 = n > 0 ? +1 : -1;
         int sign2 = d > 0 ? +1 : -1;
-        int sign = sign1 * sign2;
+        int sign = sign1 * sign2; // 注意判断符号不要直接用两数相乘
         n = abs(n); d = abs(d);
         long long factor = gcd(n, d);
         this->n = sign * n / factor;
