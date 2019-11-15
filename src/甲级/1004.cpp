@@ -2,9 +2,9 @@
 #include <vector>
 using namespace std;
 
-const int MAX_N = 105;
-int ans[MAX_N];
-vector<int> nodes[MAX_N];
+const int N = 105;
+int ans[N];
+vector<int> nodes[N];
 
 int max_level;
 
