@@ -1,20 +1,19 @@
+#include <cstring>
 #include <iostream>
-#include <vector>
 using namespace std;
 
-int occupied;
-const int MAX_N = 1005;
-bool graph[MAX_N][MAX_N];
+int n, m, k;
+const int N = 1005;
+bool marked[N], graph[N][N];
 
-void dfs(int v, vector<bool> &marked) {
+void dfs(int v, int occupied) {
     marked[v] = true;
-    for (int w = 1; w < marked.size(); w++)
+    for (int w = 1; w <= n; w++)
         if (graph[v][w] && w != occupied && !marked[w])
-            dfs(w, marked);
+            dfs(w, occupied);
 }
 
 int main() {
-    int n, m, k;
     scanf("%d%d%d", &n, &m, &k);
     for (int i = 0; i < m; i++) {
         int v, w;
@@ -22,12 +21,12 @@ int main() {
         graph[v][w] = graph[w][v] = true;
     }
     while (k--) {
+        int occupied, count = 0;
         scanf("%d", &occupied);
-        int count = 0;
-        vector<bool> marked(n + 1);
+        memset(marked, 0, n + 1);
         for (int v = 1; v <= n; v++) {
             if (marked[v] || v == occupied) continue;
-            dfs(v, marked);
+            dfs(v, occupied);
             count++;
         }
         printf("%d\n", count - 1);

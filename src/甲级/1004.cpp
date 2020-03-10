@@ -2,13 +2,13 @@
 #include <vector>
 using namespace std;
 
-const int N = 105;
+const int N = 105, ROOT = 1;
 int ans[N];
 vector<int> nodes[N];
 
 int max_level;
 
-void dfs(int id, int level) {
+void dfs(int id, int level = 1) {
     if (nodes[id].empty()) {
         ans[level]++;
         max_level = max(level, max_level);
@@ -28,8 +28,7 @@ int main() {
             nodes[id].push_back(child);
         }
     }
-    int root = 1, root_level = 1;
-    dfs(root, root_level);
+    dfs(ROOT);
     for (int i = 1; i <= max_level; i++)
         cout << ans[i] << (i < max_level ? ' ' : '\n');
     return 0;

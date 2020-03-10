@@ -28,12 +28,9 @@ int main() {
     while (left <= right) {
         mid = left + (right - left) / 2;
         LL tmp = str2num(str2, mid);
-        if (tmp < num)
-            left = mid + 1;
-        else if (tmp > num)
-            right = mid - 1;
-        else
-            break;
+        if      (tmp < num) left  = mid + 1;
+        else if (tmp > num) right = mid - 1;
+        else                break;
     }
     if (left <= right) cout << mid;
     else               cout << "Impossible";

@@ -23,11 +23,11 @@ void shortest_path(int src, int dest) {
         marked[v] = true;
         for (int w = 0; w < n; w++) {
             if (!graph[v][w] || marked[w]) continue;
-            if (dist[v] + graph[v][w] < dist[w]) {
+            if (dist[w] > dist[v] + graph[v][w]) {
                 dist[w] = dist[v] + graph[v][w];
                 cnt[w] = cnt[v];
                 num[w] = num[v] + weight[w];
-            } else if (dist[v] + graph[v][w] == dist[w]) {
+            } else if (dist[w] == dist[v] + graph[v][w]) {
                 cnt[w] += cnt[v];
                 num[w] = max(num[v] + weight[w], num[w]);
             }
@@ -38,9 +38,8 @@ void shortest_path(int src, int dest) {
 int main() {
     int src, dest;
     cin >> n >> m >> src >> dest;
-    for (int i = 0; i < n; i++)
-        cin >> weight[i];
-    while (m--) {
+    for (int i = 0; i < n; i++) cin >> weight[i];
+    for (int i = 0; i < m; i++) {
         int v, w;
         cin >> v >> w >> graph[v][w];
         graph[w][v] = graph[v][w];

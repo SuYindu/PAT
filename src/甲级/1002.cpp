@@ -17,8 +17,7 @@ int main() {
         cin >> e >> c;
         res[e] += c;
     }
-    for (auto c : res)
-        count += c != 0.0;
+    for (auto c : res) count += (c != 0.0);
     printf("%d", count);
     for (int i = E; i >= 0; i--)
         if (res[i] != 0.0) printf(" %d %.1f", i, res[i]);
