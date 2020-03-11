@@ -26,14 +26,14 @@ int main() {
     int count = 0, total = 0;
     for (int i = 0; i < n; i++) {
         if (clients[i].arrive > end) break;
-        int index = 0;
+        int free = 0;
         for (int j = 0; j < k; j++)
-            if (windows[j] < windows[index]) index = j;
-        if (windows[index] < clients[i].arrive) {
-            windows[index] = clients[i].arrive + clients[i].served;
+            if (windows[j] < windows[free]) free = j;
+        if (windows[free] < clients[i].arrive) {
+            windows[free] = clients[i].arrive + clients[i].served;
         } else {
-            total += windows[index] - clients[i].arrive;
-            windows[index] += clients[i].served;
+            total += windows[free] - clients[i].arrive;
+            windows[free] += clients[i].served;
         }
         count++;
     }

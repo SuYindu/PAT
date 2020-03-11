@@ -6,15 +6,12 @@ struct TreeNode {
     int key;
     TreeNode *left;
     TreeNode *right;
-
-    TreeNode(int key) : key(key), left(nullptr), right(nullptr) {}
 };
 
 TreeNode *create_tree(int *post, int *in, int len) {
     if (len <= 0) return nullptr;
-
     int i = 0;
-    TreeNode *root = new TreeNode(post[len - 1]);
+    TreeNode *root = new TreeNode{post[len - 1], nullptr, nullptr};
     while (i < len && in[i] != root->key) i++;
     root->left  = create_tree(post, in, i);
     root->right = create_tree(post + i, in + i + 1, len - i - 1);
@@ -36,11 +33,8 @@ int main() {
     int n;
     cin >> n;
     int post[n], in[n];
-    for (int i = 0; i < n; i++)
-        cin >> post[i];
-    for (int i = 0; i < n; i++)
-        cin >> in[i];
-    TreeNode *root = create_tree(post, in, n);
-    bfs(root);
+    for (int i = 0; i < n; i++) cin >> post[i];
+    for (int i = 0; i < n; i++) cin >> in[i];
+    bfs(create_tree(post, in, n));
     return 0;
 }

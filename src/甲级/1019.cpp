@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-bool is_palindromic(vector<int> digits) {
+bool is_palindromic(const vector<int> &digits) {
     int n = digits.size();
     for (int i = 0; i <= n / 2; i++)
         if (digits[i] != digits[n - i - 1])

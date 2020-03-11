@@ -8,7 +8,7 @@ struct Date {
     string str;
     int month, day, hour, minute;
 
-    friend istream & operator>>(istream &in, Date &date) {
+    friend istream& operator>>(istream& in, Date& date) {
         cin >> date.str;
         date.month  = stoi(date.str.substr(0, 2));
         date.day    = stoi(date.str.substr(3, 2));
@@ -19,18 +19,14 @@ struct Date {
 };
 
 struct Record {
-    string name;
     Date date;
-    string state;
+    string name, state;
 };
 
 struct BillRecord {
     string begin, end;
     int duration;
     double charge;
-
-    BillRecord(string begin, string end, int duration, double charge) : 
-    begin(begin), end(end), duration(duration), charge(charge) {}
 };
 
 int main() {
@@ -47,9 +43,9 @@ int main() {
     }); // 按姓名和时间排序，以筛去无效记录
     map<string, vector<BillRecord>> bills;
     for (int i = 0; i < n - 1; i++) {
-        if (records[i].name != records[i+1].name || records[i].state != "on-line" || records[i+1].state != "off-line") continue;
-        Date begin = records[i].date, end = records[i+1].date;
-        int duration = 0, charge = 0;
+        if (records[i].name != records[i + 1].name || records[i].state != "on-line" || records[i + 1].state != "off-line") continue;
+        Date begin = records[i].date, end = records[i + 1].date;
+        int duration = 0, charge = 0; // 计算通话时长
         while (begin.day != end.day || begin.hour != end.hour || begin.minute != end.minute) {
             duration++;
             charge += tolls[begin.hour];
@@ -63,7 +59,7 @@ int main() {
             }
         }
         // 注意总花费以美元为单位，需要换算
-        bills[records[i].name].push_back(BillRecord(records[i].date.str.substr(3), records[i+1].date.str.substr(3), duration, (double)charge / 100));
+        bills[records[i].name].push_back(BillRecord{records[i].date.str.substr(3), records[i + 1].date.str.substr(3), duration, (double)charge / 100});
     }
 
     int month = records[0].date.month;

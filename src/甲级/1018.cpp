@@ -3,11 +3,8 @@
 using namespace std;
 
 const int INF = 0x3f3f3f3f;
-
-const int SRC = 0;
-const int N = 505;
-int weights[N];
-int graph[N][N];
+const int N = 505, SRC = 0;
+int weights[N], graph[N][N];
 
 vector<int> from[N];
 
@@ -33,7 +30,6 @@ void dfs(int v) {
             best = temp;
         }
     }
-
     temp.push_back(v);
     for (auto w : from[v]) dfs(w);
     temp.pop_back();
@@ -44,7 +40,7 @@ int main() {
     cin >> cap >> n >> dest >> m;
     for (int i = 1; i <= n; i++) {
         cin >> weights[i];
-        weights[i] -= cap / 2;
+        weights[i] -= (cap / 2);
     }
     while (m--) {
         int v, w;
@@ -65,7 +61,7 @@ int main() {
         mark[v] = true;
         for (int w = 0; w <= n; w++) {
             if (!graph[v][w] || mark[w]) continue;
-            if (dist[v] + graph[v][w] < dist[w]) {
+            if (dist[w] > dist[v] + graph[v][w]) {
                 dist[w] = dist[v] + graph[v][w];
                 from[w].clear();
                 from[w].push_back(v);
@@ -74,7 +70,6 @@ int main() {
             }
         }
     }
-
     dfs(dest);
 
     vector<int> path(best.rbegin(), best.rend());
