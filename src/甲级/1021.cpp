@@ -4,9 +4,9 @@
 #include <set>
 using namespace std;
 
-const int MAX_N = 10005;
-vector<int> graph[MAX_N];
-vector<bool> marked(MAX_N);
+const int N = 10005;
+vector<int> graph[N];
+vector<bool> marked(N);
 
 void dfs(int v) {
     marked[v] = true;
@@ -15,7 +15,7 @@ void dfs(int v) {
 }
 
 int max_depth;
-void dfs(int v, int depth, set<int> &s) {
+void dfs(int v, set<int> &s, int depth = 0) {
     if (depth > max_depth) {
         max_depth = depth;
         s.clear();
@@ -26,7 +26,7 @@ void dfs(int v, int depth, set<int> &s) {
 
     marked[v] = true;
     for (auto w : graph[v])
-        if (!marked[w]) dfs(w, depth + 1, s);
+        if (!marked[w]) dfs(w, s, depth + 1);
 }
 
 int main() {
@@ -53,10 +53,10 @@ int main() {
 
     set<int> tmp;
     fill(marked.begin(), marked.end(), false);
-    dfs(1, 0, tmp);
+    dfs(1, tmp);
     set<int> ans(tmp);
     fill(marked.begin(), marked.end(), false);
-    dfs(*ans.begin(), 0, tmp);
+    dfs(*ans.begin(), tmp);
     for (auto v : tmp) ans.insert(v);
 
     for (auto v : ans) printf("%d\n", v);

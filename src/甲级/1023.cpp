@@ -28,10 +28,7 @@ struct BigInt {
             c.digits.push_back(temp % 10);
             carry = temp / 10;
         }
-        while (carry) {
-            c.digits.push_back(carry % 10);
-            carry /= 10;
-        }
+        if (carry) c.digits.push_back(carry % 10);
         return c;
     }
 };
@@ -39,13 +36,13 @@ struct BigInt {
 int main() {
     BigInt num;
     cin >> num;
-    vector<int> count(10);
-    for (auto d : num.digits) count[d]++;
+    vector<int> counts(10);
+    for (auto d : num.digits) counts[d]++;
     num = multiply(num, 2);
-    for (auto d : num.digits) count[d]--;
+    for (auto d : num.digits) counts[d]--;
     bool flag = true;
-    for (auto num : count)
-        if (num != 0) flag = false;
+    for (auto cnt : counts)
+        if (cnt != 0) flag = false;
     cout << (flag ? "Yes" : "No") << endl << num << endl;
     return 0;
 }

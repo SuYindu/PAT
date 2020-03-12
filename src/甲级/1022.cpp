@@ -11,7 +11,7 @@ int main() {
     while (n--) {
         int id;
         string title, author, key, publisher, year;
-        cin >> id; getchar();
+        cin >> id; getchar(); // skip '\n'
         getline(cin, title);
         maps[1][title].insert(id);
         getline(cin, author);

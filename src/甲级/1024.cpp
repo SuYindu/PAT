@@ -29,8 +29,7 @@ struct BigInt {
 
     BigInt reversed() {
         BigInt res;
-        for (auto it = digits.rbegin(); it != digits.rend(); it++)
-            res.digits.push_back(*it);
+        res.digits.assign(digits.rbegin(), digits.rend());
         return res;
     }
 
