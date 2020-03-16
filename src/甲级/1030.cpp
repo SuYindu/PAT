@@ -2,9 +2,7 @@
 #include <vector>
 using namespace std;
 
-const int INF = 0x3f3f3f3f;
-
-const int N = 505;
+const int N = 505, INF = 0x3f3f3f3f;
 int dist_graph[N][N], cost_graph[N][N];
 
 int main() {

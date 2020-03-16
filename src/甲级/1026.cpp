@@ -12,7 +12,7 @@ Player players[N];
 Table tables[M];
 
 int main() {
-    int n, m, k, idx = 1;
+    int n, m, k, idx; // idx 为任意 vip 球桌的编号
     scanf("%d", &n);
     for (int i = 0; i < n; i++) {
         int hour, minute, second, train;
@@ -36,19 +36,19 @@ int main() {
             if (tables[k].end < tables[tid].end)
                 tid = k;
         if (tables[tid].end >= END) break;
-        if (tables[tid].vip) {
+        if (tables[tid].vip) { // vip 顾客插队的特殊情况
             for (j = j < i ? i : j; j < n && !players[j].vip; j++);
             if (j < n && players[j].arrive <= tables[tid].end) {
                 i--; // i-- 用于补偿 for 循环的递增
-                pid = j++; // vip 顾客插队的特殊情况
+                pid = j++;
             }
-        } else if (players[i].vip) {
+        } else if (players[i].vip) { // vip 顾客优先选择空闲的 vip 球桌的特殊情况
             int vip_tid = idx;
             for (int k = 1; k <= m; k++)
                 if (tables[k].vip && tables[k].end < tables[vip_tid].end)
                     vip_tid = k;
             if (tables[vip_tid].vip && tables[vip_tid].end <= players[i].arrive)
-                tid = vip_tid; // vip 顾客优先选择空闲的 vip 球桌的特殊情况
+                tid = vip_tid;
         }
         players[pid].start = max(players[pid].arrive, tables[tid].end);
         tables[tid].end = players[pid].start + players[pid].train;
