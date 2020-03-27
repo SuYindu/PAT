@@ -8,15 +8,9 @@ struct Node {
 } nodes[100005];
 
 int main() {
-    int head1, head2, n;
-    scanf("%d%d%d", &head1, &head2, &n);
-    while (n--) {
-        char data;
-        int addr, next;
-        scanf("%d %c %d", &addr, &data, &next);
-        nodes[addr].data = data;
-        nodes[addr].next = next;
-    }
+    int head1, head2, n, addr;
+    cin >> head1 >> head2 >> n;
+    while (n--) cin >> addr >> nodes[addr].data >> nodes[addr].next;
     while (head1 != -1) {
         nodes[head1].flag = true;
         head1 = nodes[head1].next;

@@ -4,18 +4,19 @@ using namespace std;
 
 struct Gang { int num, val, max; };
 
-const int MAX_N = 2005;
-bool marked[MAX_N];
-int weights[MAX_N];
-int graph[MAX_N][MAX_N];
+const int N = 2005;
+bool marked[N];
+int weights[N];
+int graph[N][N];
 map<string, Gang> ans;
 
 map<string, int> name2id;
 map<int, string> id2name;
 int id(string name) {
-    if (!name2id.count(name)) name2id[name] = name2id.size();
-    id2name[name2id[name]] = name;
-    return name2id[name];
+    if (name2id.count(name)) return name2id[name];
+    int new_id = name2id[name] = name2id.size();
+    id2name[new_id] = name;
+    return new_id;
 }
 
 void dfs(int v, Gang &gang) {

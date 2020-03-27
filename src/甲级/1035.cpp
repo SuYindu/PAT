@@ -3,10 +3,7 @@
 #include <map>
 using namespace std;
 
-struct Account {
-    string name;
-    string password;
-};
+struct Account { string name, password; };
 
 map<char, char> transfer { {'1', '@'}, {'0', '%'}, {'l', 'L'}, {'O', 'o'} };
 

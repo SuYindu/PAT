@@ -3,16 +3,13 @@
 #include <vector>
 using namespace std;
 
-struct GasStation {
-    double price;
-    double pos;
-};
+struct GasStation { double price, pos; };
 
 int main() {
     int n;
     double cap, dest, dist;
     cin >> cap >> dest >> dist >> n;
-    vector<GasStation> st(n+1);
+    vector<GasStation> st(n + 1);
     for (int i = 0; i < n; i++)
         cin >> st[i].price >> st[i].pos;
     st[n].price = 0.0; st[n].pos = dest;
@@ -58,9 +55,7 @@ int main() {
         pos = st[idx].pos;
     }
 
-    if (pos + limit >= dest)
-        printf("%.2f\n", ans);
-    else
-        printf("The maximum travel distance = %.2f\n", pos + limit);
+    if (pos + limit >= dest) printf("%.2f\n", ans);
+    else                     printf("The maximum travel distance = %.2f\n", pos + limit);
     return 0;
 }
