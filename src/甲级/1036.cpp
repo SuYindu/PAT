@@ -15,22 +15,14 @@ int main() {
     while (n--) {
         Student student;
         cin >> student.name >> student.gender >> student.id >> student.score;
-        if (student.gender == 'F' && student.score > best_girl.score)
-            best_girl = student;
-        if (student.gender == 'M' && student.score < worst_boy.score)
-            worst_boy = student;
+        if (student.gender == 'F' && student.score > best_girl.score) best_girl = student;
+        if (student.gender == 'M' && student.score < worst_boy.score) worst_boy = student;
     }
-    if (best_girl.score != -1)
-        cout << best_girl.name << " " << best_girl.id << endl;
-    else
-        cout << "Absent" << endl;
-    if (worst_boy.score != 101)
-        cout << worst_boy.name << " " << worst_boy.id << endl;
-    else
-        cout << "Absent" << endl;
-    if (best_girl.score != -1 && worst_boy.score != 101)
-        cout << best_girl.score - worst_boy.score << endl;
-    else
-        cout << "NA" << endl;
+    if (best_girl.score == -1)  cout << "Absent" << endl;
+    else                        cout << best_girl.name << " " << best_girl.id << endl;
+    if (worst_boy.score == 101) cout << "Absent" << endl;
+    else                        cout << worst_boy.name << " " << worst_boy.id << endl;
+    if (best_girl.score == -1 || worst_boy.score == 101) cout << "NA" << endl;
+    else                                                 cout << best_girl.score - worst_boy.score << endl;
     return 0;
 }

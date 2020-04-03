@@ -7,16 +7,14 @@ int main() {
     int n, m;
     cin >> n;
     int coupons[n];
-    for (int i = 0; i < n; i++)
-        cin >> coupons[i];
+    for (int i = 0; i < n; i++) cin >> coupons[i];
     cin >> m;
     deque<int> products(m);
-    for (int i = 0; i < m; i++)
-        cin >> products[i];
+    for (int i = 0; i < m; i++) cin >> products[i];
     sort(products.begin(), products.end());
 
     long long ans = 0;
-    sort(coupons, coupons + n);
+    sort(coupons, coupons + n, less<int>());
     for (auto coupon : coupons) {
         if (coupon >= 0 || products.empty() || products.front() >= 0) break;
         ans += coupon * products.front();
