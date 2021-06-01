@@ -1,6 +1,11 @@
 **❗️提交时请使用 clang/clang++ 进行编译。**
 
-# Contents
+## Publications
+* [RIVA: A Pre-trained Tweet Multimodal Model Based on Text-image Relation for Multimodal NER (COLING 2020)](https://www.aclweb.org/anthology/2020.coling-main.168.pdf)
+* [RpBERT: A Text-image Relation Propagation-based BERT Model for Multimodal NER (AAAI 2021)](https://arxiv.org/pdf/2102.02967.pdf)
+* [Improving NER in Social Media via Entity Type-Compatible Unknown Word Substitution (ICASSP 2021)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9414304)
+
+## Contents
   - [Advanced Level](#advanced-level)
   - [Basic Level](#basic-level)
   - [Reference](#reference)
